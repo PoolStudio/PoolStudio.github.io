@@ -1,0 +1,22 @@
+/* spa.js */
+var pBegDate = '2018-3-1'; var pid = new Array(); var pcode = new Array(); var pname = new Array(); var pprice = new Array(); var pcurrency = new Array();
+ pid[0]=0; pcode[0]='spa'; pname[0]='СПА бассейны'; pprice[0]=20; pcurrency[0]='title';
+ pid[1]=1; pcode[1]='0'; pname[1]='Catalina Spas (США)'; pprice[1]=0; pcurrency[1]='head';
+ pid[2]=2; pcode[2]='Размер'; pname[2]='Наименование'; pprice[2]='Цена'; pcurrency[2]='column';
+ pid[3]=3; pcode[3]='213х213х99'; pname[3]='SPA Neptune Premium'; pprice[3]=15250.00; pcurrency[3]='eur';
+ pid[4]=4; pcode[4]='236х236х101'; pname[4]='SPA Raptor Premium'; pprice[4]=17761.00; pcurrency[4]='eur';
+ pid[5]=5; pcode[5]='236х236х112'; pname[5]='SPA XL 26 000'; pprice[5]=19162.00; pcurrency[5]='eur';
+ pid[6]=6; pcode[6]='234х234х103'; pname[6]='SPA XL 22 000'; pprice[6]=19962.00; pcurrency[6]='eur';
+ pid[7]=7; pcode[7]='2 ступеньки'; pname[7]='Лестница'; pprice[7]=223.00; pcurrency[7]='eur';
+ pid[8]=8; pcode[8]='0'; pname[8]='.'; pprice[8]=0; pcurrency[8]='header';
+ pid[9]=9; pcode[9]='0'; pname[9]='Strong Spas (США)'; pprice[9]=0; pcurrency[9]='head';
+ pid[10]=10; pcode[10]='Размер'; pname[10]='Наименование'; pprice[10]='Цена'; pcurrency[10]='column';
+ pid[11]=11; pcode[11]='187х187х81'; pname[11]='SPA Colorado'; pprice[11]=8684.00; pcurrency[11]='eur';
+ pid[12]=12; pcode[12]='216х216х92'; pname[12]='SPA Wyoming'; pprice[12]=12910.00; pcurrency[12]='eur';
+ pid[13]=13; pcode[13]='для Wyoming'; pname[13]='Аудиосистема (Bluetooth, Сабвуфер)'; pprice[13]=1340.00; pcurrency[13]='eur';
+ pid[14]=14; pcode[14]='для Wyoming'; pname[14]='Защитная крышка Hardcover'; pprice[14]=1396.00; pcurrency[14]='eur';
+ pid[15]=15; pcode[15]='для Wyoming'; pname[15]='Гидравлический лифт для крышки Hardcover'; pprice[15]=641.00; pcurrency[15]='eur';
+ pid[16]=16; pcode[16]='231х231х102'; pname[16]='SPA Yellowstone'; pprice[16]=15470.00; pcurrency[16]='eur';
+ pid[17]=17; pcode[17]='для Yellowstone'; pname[17]='Аудиосистема (Bluetooth, Сабвуфер)'; pprice[17]=1340.00; pcurrency[17]='eur';
+ pid[18]=18; pcode[18]='для Yellowstone'; pname[18]='Защитная крышка Hardcover'; pprice[18]=1677.00; pcurrency[18]='eur';
+ pid[19]=19; pcode[19]='для Yellowstone'; pname[19]='Гидравлический лифт для крышки Hardcover'; pprice[19]=641.00; pcurrency[19]='eur';

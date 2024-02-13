@@ -1,0 +1,25 @@
+/* rfliner.js */
+var pBegDate = '2018-3-1'; var pid = new Array(); var pcode = new Array(); var pname = new Array(); var pprice = new Array(); var pcurrency = new Array();
+ pid[0]=0; pcode[0]='rfliner'; pname[0]='Армированный лайнер OgenFlex'; pprice[0]=23; pcurrency[0]='title';
+ pid[1]=1; pcode[1]='Код'; pname[1]='Найменування'; pprice[1]='Ціна'; pcurrency[1]='column';
+ pid[2]=2; pcode[2]='Blue2.05'; pname[2]='Синій 8283 з дуже стійким лаковим покриттям 1.5мм, 2.05м, Ціна за 1м²'; pprice[2]=17.00; pcurrency[2]='eur';
+ pid[3]=3; pcode[3]='Blue1.65'; pname[3]='Синій 8283 з дуже стійким лаковим покриттям 1.5мм, 1.65м, Ціна за 1м²'; pprice[3]=17.00; pcurrency[3]='eur';
+ pid[4]=4; pcode[4]='Pacicfic'; pname[4]='Мозаїчний Pacicfic з дуже стійким лаковим покриттям 1.5мм, 1.65м, Ціна за 1м²'; pprice[4]=22.50; pcurrency[4]='eur';
+ pid[5]=5; pcode[5]='3DOcean'; pname[5]='Мозаїчний 3D Ocean з дуже стійким лаковим покриттям 1.5мм, 1.65м, Ціна за 1м²'; pprice[5]=22.50; pcurrency[5]='eur';
+ pid[6]=6; pcode[6]='PS'; pname[6]='Блискучий басейн Pool Sparks з дуже стійким лаковим покриттям 1.5мм, 1.65м, Ціна за 1м²'; pprice[6]=22.50; pcurrency[6]='eur';
+ pid[7]=7; pcode[7]='JS'; pname[7]='StoneFlex ПІСОК, преміум мембрана 1.5мм, 1.65м, Ціна за 1м²'; pprice[7]=27.60; pcurrency[7]='eur';
+ pid[8]=8; pcode[8]='baz'; pname[8]='StoneFlex БАЗАЛЬТ, преміум мембрана 1.5мм, 1.65м, Ціна за 1м²'; pprice[8]=27.60; pcurrency[8]='eur';
+ pid[9]=9; pcode[9]='0'; pname[9]='УВАГА! Доплата за відріз з рулону +10%/м² не повного рулону'; pprice[9]=0; pcurrency[9]='header';
+ pid[10]=10; pcode[10]='0'; pname[10]='.'; pprice[10]=0; pcurrency[10]='header';
+ pid[11]=11; pcode[11]='0'; pname[11]='Протисковзкий'; pprice[11]=0; pcurrency[11]='head';
+ pid[12]=12; pcode[12]='Код'; pname[12]='Найменування'; pprice[12]='Ціна'; pcurrency[12]='column';
+ pid[13]=13; pcode[13]='Anti-slip8283'; pname[13]='Синій протисковзкий 8283 1.5мм, 1.65м, Ціна за 1м²'; pprice[13]=25.00; pcurrency[13]='eur';
+ pid[14]=14; pcode[14]='Anti-slip_snapir6'; pname[14]='Мозаїчний протисковзкий Snapir6 1.5мм, 1.65м, Ціна за 1м²'; pprice[14]=25.00; pcurrency[14]='eur';
+ pid[15]=15; pcode[15]='0'; pname[15]='.'; pprice[15]=0; pcurrency[15]='header';
+ pid[16]=16; pcode[16]='0'; pname[16]='Супутні матеріали'; pprice[16]=0; pcurrency[16]='head';
+ pid[17]=17; pcode[17]='Код'; pname[17]='Найменування'; pprice[17]='Ціна'; pcurrency[17]='column';
+ pid[18]=18; pcode[18]='liquid.B'; pname[18]='Рідкий ПВХ, 1л синій/білий/прозорий'; pprice[18]=31.00; pcurrency[18]='eur';
+ pid[19]=19; pcode[19]='120tf'; pname[19]='Геотерсиль термічно оброблений, сірий, 300г/м²'; pprice[19]=2.00; pcurrency[19]='eur';
+ pid[20]=20; pcode[20]='internalangle'; pname[20]='Куток монтажний 5х3см внутрішній (метал/ПВХ)'; pprice[20]=4.00; pcurrency[20]='eur';
+ pid[21]=21; pcode[21]='externalangle'; pname[21]='Куток монтажний 5х3см зовнішній (метал/ПВХ)'; pprice[21]=4.00; pcurrency[21]='eur';
+ pid[22]=22; pcode[22]='mountingstrip'; pname[22]='Смуга монтажна 3см (метал/ПВХ)'; pprice[22]=3.45; pcurrency[22]='eur';

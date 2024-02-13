@@ -1,0 +1,28 @@
+/* price.js */
+ var prid = new Array(); var prcode = new Array(); var prname = new Array(); var prpack = new Array(); var prprice = new Array(); var prcurrency = new Array();
+ prid[0]=0; prcode[0]='price'; prname[0]='Список прайсов'; prpack[0]='0'; prprice[0]=6; prcurrency[0]='title';
+ prid[1]=1; prcode[1]='№ п/п'; prname[1]='Название'; prpack[1]='Показать цены в'; prprice[1]=''; prcurrency[1]='column';
+ prid[2]=2; prcode[2]='bcprivat'; prname[2]='Химия для частных и общественных бассейнов. Barchemicals (Италия)'; prpack[2]='EUR'; prprice[2]=4; prcurrency[2]='eur';
+ prid[3]=3; prcode[3]='bcequip'; prname[3]='Тестеры дозаторы и измерительные станции'; prpack[3]='EUR'; prprice[3]=4; prcurrency[3]='eur';
+ prid[4]=4; prcode[4]='froggy'; prname[4]='Химия для бассейна. Froggi (Украина)'; prpack[4]='UAH'; prprice[4]=4; prcurrency[4]='eur';
+ prid[5]=5; prcode[5]='aquadoctor'; prname[5]='Химия для бассейна. AquaDoctor (КНР)'; prpack[5]='USD'; prprice[5]=4; prcurrency[5]='eur';
+ prid[6]=6; prcode[6]='delrollet'; prname[6]='Роллеты для бассейнов. DEL (Франция)'; prpack[6]='EUR'; prprice[6]=3; prcurrency[6]='eur';
+ prid[7]=7; prcode[7]='delsolar'; prname[7]='Солярные пленки и наматывающие устройства DEL (Франция)'; prpack[7]='EUR'; prprice[7]=3; prcurrency[7]='eur';
+ prid[8]=8; prcode[8]='delmikado'; prname[8]='Универсальные и зимнии накрытия DEL (Франция)'; prpack[8]='EUR'; prprice[8]=3; prcurrency[8]='eur';
+ prid[9]=9; prcode[9]='delliner'; prname[9]='Лайнеры и фризы DEL (Франция)'; prpack[9]='EUR'; prprice[9]=3; prcurrency[9]='eur';
+ prid[10]=10; prcode[10]='rfliner'; prname[10]='Армированный лайнер OgenFlex'; prpack[10]='EUR'; prprice[10]=3; prcurrency[10]='eur';
+ prid[11]=11; prcode[11]='pierrapool'; prname[11]='Бортовой и террасный камень Pierra (Франция)'; prpack[11]='EUR'; prprice[11]=4; prcurrency[11]='eur';
+ prid[12]=12; prcode[12]='pierragarden'; prname[12]='Садовая серия камня Pierra (Франция)'; prpack[12]='EUR'; prprice[12]=4; prcurrency[12]='eur';
+ prid[13]=13; prcode[13]='pierrafasad'; prname[13]='Облицовка стен и фасадов камнем Pierra (Франция)'; prpack[13]='EUR'; prprice[13]=4; prcurrency[13]='eur';
+ prid[14]=14; prcode[14]='pierrafontan'; prname[14]='Фонтаны из камня Pierra (Франция)'; prpack[14]='EUR'; prprice[14]=4; prcurrency[14]='eur';
+ prid[15]=15; prcode[15]='pierratiles'; prname[15]='Плитка для пола Pierra (Франция)'; prpack[15]='EUR'; prprice[15]=4; prcurrency[15]='eur';
+ prid[16]=16; prcode[16]='pierrachem'; prname[16]='Химия для камня Pierra (Франция)'; prpack[16]='EUR'; prprice[16]=4; prcurrency[16]='eur';
+ prid[17]=17; prcode[17]='favorit'; prname[17]='Композитные чаши бассейнов Фаворит (Украина)'; prpack[17]='EUR'; prprice[17]=3; prcurrency[17]='eur';
+ prid[18]=18; prcode[18]='precast'; prname[18]='Сборно щитовые бассейны (КНР)'; prpack[18]='EUR'; prprice[18]=4; prcurrency[18]='eur';
+ prid[19]=19; prcode[19]='pumps'; prname[19]='Насосы для бассейнов Hayward (США), Kripsol (Испания), Emaux (КНР)'; prpack[19]='EUR'; prprice[19]=3; prcurrency[19]='eur';
+ prid[20]=20; prcode[20]='filtr'; prname[20]='Фильтры для бассейнов Hayward (США), Kripsol (Испания), Emaux (КНР)'; prpack[20]='EUR'; prprice[20]=4; prcurrency[20]='eur';
+ prid[21]=21; prcode[21]='kdfiltr'; prname[21]='Картриджные и диатомовые фильтры для бассейнов. Hayward (США)'; prpack[21]='EUR'; prprice[21]=3; prcurrency[21]='eur';
+ prid[22]=22; prcode[22]='mth'; prname[22]='Автономный навесной фильтр MTH (Германия)'; prpack[22]='EUR'; prprice[22]=3; prcurrency[22]='eur';
+ prid[23]=23; prcode[23]='roboclean'; prname[23]='Роботы очистители Hayward (США), Aquabot (США)'; prpack[23]='EUR'; prprice[23]=3; prcurrency[23]='eur';
+ prid[24]=24; prcode[24]='spa'; prname[24]='СПА бассейны Catalina Spas (США), Strong Spas (США)'; prpack[24]='EUR'; prprice[24]=3; prcurrency[24]='eur';
+ prid[25]=25; prcode[25]='currency'; prname[25]='Курс валют'; prpack[25]='UAH'; prprice[25]=3; prcurrency[25]='eur';
