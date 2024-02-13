@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="128px" height="64px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 128 64"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil5 {fill:#666666}
+    .fil3 {fill:#999999}
+    .fil6 {fill:#CCCCCC}
+    .fil10 {fill:#FFFF66}
+    .fil9 {fill:white}
+    .fil4 {fill:#999999;fill-rule:nonzero}
+    .fil2 {fill:url(#id0)}
+    .fil8 {fill:url(#id1)}
+    .fil11 {fill:url(#id2)}
+    .fil1 {fill:url(#id3);fill-rule:nonzero}
+    .fil7 {fill:url(#id4);fill-rule:nonzero}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="20.0001" y1="60" x2="28" y2="60">
+   <stop offset="0" style="stop-opacity:1; stop-color:#333333"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#999999"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="84.0001" y1="60" x2="92" y2="60">
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="38.0001" y1="7.98462" x2="64" y2="7.98462">
+   <stop offset="0" style="stop-opacity:1; stop-color:#E8E8E8"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#FCFCFC"/>
+  </linearGradient>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="20.0001" y1="32" x2="28" y2="32">
+  </linearGradient>
+  <linearGradient id="id4" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="84.0001" y1="32" x2="92" y2="32">
+  </linearGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="128" height="64"/>
+  <path class="fil1" d="M22 8l4 0 2 48 -8 0 2 -48zm2 0m3 24m-3 24m-3 -24"/>
+  <rect class="fil2" x="20" y="56" width="7.99993" height="7.99993"/>
+  <rect class="fil3" x="28" y="38" width="36" height="25.9999"/>
+  <path class="fil4" d="M28 38l12 -8 0 8 -12 0zm6 -4m6 0m-6 4"/>
+  <path class="fil4" d="M52 38l12 -8 0 8 -12 0zm6 -4m6 0m-6 4"/>
+  <path class="fil4" d="M40 38l12 -8 0 8 -12 0zm6 -4m6 0m-6 4"/>
+  <rect class="fil5" y="18" width="20.0001" height="45.9995"/>
+  <g id="_715649792">
+   <rect class="fil6" x="2" y="20" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="8" y="20" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="14" y="20" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_715650368">
+   <rect class="fil6" x="2" y="26" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="8" y="26" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="14" y="26" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_715651616">
+   <rect class="fil6" x="2" y="32" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="8" y="32" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="14" y="32" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_715652608">
+   <rect class="fil6" x="2" y="38" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="8" y="38" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="14" y="38" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_719134688">
+   <rect class="fil6" x="2" y="44" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="8" y="44" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="14" y="44" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_719138496">
+   <rect class="fil6" x="2" y="50" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="8" y="50" width="4.00025" height="4.00025"/>
+   <rect class="fil6" x="14" y="50" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_719131040">
+   <rect class="fil6" x="2" y="56" width="4.00025" height="6.00009"/>
+   <rect class="fil6" x="8" y="56" width="4.00025" height="6.00009"/>
+   <rect class="fil6" x="14" y="56" width="4.00025" height="6.00009"/>
+  </g>
+  <g id="_719138016">
+   <rect class="fil6" x="32" y="40" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="38" y="40" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="44" y="40" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="50" y="40" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="56" y="40" width="3.9994" height="5.99981"/>
+  </g>
+  <g id="_719134112">
+   <rect class="fil6" x="32" y="48" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="38" y="48" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="44" y="48" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="50" y="48" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="56" y="48" width="3.9994" height="5.99981"/>
+  </g>
+  <g id="_719131296">
+   <rect class="fil6" x="32" y="56" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="38" y="56" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="44" y="56" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="50" y="56" width="3.9994" height="5.99981"/>
+   <rect class="fil6" x="56" y="56" width="3.9994" height="5.99981"/>
+  </g>
+  <path class="fil7" d="M86 8l4 0 2 48 -8 0 2 -48zm2 0m3 24m-3 24m-3 -24"/>
+  <rect class="fil8" x="84" y="56" width="7.99993" height="7.99993"/>
+  <rect class="fil3" x="92" y="38" width="36" height="25.9999"/>
+  <path class="fil4" d="M92 38l12 -8 0 8 -12 0zm6 -4m6 0m-6 4"/>
+  <path class="fil4" d="M116 38l12 -8 0 8 -12 0zm6 -4m6 0m-6 4"/>
+  <path class="fil4" d="M104 38l12 -8 0 8 -12 0zm6 -4m6 0m-6 4"/>
+  <rect class="fil5" x="64" y="18" width="20.0001" height="45.9995"/>
+  <g id="_720103856">
+   <rect class="fil9" x="66" y="20" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="72" y="20" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="78" y="20" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_720104464">
+   <rect class="fil9" x="66" y="26" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="72" y="26" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="78" y="26" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_720101616">
+   <rect class="fil9" x="66" y="32" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="72" y="32" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="78" y="32" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_720105392">
+   <rect class="fil9" x="66" y="38" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="72" y="38" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="78" y="38" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_720100528">
+   <rect class="fil9" x="66" y="44" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="72" y="44" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="78" y="44" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_720100656">
+   <rect class="fil9" x="66" y="50" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="72" y="50" width="4.00025" height="4.00025"/>
+   <rect class="fil9" x="78" y="50" width="4.00025" height="4.00025"/>
+  </g>
+  <g id="_720101360">
+   <rect class="fil9" x="66" y="56" width="4.00025" height="6.00009"/>
+   <rect class="fil9" x="72" y="56" width="4.00025" height="6.00009"/>
+   <rect class="fil9" x="78" y="56" width="4.00025" height="6.00009"/>
+  </g>
+  <g id="_720100208">
+   <rect class="fil9" x="96" y="40" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="102" y="40" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="108" y="40" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="114" y="40" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="120" y="40" width="3.9994" height="5.99981"/>
+  </g>
+  <g id="_719251008">
+   <rect class="fil9" x="96" y="48" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="102" y="48" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="108" y="48" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="114" y="48" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="120" y="48" width="3.9994" height="5.99981"/>
+  </g>
+  <g id="_719253472">
+   <rect class="fil9" x="96" y="56" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="102" y="56" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="108" y="56" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="114" y="56" width="3.9994" height="5.99981"/>
+   <rect class="fil9" x="120" y="56" width="3.9994" height="5.99981"/>
+  </g>
+  <polygon class="fil0" points="52,0 53,6 54,0 54,6 57,1 55,7 59,2 56,7 60,4 57,8 62,5 57,9 63,7 58,10 64,10 58,11 64,12 58,13 64,14 58,14 63,17 57,15 62,19 57,16 60,20 56,17 59,22 55,17 57,23 54,18 54,24 53,18 52,24 51,18 50,24 50,18 47,23 49,17 45,22 48,17 44,20 47,16 42,19 47,15 41,17 46,14 40,14 46,13 40,12 46,11 40,10 46,10 41,7 47,9 42,5 47,8 44,4 48,7 45,2 49,7 47,1 50,6 50,0 51,6 "/>
+  <polygon class="fil10" points="116,0 117,6 118,0 118,6 121,1 119,7 123,2 120,7 124,4 121,8 126,5 121,9 127,7 122,10 128,10 122,11 128,12 122,13 128,14 122,14 127,17 121,15 126,19 121,16 124,20 120,17 123,22 119,17 121,23 118,18 118,24 117,18 116,24 115,18 114,24 114,18 111,23 113,17 109,22 112,17 108,20 111,16 106,19 111,15 105,17 110,14 104,14 110,13 104,12 110,11 104,10 110,10 105,7 111,9 106,5 111,8 108,4 112,7 109,2 113,7 111,1 114,6 114,0 115,6 "/>
+  <path class="fil9" d="M89 8c0,0 1,-1 2,-1 1,-1 3,-1 4,-1 2,1 3,1 4,0 2,0 3,-1 3,-2 -1,0 -2,1 -3,1 -2,0 -3,0 -5,0 -1,-1 -2,-1 -4,0 -1,1 -1,3 -1,3z"/>
+  <path class="fil9" d="M87 8c0,0 1,-1 1,-2 1,-1 2,-2 3,-3 1,0 2,0 3,0 1,0 3,1 4,1 2,0 3,-1 5,-1 1,0 2,-1 3,-1 1,-1 2,-2 2,-2 -1,0 -3,1 -5,1 -2,1 -3,1 -5,1 -1,0 -2,0 -4,0 -1,-1 -2,-1 -3,0 -2,0 -3,1 -4,3 0,1 0,3 0,3z"/>
+  <path class="fil11" d="M41 8c0,0 0,0 0,0 1,-2 2,-3 4,-3 1,0 2,0 2,0 1,-2 3,-3 5,-3 3,0 5,1 6,3 1,0 2,1 3,3 0,0 0,0 0,0 2,0 3,1 3,3 0,2 -1,3 -3,3l0 0 0 0 -4 0 0 0 -4 0 -1 0 -7 0 0 0 -4 0 0 0 0 0c-2,0 -3,-1 -3,-3 0,-2 1,-3 3,-3z"/>
+ </g>
+</svg>
