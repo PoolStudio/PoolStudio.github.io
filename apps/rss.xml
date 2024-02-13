@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<atom:link href="http://poolstudio.github.io/rss.xml" rel="self" type="application/rss+xml" />
+<title>Новости – Студия бассейнов</title>
+<link>http://poolstudio.github.io/</link>
+<description>Студия бассейнов: обновление каталога Акваплюс товары и услуги для бассейна.</description>
+<language>ru-ru</language>
+<copyright>Copyright 2012 Pools Studio</copyright>
+<managingEditor>email@gmail.com (Студия бассейнов)</managingEditor>
+<webMaster>email@gmail.com (Pools Studio)</webMaster>
+<image>
+ <url>http://poolstudio.github.io/images/ps.jpg</url>
+ <title>Студия бассейнов</title>
+ <link>http://poolstudio.github.io/</link>
+</image>
+<lastBuildDate>Tue, 01 Jan 2019 09:08:09 +0200</lastBuildDate>
+
+<item>
+  <title>С Новым 2019 годом!</title>
+  <link>http://poolstudio.github.io/rss.html</link>
+  <description>
+    <p>Поздравляем с Новым 2019 годом! <br />Год наступивший пусть принесет только хорошие события, яркие моменты в жизни, счастья, исполнения всех надежд и поставленных целей. Очень хочется, чтобы в старом году остались все проблемы, а новый год пришел с новыми возможностями. Пусть Новый год подарит всем крепкое здоровье и отличное настроение. И пусть этот год станет для всех особенным.
+    </p>
+  </description>
+  <guid>http://poolstudio.github.io/rss.html?id=1</guid>
+  <author>email@gmail.com (Студия бассейнов)</author>
+  <pubDate>Tue, 01 Jan 2019 09:08:09 +0200</pubDate>
+</item>
+
+</channel>
+</rss>

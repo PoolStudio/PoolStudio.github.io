@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="all">
+	<meta name="description" content="Самая распространенная ошибка при пользовании Интернетом, основная причина – ошибка в написании адреса Web-страницы.">
+	<title>Error 404 | Ошибка: 404 – Студия бассейнов</title>
+	<link rel="canonical" href="http://poolstudio.ltd.ua/error404.html">
+	<link rel="dns-prefetch" href="//s.w.org">
+	<link rel="stylesheet" id="style-css" href="css/style.css" type="text/css" media="all">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="shortcut icon" type='image/x-icon' href="img/favicon.ico">
+	<script type='text/javascript' src='js/jquery-3.1.1.min.js'></script>
+</head>
+<body class="nts l-wbw">
+<div id="wrapper">
+<header>
+	<div class="sector"><div class="s-wrap"><div class="s-cont">
+	</div></div></div>
+</header>
+<!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+<div id="content">
+	<div class="c-wrap">
+		<div class="block"><div class="b-wrap"><div class="b-cont">
+		</div></div></div>
+		<div class="sector"><div class="s-wrap"><div class="s-cont">
+			<h3 class="t-center">Error: 404 – Not Found</h3>
+			<h3 class="t-center">Ошибка: 404 – Страница не существует</h3>
+			<p class="t-center">Самая распространенная ошибка при пользовании Интернетом,
+				<br>основная причина – ошибка в написании адреса Web-страницы.</p>
+			<p class="t-center">Сервер понял запрос, но не нашёл соответствующего ресурса по указанному URL.</p>
+			<p class="t-center">Для устранения проблемы перейдите на главную страницу сайта: <a href="http://poolstudio.ltd.ua">Студия бассейнов</a>.</p>
+				<p id="mesone" class="t-center">Через несколько секунд произойдет автоматическое перенаправление на главную страницу сайта...</p>
+				<progress id="progress" value="0" max="100"></progress>
+				<script>
+				function getProgress(){
+				if(document.getElementById('progress').value>=document.getElementById('progress').max) return false;
+				document.getElementById('progress').value++;
+				setTimeout(getProgress,300);
+				if (progress.value >= progress.max) {
+				document.getElementById('mesone').innerHTML = "Автоматическое перенаправление на главную страницу сайта...";
+				mw=setInterval("window.location.href='http://poolstudio.ltd.ua'",1500);
+				}}
+				getProgress();
+			</script>
+		</div></div></div>
+		<div class="block"><div class="b-wrap"><div class="b-cont">
+		</div></div></div>
+	</div> <!-- END <div class="c-wrap">-->
+</div> <!-- END <div id="content"> -->
+	<!-- ********************************************************************************************** -->
+	<!-- ********************************************************************************************** -->
+	<!-- ********************************************************************************************** -->
+<footer>
+	<div class="sector"><div class="s-wrap"><div class="s-cont">
+		<div style="display: block; height: 100%;"></div>
+	</div></div></div>
+</footer>
+</div><!-- END <div id="wrapper"> -->
+</body>
+</html>
