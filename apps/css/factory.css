@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/****************************************************************************************************
+factory.css
+****************************************************************************************************/
+/* img */
+.barchemicals #jpg:before {content: url(../images/info/factory/barchemicals/barchemicals0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.barchemicals #jpg {background-image: url(../images/info/factory/barchemicals/barchemicals.jpg);}
+.barchemicals #jpg:hover {background-image: url(../images/info/factory/barchemicals/barchemicals0.jpg);}
+.barchemicals .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.del #jpg:before {content: url(../images/info/factory/del/del0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.del #jpg {background-image: url(../images/info/factory/del/del.jpg);}
+.del #jpg:hover {background-image: url(../images/info/factory/del/del0.jpg);}
+.del .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.hayward #jpg:before {content: url(../images/info/factory/hayward/hayward0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.hayward #jpg {background-image: url(../images/info/factory/hayward/hayward.jpg);}
+.hayward #jpg:hover {background-image: url(../images/info/factory/hayward/hayward0.jpg);}
+.hayward .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pierra #jpg:before {content: url(../images/info/factory/pierra/pierra0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierra #jpg {background-image: url(../images/info/factory/pierra/pierra.jpg);}
+.pierra #jpg:hover {background-image: url(../images/info/factory/pierra/pierra0.jpg);}
+.pierra .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.factory #jpg:before {content: url(../images/super.jpg); width:0; height:0; visibility:hidden; display: none;}
+.factory #jpg {background-image: url(../images/info/factory/factory.jpg);}
+.factory #jpg:hover {background-image: url(../images/super.jpg);}
+.factory .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+END
+****************************************************************************************************/

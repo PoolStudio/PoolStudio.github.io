@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/****************************************************************************************************
+hayward.css
+****************************************************************************************************/
+/* img */
+.hayward #jpg:before {content: url(../images/info/factory/hayward/hayward0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.hayward #jpg {background-image: url(../images/info/factory/hayward/hayward.jpg);}
+.hayward #jpg:hover {background-image: url(../images/info/factory/hayward/hayward0.jpg);}
+.hayward .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.hayward1 #jpg:before {content: url(../images/info/factory/hayward/hayward2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.hayward1 #jpg {background-image: url(../images/info/factory/hayward/hayward1.jpg);}
+.hayward1 #jpg:hover {background-image: url(../images/info/factory/hayward/hayward2.jpg);}
+.hayward1 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.hayward2 #jpg:before {content: url(../images/info/factory/hayward/hayward4.jpg); width:0; height:0; visibility:hidden; display: none;}
+.hayward2 #jpg {background-image: url(../images/info/factory/hayward/hayward3.jpg);}
+.hayward2 #jpg:hover {background-image: url(../images/info/factory/hayward/hayward4.jpg);}
+.hayward2 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

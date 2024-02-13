@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/****************************************************************************************************
+psind.css
+****************************************************************************************************/
+/*Slide*/
+.ifc {width: 100%; height: auto; position: relative; z-index: 0;}
+.ifc .img-wrap {
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1),
+	inset 0 0 12px 1px rgba(255,255,255,1),
+	inset 0 0 16px 1px rgba(255,255,255,1);
+}
+.ifc .img-wrap:before {
+	content: "В сезоне...";
+	position: absolute;
+	bottom: 12px;
+	width:100%;
+	padding: 6px;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	font-size: 2.4rem;
+	text-align:center;
+	color: rgba(102,102,102,1);
+	background: linear-gradient(to right,
+			transparent 0%,
+			transparent 10%,
+			rgba(255,255,255,1) 40%,
+			rgba(255,255,255,1) 60%,
+			transparent 90%,
+			transparent 100%);
+	opacity: 0;
+}
+.slidewinter .img-wrap:before {content: "В зимнем сезоне...";}
+.slidespring .img-wrap:before {content: "В весеннем сезоне...";}
+.slidesummer .img-wrap:before {content: "В летнем сезоне...";}
+.slideautumn .img-wrap:before {content: "В осеннем сезоне...";}
+.nts .ifc .img-wrap:hover:before, .yts .ifc .img-wrap:active:before {opacity: 1;}
+
+#slide {position: relative; z-index: -1;}
+.ifc #slide {
+	animation-duration: 120s;
+	animation-timing-function: linear; /*linear ease-in-out*/
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+}
+/* img */
+.slidewinter #slide:before {content: url(../images/slide/winter1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.slidewinter #slide {background-image: url(../images/slide/winter0.jpg);}
+/*.slidewinter #slide:hover {background-image: url(../images/slide/winter1.jpg);}*/
+.slidewinter .inner {padding-top: calc(272 / 1496 * 100%); /* высота/ширина изображения */}
+.slidewinter #slide {animation-name: slidewinter;}
+@keyframes slidewinter {
+from{transform: scale(1); opacity: 1; }
+8%{transform: scale(1.2); opacity: 1; }
+10%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/winter0.jpg); }
+10.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/winter1.jpg); }
+12.5%{transform: scale(1); opacity: 1; }
+20.5%{transform: scale(1.2); opacity: 1; }
+22.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/winter1.jpg); }
+23%{transform: scale(1); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+25%{transform: scale(1); opacity: 1; }
+33%{transform: scale(1.2); opacity: 1; }
+35%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+35.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+37.5%{transform: scale(1); opacity: 1; }
+45.5%{transform: scale(1.2); opacity: 1; }
+47.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+48%{transform: scale(1); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+50%{transform: scale(1); opacity: 1; }
+58%{transform: scale(1.2); opacity: 1; }
+60%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+60.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+62.5%{transform: scale(1); opacity: 1; }
+70.5%{transform: scale(1.2); opacity: 1; }
+72.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+73%{transform: scale(1); opacity: 0; background-image: url(../images/slide/autumn0.jpg); }
+75%{transform: scale(1); opacity: 1; }
+83%{transform: scale(1.2); opacity: 1; }
+85%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/autumn0.jpg); }
+85.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/autumn1.jpg); }
+87.5%{transform: scale(1); opacity: 1; }
+95.5%{transform: scale(1.2); opacity: 1; }
+97.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/autumn1.jpg); }
+98%{transform: scale(1); opacity: 0; background-image: url(../images/slide/winter0.jpg); }
+to{transform: scale(1); opacity: 1; }
+}
+/* img */
+.slidespring #slide:before {content: url(../images/slide/spring1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.slidespring #slide {background-image: url(../images/slide/spring0.jpg);}
+/*.slidespring #slide:hover {background-image: url(../images/slide/spring1.jpg);}*/
+.slidespring .inner {padding-top: calc(272 / 1496 * 100%); /* высота/ширина изображения */}
+.slidespring #slide {animation-name: slidespring;}
+@keyframes slidespring {
+from{transform: scale(1); opacity: 1; }
+8%{transform: scale(1.2); opacity: 1; }
+10%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+10.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+12.5%{transform: scale(1); opacity: 1; }
+20.5%{transform: scale(1.2); opacity: 1; }
+22.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+23%{transform: scale(1); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+25%{transform: scale(1); opacity: 1; }
+33%{transform: scale(1.2); opacity: 1; }
+35%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+35.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+37.5%{transform: scale(1); opacity: 1; }
+45.5%{transform: scale(1.2); opacity: 1; }
+47.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+48%{transform: scale(1); opacity: 0; background-image: url(../images/slide/autumn0.jpg); }
+50%{transform: scale(1); opacity: 1; }
+58%{transform: scale(1.2); opacity: 1; }
+60%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/autumn0.jpg); }
+60.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/autumn1.jpg); }
+62.5%{transform: scale(1); opacity: 1; }
+70.5%{transform: scale(1.2); opacity: 1; }
+72.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/autumn1.jpg); }
+73%{transform: scale(1); opacity: 0; background-image: url(../images/slide/winter0.jpg); }
+75%{transform: scale(1); opacity: 1; }
+83%{transform: scale(1.2); opacity: 1; }
+85%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/winter0.jpg); }
+85.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/winter1.jpg); }
+87.5%{transform: scale(1); opacity: 1; }
+95.5%{transform: scale(1.2); opacity: 1; }
+97.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/winter1.jpg); }
+98%{transform: scale(1); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+to{transform: scale(1); opacity: 1; }
+}
+/* img */
+.slidesummer #slide:before {content: url(../images/slide/summer1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.slidesummer #slide {background-image: url(../images/slide/summer0.jpg);}
+/*.slidesummer #slide:hover {background-image: url(../images/slide/summer1.jpg);}*/
+.slidesummer .inner {padding-top: calc(272 / 1496 * 100%); /* высота/ширина изображения */}
+.slidesummer #slide {animation-name: slidesummer;}
+@keyframes slidesummer {
+from{transform: scale(1); opacity: 1; }
+8%{transform: scale(1.2); opacity: 1; }
+10%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+10.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+12.5%{transform: scale(1); opacity: 1; }
+20.5%{transform: scale(1.2); opacity: 1; }
+22.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+23%{transform: scale(1); opacity: 0; background-image: url(../images/slide/autumn0.jpg); }
+25%{transform: scale(1); opacity: 1; }
+33%{transform: scale(1.2); opacity: 1; }
+35%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/autumn0.jpg); }
+35.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/autumn1.jpg); }
+37.5%{transform: scale(1); opacity: 1; }
+45.5%{transform: scale(1.2); opacity: 1; }
+47.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/autumn1.jpg); }
+48%{transform: scale(1); opacity: 0; background-image: url(../images/slide/winter0.jpg); }
+50%{transform: scale(1); opacity: 1; }
+58%{transform: scale(1.2); opacity: 1; }
+60%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/winter0.jpg); }
+60.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/winter1.jpg); }
+62.5%{transform: scale(1); opacity: 1; }
+70.5%{transform: scale(1.2); opacity: 1; }
+72.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/winter1.jpg); }
+73%{transform: scale(1); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+75%{transform: scale(1); opacity: 1; }
+83%{transform: scale(1.2); opacity: 1; }
+85%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+85.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+87.5%{transform: scale(1); opacity: 1; }
+95.5%{transform: scale(1.2); opacity: 1; }
+97.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+98%{transform: scale(1); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+to{transform: scale(1); opacity: 1; }
+}
+/* img */
+.slideautumn #slide:before {content: url(../images/slide/autumn1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.slideautumn #slide {background-image: url(../images/slide/autumn0.jpg);}
+/*.slideautumn #slide:hover {background-image: url(../images/slide/autumn1.jpg);}*/
+.slideautumn .inner {padding-top: calc(272 / 1496 * 100%); /* высота/ширина изображения */}
+.slideautumn #slide {animation-name: slideautumn;}
+@keyframes slideautumn {
+from{transform: scale(1); opacity: 1; }
+8%{transform: scale(1.2); opacity: 1; }
+10%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/autumn0.jpg); }
+10.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/autumn1.jpg); }
+12.5%{transform: scale(1); opacity: 1; }
+20.5%{transform: scale(1.2); opacity: 1; }
+22.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/autumn1.jpg); }
+23%{transform: scale(1); opacity: 0; background-image: url(../images/slide/winter0.jpg); }
+25%{transform: scale(1); opacity: 1; }
+33%{transform: scale(1.2); opacity: 1; }
+35%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/winter0.jpg); }
+35.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/winter1.jpg); }
+37.5%{transform: scale(1); opacity: 1; }
+45.5%{transform: scale(1.2); opacity: 1; }
+47.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/winter1.jpg); }
+48%{transform: scale(1); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+50%{transform: scale(1); opacity: 1; }
+58%{transform: scale(1.2); opacity: 1; }
+60%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+60.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+62.5%{transform: scale(1); opacity: 1; }
+70.5%{transform: scale(1.2); opacity: 1; }
+72.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+73%{transform: scale(1); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+75%{transform: scale(1); opacity: 1; }
+83%{transform: scale(1.2); opacity: 1; }
+85%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+85.5%{transform: scale(1); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+87.5%{transform: scale(1); opacity: 1; }
+95.5%{transform: scale(1.2); opacity: 1; }
+97.5%{transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+98%{transform: scale(1); opacity: 0; background-image: url(../images/slide/autumn0.jpg); }
+to{transform: scale(1); opacity: 1; }
+}
+/* img */
+.callme #jpg:before {content: url(../images/callme.jpg); width:0; height:0; visibility:hidden; display: none;}
+.callme #jpg {background-image: url(../images/swiming.jpg);}
+.callme #jpg:hover {background-image: url(../images/callme.jpg);}
+.callme #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*All*/
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+	.ifc .img-wrap:before {font-size: 1.8rem; bottom: 8px; padding: 4px;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+	.ifc .img-wrap:before {font-size: 1.4rem; bottom: 4px; padding: 2px;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

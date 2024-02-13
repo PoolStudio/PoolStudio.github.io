@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/****************************************************************************************************
+modwin.css
+****************************************************************************************************/
+/* Контейнер */
+.modal {
+/* Слой перекрытия */
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0,0,0,.92);
+/*background: rgba(0,0,0,.6);*/
+/*background: rgba(255, 255, 255, 0.6);*/
+z-index: 1000;
+/* Трансформации прозрачности при открытии  */
+/*-webkit-transition: opacity 500ms ease-in;
+-moz-transition: opacity 500ms ease-in;*/
+transition: opacity 500ms ease-in;
+/* Скрываем изначально */
+opacity: 0;
+pointer-events: none;
+display: none;
+cursor: not-allowed;
+}
+/* Показываем модальное окно */
+.modal:target {
+z-index: 10000;
+opacity: 1;
+pointer-events: auto;
+display: block;
+}
+/* Содержание */
+.modal > div {
+/*width: 500px;*/
+background: #fff;
+position: relative;
+line-height: 1.5;
+/*margin: 10% auto;*/
+/* По умолчанию минимизируем анимацию */
+animation: minimise 500ms linear;
+/* Придаем хороший вид */
+padding: 30px;
+border-radius: 14px;
+box-shadow: 0 0 25px 5px rgba(255,255,255,1);
+}
+/* Изменяем анимацию при открытии модального окна*/
+.modal:target > div {
+animation: bounce 500ms linear;
+background-color: rgba(32,32,32,1);
+}
+@-webkit-keyframes bounce {
+  0% {transform: scale3d(0.1,0.1,1);}
+  55% {transform: scale3d(1.08,1.08,1);}
+  75% {transform: scale3d(0.95,0.95,1);}
+  100% {transform: scale3d(1,1,1);}
+}
+@-webkit-keyframes minimise {
+  0% {transform: scale3d(1,1,1);}
+  100% {transform: scale3d(0.1,0.1,1);}
+}
+/* Ссылка на кнопку Закрыть */
+.modal a[href="#mw"] {
+position: absolute;
+display: block;
+width: 20px;
+height: 20px;
+right: 6px;
+top: 6px;
+color: transparent;
+}
+/* Сбрасываем изменения */
+.modal a[href="#mw"]:focus {
+outline: none;
+}
+/* Создаем кнопку Закрыть */
+.modal a[href="#mw"]:after {
+content: '×';
+display: block;
+/* Позиционируем */
+position: absolute;
+right: 0px;
+top: 0px;
+width: 20px;
+height: 20px;
+/*padding: 1px 1px 1px 2px;*/
+/* Стили */
+color: rgba(255, 255, 255, 1);
+border: 2px solid rgba(255, 255, 255, 1);
+/*border-radius: 50%;
+*/
+border-radius: 4px;
+background-color: rgba(102, 102, 102, 1);
+box-shadow: 0px 0px 0px 1px rgba(102, 102, 102, 1);
+text-align: center;
+text-decoration: none;
+text-shadow: 0px 1px rgba(255, 255, 255, 1);
+font-size: 28px;
+font-weight: bold;
+line-height: 16px;
+cursor: pointer;
+transition: all .6s ease;
+}
+.modal a[href="#mw"]:focus:after,
+.modal a[href="#mw"]:hover:after {
+  background-color: rgba(51, 51, 51, 1);
+	box-shadow: 0px 0px 0px 1px rgba(51, 51, 51, 1);
+	transform: rotate(360deg) scale(.7, .7);;
+}
+/*END*/

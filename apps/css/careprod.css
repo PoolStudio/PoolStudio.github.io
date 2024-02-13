@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/****************************************************************************************************
+careprod.css
+****************************************************************************************************/
+.imgmod {width: 600px; height: auto; margin: 2% auto;}
+.imgmod0 {width: 425px; height: auto; margin: 2% auto;}
+.imgmod1 {width: 403px; height: auto; margin: 2% auto;}
+/* img */
+.careprod #jpg:before {content: url(../images/material/careprod/careprod0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.careprod #jpg {background-image: url(../images/material/careprod/careprod.jpg);}
+.careprod #jpg:hover {background-image: url(../images/material/careprod/careprod0.jpg);}
+.careprod .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.pjoda {max-width: 281px; height: auto;}
+.pjoda #png {background-image: url(../images/material/careprod/PJODA.jpg);}
+.pjoda .inner {padding-top: calc(500 / 281 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.colpic2e {max-width: 280px; height: auto;}
+.colpic2e #png {background-image: url(../images/material/careprod/COLPIC2E.jpg);}
+.colpic2e .inner {padding-top: calc(500 / 280 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.trai1n {max-width: 375px; height: auto;}
+.trai1n #png {background-image: url(../images/material/careprod/TRAI1N.jpg);}
+.trai1n .inner {padding-top: calc(500 / 375 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.netmapi1n {max-width: 375px; height: auto;}
+.netmapi1n #png {background-image: url(../images/material/careprod/NETMAPI1N.jpg);}
+.netmapi1n .inner {padding-top: calc(500 / 375 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.netfeul1n {max-width: 375px; height: auto;}
+.netfeul1n #png {background-image: url(../images/material/careprod/NETFEUL1N.jpg);}
+.netfeul1n .inner {padding-top: calc(500 / 375 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.detpin {max-width: 375px; height: auto;}
+.detpin #png {background-image: url(../images/material/careprod/DETPIN.jpg);}
+.detpin .inner {padding-top: calc(500 / 375 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.netcapin {max-width: 375px; height: auto;}
+.netcapin #png {background-image: url(../images/material/careprod/NETCAPIN.jpg);}
+.netcapin .inner {padding-top: calc(500 / 375 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.netro1n {max-width: 375px; height: auto;}
+.netro1n #png {background-image: url(../images/material/careprod/NETRO1N.jpg);}
+.netro1n .inner {padding-top: calc(500 / 375 * 100%); /* высота/ширина изображения */}
+/*Цвет затирки*/
+.psctp, .pscrp, .pscan, .pscgc, .pscch {display: inline-block; width: 15rem; height: 1.5rem;}
+.psctp {background-color: rgba(211,193,157,1);} /* Ton pierre (Натуральный)*/
+.pscrp {background-color: rgba(219,160,125,1);} /* Rose provence (Розовый)*/
+.pscan {background-color: rgba(99,96,102,1);} /* Anthracite (Антрацит)*/
+.pscgc {background-color: rgba(208,212,215,1);} /* Gris clair (Светло-серый)*/
+.pscch {background-color: rgba(134,100,78,1);} /* Chocolat (Шоколадный)*/
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .imgmod {width: 480px; height: auto; margin: 3% auto;}
+  .imgmod0 {width: 360px; height: auto; margin: 3% auto;}
+  .imgmod1 {width: 360px; height: auto; margin: 3% auto;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .imgmod {width: 360px; height: auto; margin: 6% auto;}
+  .imgmod0 {width: 360px; height: auto; margin: 2% auto;}
+  .imgmod1 {width: 360px; height: auto; margin: 2% auto;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

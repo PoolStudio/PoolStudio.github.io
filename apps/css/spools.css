@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/****************************************************************************************************
+spools.css
+****************************************************************************************************/
+/* img */
+.neptunepr #jpg:before {content: url(../images/pools/spa/catalina/neptunepr/neptunepr1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.neptunepr #jpg {background-image: url(../images/pools/spa/catalina/neptunepr/neptunepr0.jpg);}
+.neptunepr #jpg:hover {background-image: url(../images/pools/spa/catalina/neptunepr/neptunepr1.jpg);}
+.neptunepr .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.neptunepr1 #jpg:before {content: url(../images/pools/spa/catalina/neptunepr/neptunepr2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.neptunepr1 #jpg {background-image: url(../images/pools/spa/catalina/neptunepr/neptunepr3.jpg);}
+.neptunepr1 #jpg:hover {background-image: url(../images/pools/spa/catalina/neptunepr/neptunepr2.jpg);}
+.neptunepr1 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.raptorpr #jpg:before {content: url(../images/pools/spa/catalina/raptorpr/raptorpr2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.raptorpr #jpg {background-image: url(../images/pools/spa/catalina/raptorpr/raptorpr1.jpg);}
+.raptorpr #jpg:hover {background-image: url(../images/pools/spa/catalina/raptorpr/raptorpr2.jpg);}
+.raptorpr .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.raptorpr1 #jpg:before {content: url(../images/pools/spa/catalina/raptorpr/raptorpr8.jpg); width:0; height:0; visibility:hidden; display: none;}
+.raptorpr1 #jpg {background-image: url(../images/pools/spa/catalina/raptorpr/raptorpr3.jpg);}
+.raptorpr1 #jpg:hover {background-image: url(../images/pools/spa/catalina/raptorpr/raptorpr8.jpg);}
+.raptorpr1 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.colorado #jpg:before {content: url(../images/pools/spa/strong/colorado/colorado4.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colorado #jpg {background-image: url(../images/pools/spa/strong/colorado/colorado1.jpg);}
+.colorado #jpg:hover {background-image: url(../images/pools/spa/strong/colorado/colorado4.jpg);}
+.colorado .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.wyoming #jpg:before {content: url(../images/pools/spa/strong/wyoming/wyoming9.jpg); width:0; height:0; visibility:hidden; display: none;}
+.wyoming #jpg {background-image: url(../images/pools/spa/strong/wyoming/wyoming1.jpg);}
+.wyoming #jpg:hover {background-image: url(../images/pools/spa/strong/wyoming/wyoming9.jpg);}
+.wyoming .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.yellowstone #jpg:before {content: url(../images/pools/spa/strong/yellowstone/yellowstone2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.yellowstone #jpg {background-image: url(../images/pools/spa/strong/yellowstone/yellowstone1.jpg);}
+.yellowstone #jpg:hover {background-image: url(../images/pools/spa/strong/yellowstone/yellowstone2.jpg);}
+.yellowstone .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.catalina #jpg:before {content: url(../images/pools/spa/catalina/cs/cs21.jpg); width:0; height:0; visibility:hidden; display: none;}
+.catalina #jpg {background-image: url(../images/pools/spa/catalina/cs/cs22.jpg);}
+.catalina #jpg:hover {background-image: url(../images/pools/spa/catalina/cs/cs21.jpg);}
+.catalina .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.catalina1 #jpg:before {content: url(../images/pools/spa/catalina/cs/cs18.jpg); width:0; height:0; visibility:hidden; display: none;}
+.catalina1 #jpg {background-image: url(../images/pools/spa/catalina/cs/cs17.jpg);}
+.catalina1 #jpg:hover {background-image: url(../images/pools/spa/catalina/cs/cs18.jpg);}
+.catalina1 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 */
+.fc-img {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+  justify-content: space-between;
+	align-items: flex-start;
+  width: 100%;
+}
+.fi-img {
+	flex: 0 1 auto;
+  width: 32%;
+  height: auto;
+}
+.ord1 {order: 1;}
+.ord2 {order: 2;}
+.ord3 {order: 3;}
+/* img 3 123 456*/
+.fimg1, .fimg2, .fimg3, .fimg4, .fimg5, .fimg6 {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	float: none;
+}
+/* img 3 1*/
+.fimg1 #jpg:before {content: url(../images/pools/spa/catalina/cs/cs02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg1 #jpg {background-image: url(../images/pools/spa/catalina/cs/cs01.jpg);}
+.fimg1 #jpg:hover {background-image: url(../images/pools/spa/catalina/cs/cs02.jpg);}
+.fimg1 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 2*/
+.fimg2 #jpg:before {content: url(../images/pools/spa/catalina/cs/cs04.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg2 #jpg {background-image: url(../images/pools/spa/catalina/cs/cs03.jpg);}
+.fimg2 #jpg:hover {background-image: url(../images/pools/spa/catalina/cs/cs04.jpg);}
+.fimg2 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 3*/
+.fimg3 #jpg:before {content: url(../images/pools/spa/catalina/cs/cs06.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg3 #jpg {background-image: url(../images/pools/spa/catalina/cs/cs05.jpg);}
+.fimg3 #jpg:hover {background-image: url(../images/pools/spa/catalina/cs/cs06.jpg);}
+.fimg3 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 4*/
+.fimg4 #jpg:before {content: url(../images/pools/spa/catalina/cs/cs08.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg4 #jpg {background-image: url(../images/pools/spa/catalina/cs/cs07.jpg);}
+.fimg4 #jpg:hover {background-image: url(../images/pools/spa/catalina/cs/cs08.jpg);}
+.fimg4 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 4*/
+.fimg5 #jpg:before {content: url(../images/pools/spa/catalina/cs/cs10.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg5 #jpg {background-image: url(../images/pools/spa/catalina/cs/cs09.jpg);}
+.fimg5 #jpg:hover {background-image: url(../images/pools/spa/catalina/cs/cs10.jpg);}
+.fimg5 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 4*/
+.fimg6 #jpg:before {content: url(../images/pools/spa/catalina/cs/cs12.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg6 #jpg {background-image: url(../images/pools/spa/catalina/cs/cs11.jpg);}
+.fimg6 #jpg:hover {background-image: url(../images/pools/spa/catalina/cs/cs12.jpg);}
+.fimg6 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .fi-img {width: 49%; }
+  .ord1 {order: 1;}
+  .ord2 {order: 2;}
+	.ord3 {display: none;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .fc-img {flex-direction: column;}
+	.fi-img {width: 100%; }
+	.ord1 {order: 1;}
+	.ord2 {display: none;}
+  .ord3 {display: none;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/****************************************************************************************************
+psind.css
+****************************************************************************************************/
+/*Slide*/
+.ifc {width: 100%; height: auto; position: relative; z-index: 0;}
+.ifc .img-wrap {
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1),
+	inset 0 0 12px 1px rgba(255,255,255,1),
+	inset 0 0 16px 1px rgba(255,255,255,1);
+}
+.ifc .img-wrap:before {
+	content: "Фотографии...";
+	position: absolute;
+	bottom: 12px;
+	width:100%;
+	padding: 6px;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	font-size: 2.4rem;
+	text-align:center;
+	color: rgba(102,102,102,1);
+	background: linear-gradient(to right,
+			transparent 0%,
+			transparent 10%,
+			rgba(255,255,255,1) 40%,
+			rgba(255,255,255,1) 60%,
+			transparent 90%,
+			transparent 100%);
+	opacity: 0;
+}
+.nts .ifc .img-wrap:hover:before, .yts .ifc .img-wrap:active:before {opacity: 1;}
+#slide {position: relative; z-index: -1;}
+.ifc #slide {
+	animation-duration: 60s;
+	animation-timing-function: linear; /*linear ease-in-out*/
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+}
+/* img */
+.slidephoto #slide:before {content: url(../images/info/photo/0002.jpg); width:0; height:0; visibility:hidden; display: none;}
+.slidephoto #slide {background-image: url(../images/info/photo/0001.jpg);}
+.slidephoto .inner {padding-top: calc(272 / 1496 * 100%); /* высота/ширина изображения */}
+.slidephoto #slide {animation-name: slidephoto;}
+@keyframes slidephoto {
+	from { transform: scale(1); }
+	24% { transform: scale(1.2); }
+	48% { transform: scale(1); background-image: url(../images/info/photo/0001.jpg); }
+	50% { transform: scale(1); background-image: url(../images/info/photo/0002.jpg); }
+	74% { transform: scale(1.2); }
+	98% { transform: scale(1); background-image: url(../images/info/photo/0002.jpg); }
+	to     {transform: scale(1); background-image: url(../images/info/photo/0001.jpg); }
+}
+/* img */
+.f01 #jpg:before {content: url(../images/info/photo/01/f00h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.f01 #jpg {background-image: url(../images/info/photo/01/f00.jpg);}
+.f01 #jpg:hover {background-image: url(../images/info/photo/01/f00h.jpg);}
+.f01 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.f02 #jpg:before {content: url(../images/info/photo/02/f00h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.f02 #jpg {background-image: url(../images/info/photo/02/f00.jpg);}
+.f02 #jpg:hover {background-image: url(../images/info/photo/02/f00h.jpg);}
+.f02 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.f03 #jpg:before {content: url(../images/info/photo/03/f00h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.f03 #jpg {background-image: url(../images/info/photo/03/f00.jpg);}
+.f03 #jpg:hover {background-image: url(../images/info/photo/03/f00h.jpg);}
+.f03 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.f04 #jpg:before {content: url(../images/info/photo/04/f00h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.f04 #jpg {background-image: url(../images/info/photo/04/f00.jpg);}
+.f04 #jpg:hover {background-image: url(../images/info/photo/04/f00h.jpg);}
+.f04 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.f05 #jpg:before {content: url(../images/info/photo/05/f00h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.f05 #jpg {background-image: url(../images/info/photo/05/f00.jpg);}
+.f05 #jpg:hover {background-image: url(../images/info/photo/05/f00h.jpg);}
+.f05 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.f06 #jpg:before {content: url(../images/info/photo/06/f00h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.f06 #jpg {background-image: url(../images/info/photo/06/f00.jpg);}
+.f06 #jpg:hover {background-image: url(../images/info/photo/06/f00h.jpg);}
+.f06 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.f00 #jpg:before {content: url(../images/super.jpg); width:0; height:0; visibility:hidden; display: none;}
+.f00 #jpg {background-image: url(../images/info/photo/f00.jpg);}
+.f00 #jpg:hover {background-image: url(../images/super.jpg);}
+.f00 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 */
+.fc-img {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+.fi-img {
+	flex: 0 1 auto;
+  width: 32%;
+  height: auto;
+	margin: 12px 0;
+}
+/*.ord1 {order: 1;}
+.ord2 {order: 2;}
+.ord3 {order: 3;}*/
+/* img */
+.fimg01, .fimg02, .fimg03 {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	float: none;
+}
+.fimg01 #img {background-image: url(../images/info/photo/f01.jpg);}
+.fimg01 #img .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+.fimg02 #img {background-image: url(../images/info/photo/f02.jpg);}
+.fimg02 #img .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+.fimg03 #img {background-image: url(../images/info/photo/f03.jpg);}
+.fimg03 #img .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .fc-img {
+    margin: 0;
+  }
+  .fi-img {width: 49%; margin: 8px 0;}
+/*  .ord1 {order: 1;}
+  .ord2 {order: 2;}
+  .ord3 {display: none;}*/
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .fc-img {
+    flex-direction: column;
+    margin: 0;
+  }
+	.fi-img {width: 100%; margin: 4px 0;}
+/*  .ord1 {order: 1;}
+  .ord2 {display: none;}
+  .ord3 {display: none;}*/
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

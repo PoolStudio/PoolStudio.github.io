@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/****************************************************************************************************
+solar.css
+****************************************************************************************************/
+/* img */
+.solar #jpg:before {content: url(../images/equip/solar/solar06.jpg); width:0; height:0; visibility:hidden; display: none;}
+.solar #jpg {background-image: url(../images/equip/solar/solar10.jpg);}
+.solar #jpg:hover {background-image: url(../images/equip/solar/solar06.jpg);}
+.solar .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+
+
+
+/* img */
+.geobubble #jpg:before {content: url(../images/equip/solar/geobubble0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.geobubble #jpg {background-image: url(../images/equip/solar/solar08.jpg);}
+.geobubble #jpg:hover {background-image: url(../images/equip/solar/geobubble0.jpg);}
+.geobubble .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+
+
+/* img */
+.solguard #jpg:before {content: url(../images/equip/solar/solguard1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.solguard #jpg {background-image: url(../images/equip/solar/solguard0.jpg);}
+.solguard #jpg:hover {background-image: url(../images/equip/solar/solguard1.jpg);}
+.solguard .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.energyguard #jpg:before {content: url(../images/equip/solar/energyguard1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.energyguard #jpg {background-image: url(../images/equip/solar/energyguard0.jpg);}
+.energyguard #jpg:hover {background-image: url(../images/equip/solar/energyguard1.jpg);}
+.energyguard .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.extrasun #jpg:before {content: url(../images/equip/solar/extrasun1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.extrasun #jpg {background-image: url(../images/equip/solar/extrasun0.jpg);}
+.extrasun #jpg:hover {background-image: url(../images/equip/solar/extrasun1.jpg);}
+.extrasun .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

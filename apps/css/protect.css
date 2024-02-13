@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/****************************************************************************************************
+protect.css
+****************************************************************************************************/
+/* img */
+.protect #jpg:before {content: url(../images/equip/protect1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.protect #jpg {background-image: url(../images/equip/protect.jpg);}
+.protect #jpg:hover {background-image: url(../images/equip/protect1.jpg);}
+.protect .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.mikado #jpg:before {content: url(../images/equip/protect/mikadog.jpg); width:0; height:0; visibility:hidden; display: none;}
+.mikado #jpg {background-image: url(../images/equip/protect/mikadob.jpg);}
+.mikado #jpg:hover {background-image: url(../images/equip/protect/mikadog.jpg);}
+.mikado .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.mikado1 #jpg:before {content: url(../images/equip/protect/protect02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.mikado1 #jpg {background-image: url(../images/equip/protect/protect05.jpg);}
+.mikado1 #jpg:hover {background-image: url(../images/equip/protect/protect02.jpg);}
+.mikado1 .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.mikado2 #jpg:before {content: url(../images/equip/protect/protect06.jpg); width:0; height:0; visibility:hidden; display: none;}
+.mikado2 #jpg {background-image: url(../images/equip/protect/protect01.jpg);}
+.mikado2 #jpg:hover {background-image: url(../images/equip/protect/protect06.jpg);}
+.mikado2 .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.lake #jpg:before {content: url(../images/equip/protect/lakeh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.lake #jpg {background-image: url(../images/equip/protect/lake.jpg);}
+.lake #jpg:hover {background-image: url(../images/equip/protect/lakeh.jpg);}
+.lake .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.supergreen #jpg:before {content: url(../images/equip/protect/supergreenh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.supergreen #jpg {background-image: url(../images/equip/protect/supergreen.jpg);}
+.supergreen #jpg:hover {background-image: url(../images/equip/protect/supergreenh.jpg);}
+.supergreen .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.initial #jpg:before {content: url(../images/equip/protect/initialh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.initial #jpg {background-image: url(../images/equip/protect/initial.jpg);}
+.initial #jpg:hover {background-image: url(../images/equip/protect/initialh.jpg);}
+.initial .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

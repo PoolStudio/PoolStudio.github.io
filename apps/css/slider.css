@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/****************************************************************************************************
+slider.css
+****************************************************************************************************/
+.slr {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	/*background-color: BLUE;*/
+}
+.slwrap {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: GREEN;*/
+}
+.slnav {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: Pink;*/
+}
+.slnav > .bttnsmbl {opacity: 1;}
+.slnav:hover > .slbar {box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);}
+.slbar {
+	display: block;
+	margin: 10px auto;
+	padding: 0;
+	width: 300px;
+	height: 28px;
+	border-radius: 8px;
+	border: 1px solid rgb(123,123,123);
+	opacity: 1;
+	position: relative;
+	background: rgba(252,252,252,1);
+  /*box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);*/
+}
+.slbar > .bttnsmbl {opacity: 1;}
+.slider {
+	margin: 0 !important;
+	position: relative !important;
+	top: -11px !important;
+	left: 108px;
+  left: 0;
+	cursor: move;
+}
+.slnum {
+	display: block;
+	margin: 0 auto;
+	padding: .8em 0 0;
+	width: auto;
+	text-align: center;
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+.dbvo {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+.dbvo .img-wrap {
+	opacity: 1;
+	animation-name: show-dbvo;
+	animation-duration: .5s;
+}
+@keyframes show-dbvo {from {opacity: 0} to {opacity: 1;}}
+.dnvo {
+	display: none;
+	visibility: hidden;
+/*	display: block;
+	visibility: visible;
+*/	opacity: 0;
+}
+.dnvo .img-wrap {
+	opacity: 0;
+	animation-name: hide-dnvo;
+	animation-duration: .5s;
+}
+@keyframes hide-dnvo {from {opacity: 1} to {opacity: 0;}}
+.prev, .next {cursor: pointer;}
+/****************************************************************************************************
+Radio Button
+****************************************************************************************************/
+[type="radio"] {display: none;}
+.rbcolor {
+	display: inline-block;
+	margin: 0 auto;
+	padding: .8em 0 0 0;
+	width: auto;
+	background-color: #fff;
+}
+.rbcolor label {
+    display: block;
+		position: relative;
+		padding: 0.3em 0.8em;
+		font-size: 2em;
+		letter-spacing: 0.1rem;
+		text-align: left;
+		border-bottom: 1px solid rgba(204,204,204,1);
+		cursor: pointer;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+		-moz-user-select: none;     /* Firefox all */
+		-ms-user-select: none;       /* IE 10+ */
+		user-select: none;              /* Likely future */
+}
+.rbcolor label:first-of-type {border-top: 1px solid rgba(204,204,204,1);}
+.nts .rbcolor label:hover, .yts .rbcolor label:active {
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);
+	background: rgba(248,248,248,.5);
+}
+.rbcolor label:hover:after {
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);
+}
+.rbcolor label:before {
+    content: "";
+		position: relative;
+		display: inline-block;
+    width: 60px;
+    height: 60px;
+		left: 0;
+		top: 0;
+		margin: 0 .8em 0 0;
+    background: #fff;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbcolor .colorTPN + label:before {border: 5px solid rgba(211,193,157,1);} /*Ton Pierre nuance (Натуральный)*/
+.rbcolor .colorRP + label:before {border: 5px solid rgba(219,160,125,1);} /*Rose provence (Розовый)*/
+.rbcolor .colorQ + label:before {border: 5px solid rgba(233,172,53,1);} /*Quercy (Желтый)*/
+.rbcolor .colorGN + label:before {border: 5px solid rgba(175,177,178,1);} /*Gris nuance (Серый)*/
+.rbcolor .colorSc + label:before {border: 5px solid rgba(226,194,173,1);} /*Sommieres (Светло-розовый)*/
+.rbcolor .colorGa + label:before {border: 5px solid rgba(238,213,185,1);} /*Guyenne (Светло-розовый) ABBAYE*/
+.rbcolor .colorV + label:before {border: 5px solid rgba(232,214,188,1);} /*Vendome (Серо-коричневый)*/
+.rbcolor .colorSab + label:before {border: 5px solid rgba(211,140,72,1);} /*Sarlat (Охра) BEAUREGARD, ABBAYE margelles a retombee*/
+.rbcolor .colorA + label:before {border: 5px solid rgba(99,96,102,1);} /*Anthracite (Антрацит)*/
+.rbcolor .colorM + label:before {border: 5px solid rgba(56,51,46,1);} /*Metal (Металлический)*/
+.rbcolor .colorGs + label:before {border: 5px solid rgba(175,177,178,1);} /*Gris (Серый) SEMAPHORE*/
+.rbcolor .colorGCn + label:before {border: 5px solid rgba(208,212,215,1);} /*Gris clair (Светло-серый) NEVADA*/
+.rbcolor .colorGCa + label:before {border: 5px solid rgba(175,177,178,1);} /*Gris clair (Светло-серый) ANGEROISE*/
+
+.rbcolor .colorB + label:before {border: 5px solid rgba(94,51,26,1);} /*Bois (Дерево)*/
+.rbcolor .colorT + label:before {border: 5px solid rgba(141,126,119,1);} /*Taupe (Серо-оранжевый)*/
+.rbcolor .colorGta + label:before {border: 5px solid rgba(173,176,178,1);} /*Gris (Серый) ABBAYE, TENNESSEE planche*/
+
+.rbcolor .colorBD + label:before {border: 5px solid rgba(94,51,26,1);} /*Bois dalle (Дерево)*/
+.rbcolor .colorBL + label:before {border: 5px solid rgba(157,115,73,1);} /*Bois lame (Дерево)*/
+.rbcolor .colorBP + label:before {border: 5px solid rgba(155,120,89,1);} /*Bois planche (Дерево)*/
+
+.rbcolor .colorTD + label:before {border: 5px solid rgba(211,196,144,1);} /*Ton Dore (Золотой)*/
+.rbcolor label:after {
+    content: "";
+		position: absolute;
+		display: inline-block;
+    width: 60px;
+    height: 60px;
+		left: 0.8em;
+		top: 0.3em;
+		margin: 0 .8em 0 0;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbcolor .colorTPN + label:after {background-color: rgba(211,193,157,1);} /*Ton Pierre nuance (Натуральный)*/
+.rbcolor .colorRP + label:after {background-color: rgba(219,160,125,1);} /*Rose provence (Розовый)*/
+.rbcolor .colorQ + label:after {background-color: rgba(233,172,53,1);} /*Quercy (Желтый)*/
+.rbcolor .colorGN + label:after {background-color: rgba(175,177,178,1);} /*Gris nuance (Серый)*/
+.rbcolor .colorSc + label:after {background-color: rgba(226,194,173,1);} /*Sommieres (Светло-розовый)*/
+.rbcolor .colorGa + label:after {background-color: rgba(238,213,185,1);} /*Guyenne (Светло-розовый) ABBAYE*/
+.rbcolor .colorV + label:after {background-color: rgba(232,214,188,1);} /*Vendome (Светло-бежевый)*/
+.rbcolor .colorSab + label:after {background-color: rgba(211,140,72,1);} /*Sarlat (Охра) BEAUREGARD, ABBAYE margelles a retombee*/
+.rbcolor .colorA + label:after {background-color: rgba(99,96,102,1);} /*Anthracite (Антрацит)*/
+.rbcolor .colorM + label:after {background-color: rgba(56,51,46,1);} /*Metal (Металлический)*/
+.rbcolor .colorGs + label:after {background-color: rgba(175,177,178,1);} /*Gris (Серый) SEMAPHORE*/
+.rbcolor .colorGCn + label:after {background-color: rgba(208,212,215,1);} /*Gris clair (Светло-серый) NEVADA*/
+.rbcolor .colorGCa + label:after {background-color: rgba(175,177,178,1);} /*Gris clair (Светло-серый) ANGEROISE*/
+
+.rbcolor .colorB + label:after {background-color: rgba(94,51,26,1);} /*Bois (Дерево)*/
+.rbcolor .colorT + label:after {background-color: rgba(141,126,119,1);} /*Taupe (Серо-оранжевый)*/
+.rbcolor .colorGta + label:after {background-color: rgba(173,176,178,1);} /*Gris (Серый) ABBAYE, TENNESSEE planche*/
+
+.rbcolor .colorBD + label:after {background-color: rgba(94,51,26,1);} /*Bois dalle (Дерево)*/
+.rbcolor .colorBL + label:after {background-color: rgba(157,115,73,1);} /*Bois lame (Дерево)*/
+.rbcolor .colorBP + label:after {background-color: rgba(155,120,89,1);} /*Bois planche (Дерево)*/
+
+.rbcolor .colorTD + label:after {background-color: rgba(211,196,144,1);} /*Ton Dore (Золотой)*/
+.rbcolor .radio:checked + label:after {transform: scale(0.72,0.72);}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .slwrap {width: auto;}
+	.slbar {width: 250px;}
+	.rbcolor label {letter-spacing: 0.05rem;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .slwrap {width: 100%;}
+	.slbar {width: 214px;}
+	.rbcolor label {letter-spacing: normal;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

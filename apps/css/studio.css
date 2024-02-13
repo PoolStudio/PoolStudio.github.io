@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/****************************************************************************************************
+studio.css
+****************************************************************************************************/
+/* img */
+.flower #jpg:before {content: url(../images/info/studio/pstropical.jpg); width:0; height:0; visibility:hidden; display: none;}
+.flower #jpg {background-image: url(../images/info/studio/flower.jpg);}
+.flower #jpg:hover {background-image: url(../images/info/studio/pstropical.jpg);}
+.flower .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.hello #jpg:before {content: url(../images/info/studio/readbook.jpg); width:0; height:0; visibility:hidden; display: none;}
+.hello #jpg {background-image: url(../images/info/studio/withbook.jpg);}
+.hello #jpg:hover {background-image: url(../images/info/studio/readbook.jpg);}
+.hello #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.relax #jpg:before {content: url(../images/info/studio/hello.jpg); width:0; height:0; visibility:hidden; display: none;}
+.relax #jpg {background-image: url(../images/info/studio/relax.jpg);}
+.relax #jpg:hover {background-image: url(../images/info/studio/hello.jpg);}
+.relax .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+END
+****************************************************************************************************/

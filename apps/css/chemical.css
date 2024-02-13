@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/****************************************************************************************************
+chemical.css
+****************************************************************************************************/
+/* img */
+.chemical #jpg:before {content: url(../images/material/chemical/chemical0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.chemical #jpg {background-image: url(../images/material/chemical/chemical.jpg);}
+.chemical #jpg:hover {background-image: url(../images/material/chemical/chemical0.jpg);}
+.chemical .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+/*.barchemical {clear: both; width: 35%; height: auto; float: left; margin: 0.8em 3.2em 0 0;}*/
+.barchemical #jpg:before {content: url(../images/material/chemical/barchemicals0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.barchemical #jpg {background-image: url(../images/material/chemical/barchemicals1.jpg);}
+.barchemical #jpg:hover {background-image: url(../images/material/chemical/barchemicals0.jpg);}
+.barchemical .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg12 #jpg:before {content: url(../images/material/chemical/pg12h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg12 #jpg {background-image: url(../images/material/chemical/pg12.jpg);}
+.pg12 #jpg:hover {background-image: url(../images/material/chemical/pg12h.jpg);}
+.pg12 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg15 #jpg:before {content: url(../images/material/chemical/pg15h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg15 #jpg {background-image: url(../images/material/chemical/pg15.jpg);}
+.pg15 #jpg:hover {background-image: url(../images/material/chemical/pg15h.jpg);}
+.pg15 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg20 #jpg:before {content: url(../images/material/chemical/pg20h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg20 #jpg {background-image: url(../images/material/chemical/pg20.jpg);}
+.pg20 #jpg:hover {background-image: url(../images/material/chemical/pg20h.jpg);}
+.pg20 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg25 #jpg:before {content: url(../images/material/chemical/pg25h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg25 #jpg {background-image: url(../images/material/chemical/pg25.jpg);}
+.pg25 #jpg:hover {background-image: url(../images/material/chemical/pg25h.jpg);}
+.pg25 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg30 #jpg:before {content: url(../images/material/chemical/pg30h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg30 #jpg {background-image: url(../images/material/chemical/pg30.jpg);}
+.pg30 #jpg:hover {background-image: url(../images/material/chemical/pg30h.jpg);}
+.pg30 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg35 #jpg:before {content: url(../images/material/chemical/pg35h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg35 #jpg {background-image: url(../images/material/chemical/pg35.jpg);}
+.pg35 #jpg:hover {background-image: url(../images/material/chemical/pg35h.jpg);}
+.pg35 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg36 #jpg:before {content: url(../images/material/chemical/pg36h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg36 #jpg {background-image: url(../images/material/chemical/pg36.jpg);}
+.pg36 #jpg:hover {background-image: url(../images/material/chemical/pg36h.jpg);}
+.pg36 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg33 #jpg:before {content: url(../images/material/chemical/pg33h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg33 #jpg {background-image: url(../images/material/chemical/pg33.jpg);}
+.pg33 #jpg:hover {background-image: url(../images/material/chemical/pg33h.jpg);}
+.pg33 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg48 #jpg:before {content: url(../images/material/chemical/pg48h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg48 #jpg {background-image: url(../images/material/chemical/pg48.jpg);}
+.pg48 #jpg:hover {background-image: url(../images/material/chemical/pg48h.jpg);}
+.pg48 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg41 #jpg:before {content: url(../images/material/chemical/pg41h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg41 #jpg {background-image: url(../images/material/chemical/pg41.jpg);}
+.pg41 #jpg:hover {background-image: url(../images/material/chemical/pg41h.jpg);}
+.pg41 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg42 #jpg:before {content: url(../images/material/chemical/pg42h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg42 #jpg {background-image: url(../images/material/chemical/pg42.jpg);}
+.pg42 #jpg:hover {background-image: url(../images/material/chemical/pg42h.jpg);}
+.pg42 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg50 #jpg:before {content: url(../images/material/chemical/pg50h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg50 #jpg {background-image: url(../images/material/chemical/pg50.jpg);}
+.pg50 #jpg:hover {background-image: url(../images/material/chemical/pg50h.jpg);}
+.pg50 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg45 #jpg:before {content: url(../images/material/chemical/pg45h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg45 #jpg {background-image: url(../images/material/chemical/pg45.jpg);}
+.pg45 #jpg:hover {background-image: url(../images/material/chemical/pg45h.jpg);}
+.pg45 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg46 #jpg:before {content: url(../images/material/chemical/pg46h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg46 #jpg {background-image: url(../images/material/chemical/pg46.jpg);}
+.pg46 #jpg:hover {background-image: url(../images/material/chemical/pg46h.jpg);}
+.pg46 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg84 #jpg:before {content: url(../images/material/chemical/pg84h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg84 #jpg {background-image: url(../images/material/chemical/pg84.jpg);}
+.pg84 #jpg:hover {background-image: url(../images/material/chemical/pg84h.jpg);}
+.pg84 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg85 #jpg:before {content: url(../images/material/chemical/pg85h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg85 #jpg {background-image: url(../images/material/chemical/pg85.jpg);}
+.pg85 #jpg:hover {background-image: url(../images/material/chemical/pg85h.jpg);}
+.pg85 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pg90 #jpg:before {content: url(../images/material/chemical/pg90h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pg90 #jpg {background-image: url(../images/material/chemical/pg90.jpg);}
+.pg90 #jpg:hover {background-image: url(../images/material/chemical/pg90h.jpg);}
+.pg90 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  /*.barchemical {clear: none; width: 47%; height: auto; float: right; margin: 0.8em 0 0 2.2em;}*/
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  /*.barchemical {visibility:hidden; display: none;}*/
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

@@ -1,0 +1,28 @@
+/****************************************************************************************************
+fonts.css
+****************************************************************************************************/
+@font-face {
+    font-family: 'Carolina';
+    src: url('../fonts/carolina.eot');
+    src: url('../fonts/carolina.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/carolina.woff2') format('woff2'),
+         url('../fonts/carolina.woff') format('woff'),
+         url('../fonts/carolina.ttf') format('truetype'),
+         url('../fonts/carolina.svg#Carolina') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ISOCPEUR';
+    src: url('../fonts/isocpeur.eot');
+    src: url('../fonts/isocpeur.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/isocpeur.woff2') format('woff2'),
+         url('../fonts/isocpeur.woff') format('woff'),
+         url('../fonts/isocpeur.ttf') format('truetype'),
+         url('../fonts/isocpeur.svg#ISOCPEUR') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

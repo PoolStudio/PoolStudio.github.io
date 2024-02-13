@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/****************************************************************************************************
+kfiltr.css
+****************************************************************************************************/
+/* img */
+.mthis #jpg:before {content: url(../images/equip/kfiltr/mthis6h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.mthis #jpg {background-image: url(../images/equip/kfiltr/mthis6.jpg);}
+.mthis #jpg:hover {background-image: url(../images/equip/kfiltr/mthis6h.jpg);}
+.mthis .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.smthis #jpg:before {content: url(../images/equip/kfiltr/smthis6h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.smthis #jpg {background-image: url(../images/equip/kfiltr/smthis6.jpg);}
+.smthis #jpg:hover {background-image: url(../images/equip/kfiltr/smthis6h.jpg);}
+.smthis .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.mthispl #jpg:before {content: url(../images/equip/kfiltr/mthis6p2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.mthispl #jpg {background-image: url(../images/equip/kfiltr/mthis6p1.jpg);}
+.mthispl #jpg:hover {background-image: url(../images/equip/kfiltr/mthis6p2.jpg);}
+.mthispl .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img 3 */
+.fc-img {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+  justify-content: space-between;
+	align-items: flex-start;
+  width: 100%;
+}
+.fi-img {
+	flex: 0 1 auto;
+  width: 32%;
+  height: auto;
+}
+.ord1 {order: 1;}
+.ord2 {order: 2;}
+.ord3 {order: 3;}
+/* img */
+.fimg1, .fimg2, .fimg3 {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	float: none;
+}
+.fimg1 #jpg:before {content: url(../images/equip/kfiltr/mthis6p4.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg1 #jpg {background-image: url(../images/equip/kfiltr/mthis6p3.jpg);}
+.fimg1 #jpg:hover {background-image: url(../images/equip/kfiltr/mthis6p4.jpg);}
+.fimg1 #jpg .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+
+.fimg2 #jpg:before {content: url(../images/equip/kfiltr/mthis6p6.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg2 #jpg {background-image: url(../images/equip/kfiltr/mthis6p5.jpg);}
+.fimg2 #jpg:hover {background-image: url(../images/equip/kfiltr/mthis6p6.jpg);}
+.fimg2 #jpg .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+
+.fimg3 #jpg:before {content: url(../images/equip/kfiltr/mthis6p8.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg3 #jpg {background-image: url(../images/equip/kfiltr/mthis6p7.jpg);}
+.fimg3 #jpg:hover {background-image: url(../images/equip/kfiltr/mthis6p8.jpg);}
+.fimg3 #jpg .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .fi-img {width: 49%; }
+  .ord1 {order: 1;}
+  .ord2 {order: 2;}
+  .ord3 {display: none;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .fc-img {flex-direction: column;}
+	.fi-img {width: 100%; }
+  .ord1 {order: 1;}
+  .ord2 {display: none;}
+  .ord3 {display: none;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

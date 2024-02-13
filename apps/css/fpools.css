@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/****************************************************************************************************
+fpools.css
+****************************************************************************************************/
+/* img */
+.favorit #jpg:before {content: url(../images/pools/favorit/favorit0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.favorit #jpg {background-image: url(../images/pools/favorit/favorit.jpg);}
+.favorit #jpg:hover {background-image: url(../images/pools/favorit/favorit0.jpg);}
+.favorit .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.favori1t #jpg:before {content: url(../images/pools/favorit/favorit2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.favorit1 #jpg {background-image: url(../images/pools/favorit/favorit1.jpg);}
+.favorit1 #jpg:hover {background-image: url(../images/pools/favorit/favorit2.jpg);}
+.favorit1 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.structur #jpg:before {content: url(../images/pools/favorit/favorit02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.structur #jpg {background-image: url(../images/pools/favorit/favorit01.jpg);}
+.structur #jpg:hover {background-image: url(../images/pools/favorit/favorit02.jpg);}
+.structur .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.crWhite #jpg:before {content: url(../images/pools/favorit/white0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.crWhite #jpg {background-image: url(../images/pools/favorit/white.jpg);}
+.crWhite #jpg:hover {background-image: url(../images/pools/favorit/white0.jpg);}
+.crWhite .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.crBlue #jpg:before {content: url(../images/pools/favorit/blue0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.crBlue #jpg {background-image: url(../images/pools/favorit/blue.jpg);}
+.crBlue #jpg:hover {background-image: url(../images/pools/favorit/blue0.jpg);}
+.crBlue .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.crBrilliant #jpg:before {content: url(../images/pools/favorit/brilliant0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.crBrilliant #jpg {background-image: url(../images/pools/favorit/brilliant.jpg);}
+.crBrilliant #jpg:hover {background-image: url(../images/pools/favorit/brilliant0.jpg);}
+.crBrilliant .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.crOnyx #jpg:before {content: url(../images/pools/favorit/onyx0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.crOnyx #jpg {background-image: url(../images/pools/favorit/onyx.jpg);}
+.crOnyx #jpg:hover {background-image: url(../images/pools/favorit/onyx0.jpg);}
+.crOnyx .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.crSapphire #jpg:before {content: url(../images/pools/favorit/sapphire0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.crSapphire #jpg {background-image: url(../images/pools/favorit/sapphire.jpg);}
+.crSapphire #jpg:hover {background-image: url(../images/pools/favorit/sapphire0.jpg);}
+.crSapphire .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.monako #jpg:before {content: url(../images/pools/favorit/01-monako/monakoh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.monako #jpg {background-image: url(../images/pools/favorit/01-monako/monako.jpg);}
+.monako #jpg:hover {background-image: url(../images/pools/favorit/01-monako/monakoh.jpg);}
+.monako .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.monako10 #jpg:before {content: url(../images/pools/favorit/02-monako10/monako10h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.monako10 #jpg {background-image: url(../images/pools/favorit/02-monako10/monako10.jpg);}
+.monako10 #jpg:hover {background-image: url(../images/pools/favorit/02-monako10/monako10h.jpg);}
+.monako10 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.oscar10 #jpg:before {content: url(../images/pools/favorit/19-oscar10/oscar10h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.oscar10 #jpg {background-image: url(../images/pools/favorit/19-oscar10/oscar10.jpg);}
+.oscar10 #jpg:hover {background-image: url(../images/pools/favorit/19-oscar10/oscar10h.jpg);}
+.oscar10 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.atlantida10 #jpg:before {content: url(../images/pools/favorit/03-atlantida10/atlantida10h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.atlantida10 #jpg {background-image: url(../images/pools/favorit/03-atlantida10/atlantida10.jpg);}
+.atlantida10 #jpg:hover {background-image: url(../images/pools/favorit/03-atlantida10/atlantida10h.jpg);}
+.atlantida10 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.akvapark #jpg:before {content: url(../images/pools/favorit/04-akvapark/akvaparkh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.akvapark #jpg {background-image: url(../images/pools/favorit/04-akvapark/akvapark.jpg);}
+.akvapark #jpg:hover {background-image: url(../images/pools/favorit/04-akvapark/akvaparkh.jpg);}
+.akvapark .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.gidropark #jpg:before {content: url(../images/pools/favorit/05-gidropark/gidroparkh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.gidropark #jpg {background-image: url(../images/pools/favorit/05-gidropark/gidropark.jpg);}
+.gidropark #jpg:hover {background-image: url(../images/pools/favorit/05-gidropark/gidroparkh.jpg);}
+.gidropark .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.versal #jpg:before {content: url(../images/pools/favorit/06-versal/versalh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.versal #jpg {background-image: url(../images/pools/favorit/06-versal/versal.jpg);}
+.versal #jpg:hover {background-image: url(../images/pools/favorit/06-versal/versalh.jpg);}
+.versal .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.korsika #jpg:before {content: url(../images/pools/favorit/07-korsika/korsikah.jpg); width:0; height:0; visibility:hidden; display: none;}
+.korsika #jpg {background-image: url(../images/pools/favorit/07-korsika/korsika.jpg);}
+.korsika #jpg:hover {background-image: url(../images/pools/favorit/07-korsika/korsikah.jpg);}
+.korsika .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.olimpik #jpg:before {content: url(../images/pools/favorit/08-olimpik/olimpikh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.olimpik #jpg {background-image: url(../images/pools/favorit/08-olimpik/olimpik.jpg);}
+.olimpik #jpg:hover {background-image: url(../images/pools/favorit/08-olimpik/olimpikh.jpg);}
+.olimpik .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.oscar8 #jpg:before {content: url(../images/pools/favorit/20-oscar8/oscar8h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.oscar8 #jpg {background-image: url(../images/pools/favorit/20-oscar8/oscar8.jpg);}
+.oscar8 #jpg:hover {background-image: url(../images/pools/favorit/20-oscar8/oscar8h.jpg);}
+.oscar8 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.atlantida8 #jpg:before {content: url(../images/pools/favorit/09-atlantida8/atlantida8h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.atlantida8 #jpg {background-image: url(../images/pools/favorit/09-atlantida8/atlantida8.jpg);}
+.atlantida8 #jpg:hover {background-image: url(../images/pools/favorit/09-atlantida8/atlantida8h.jpg);}
+.atlantida8 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.geneva #jpg:before {content: url(../images/pools/favorit/10-geneva/genevah.jpg); width:0; height:0; visibility:hidden; display: none;}
+.geneva #jpg {background-image: url(../images/pools/favorit/10-geneva/geneva.jpg);}
+.geneva #jpg:hover {background-image: url(../images/pools/favorit/10-geneva/genevah.jpg);}
+.geneva .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.korvet #jpg:before {content: url(../images/pools/favorit/11-korvet/korveth.jpg); width:0; height:0; visibility:hidden; display: none;}
+.korvet #jpg {background-image: url(../images/pools/favorit/11-korvet/korvet.jpg);}
+.korvet #jpg:hover {background-image: url(../images/pools/favorit/11-korvet/korveth.jpg);}
+.korvet .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.oscar7 #jpg:before {content: url(../images/pools/favorit/21-oscar7/oscar7h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.oscar7 #jpg {background-image: url(../images/pools/favorit/21-oscar7/oscar7.jpg);}
+.oscar7 #jpg:hover {background-image: url(../images/pools/favorit/21-oscar7/oscar7h.jpg);}
+.oscar7 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.parus #jpg:before {content: url(../images/pools/favorit/12-parus/parush.jpg); width:0; height:0; visibility:hidden; display: none;}
+.parus #jpg {background-image: url(../images/pools/favorit/12-parus/parus.jpg);}
+.parus #jpg:hover {background-image: url(../images/pools/favorit/12-parus/parush.jpg);}
+.parus .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.mustang #jpg:before {content: url(../images/pools/favorit/13-mustang/mustangh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.mustang #jpg {background-image: url(../images/pools/favorit/13-mustang/mustang.jpg);}
+.mustang #jpg:hover {background-image: url(../images/pools/favorit/13-mustang/mustangh.jpg);}
+.mustang .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.atlantik #jpg:before {content: url(../images/pools/favorit/14-atlantik/atlantikh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.atlantik #jpg {background-image: url(../images/pools/favorit/14-atlantik/atlantik.jpg);}
+.atlantik #jpg:hover {background-image: url(../images/pools/favorit/14-atlantik/atlantikh.jpg);}
+.atlantik .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.oscar6 #jpg:before {content: url(../images/pools/favorit/22-oscar6/oscar6h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.oscar6 #jpg {background-image: url(../images/pools/favorit/22-oscar6/oscar6.jpg);}
+.oscar6 #jpg:hover {background-image: url(../images/pools/favorit/22-oscar6/oscar6h.jpg);}
+.oscar6 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.amazonka #jpg:before {content: url(../images/pools/favorit/15-amazonka/amazonkah.jpg); width:0; height:0; visibility:hidden; display: none;}
+.amazonka #jpg {background-image: url(../images/pools/favorit/15-amazonka/amazonka.jpg);}
+.amazonka #jpg:hover {background-image: url(../images/pools/favorit/15-amazonka/amazonkah.jpg);}
+.amazonka .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.golf #jpg:before {content: url(../images/pools/favorit/16-golf/golfh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.golf #jpg {background-image: url(../images/pools/favorit/16-golf/golf.jpg);}
+.golf #jpg:hover {background-image: url(../images/pools/favorit/16-golf/golfh.jpg);}
+.golf .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.atlantida6 #jpg:before {content: url(../images/pools/favorit/17-atlantida6/atlantida6h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.atlantida6 #jpg {background-image: url(../images/pools/favorit/17-atlantida6/atlantida6.jpg);}
+.atlantida6 #jpg:hover {background-image: url(../images/pools/favorit/17-atlantida6/atlantida6h.jpg);}
+.atlantida6 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.feniks #jpg:before {content: url(../images/pools/favorit/18-feniks/feniksh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.feniks #jpg {background-image: url(../images/pools/favorit/18-feniks/feniks.jpg);}
+.feniks #jpg:hover {background-image: url(../images/pools/favorit/18-feniks/feniksh.jpg);}
+.feniks .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 */
+.fc-img {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	/*justify-content: space-around;*/
+  justify-content: space-between;
+	align-items: flex-start;
+  width: 100%;
+  /*background-color: green;*/
+  /*margin: 0 auto 0.8em;*/
+}
+.fi-img {
+	flex: 0 1 auto;
+	/*background-color: red;*/
+  width: 32%;
+  height: auto;
+	/*border-radius: 8px;
+	border: 1px solid rgb(204,204,204);
+*/
+  /*padding: 0.8em;*/
+}
+.ord1 {order: 3;}
+.ord2 {order: 1;}
+.ord3 {order: 2;}
+/* img */
+.fimg1, .fimg2, .fimg3 {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	float: none;
+}
+.fimg1 #jpg:before {content: url(../images/pools/favorit/08-olimpik/olimpik-1h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg1 #jpg {background-image: url(../images/pools/favorit/08-olimpik/olimpik-1.jpg);}
+.fimg1 #jpg:hover {background-image: url(../images/pools/favorit/08-olimpik/olimpik-1h.jpg);}
+.fimg1 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/**/
+.fimg2 #jpg:before {content: url(../images/pools/favorit/17-atlantida6/atlantida6-1h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg2 #jpg {background-image: url(../images/pools/favorit/17-atlantida6/atlantida6-1.jpg);}
+.fimg2 #jpg:hover {background-image: url(../images/pools/favorit/17-atlantida6/atlantida6-1h.jpg);}
+.fimg2 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/**/
+.fimg3 #jpg:before {content: url(../images/pools/favorit/18-feniks/feniks-1h.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg3 #jpg {background-image: url(../images/pools/favorit/18-feniks/feniks-1.jpg);}
+.fimg3 #jpg:hover {background-image: url(../images/pools/favorit/18-feniks/feniks-1h.jpg);}
+.fimg3 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Color*/
+.slr {
+	margin: 0;
+	padding: .8em 0 0;
+	text-align: center;
+	/*background-color: BLUE;*/
+}
+.slwrap {
+	display: inline-block;
+	margin: 0 auto;
+	padding: .8em 0 0;
+	width: 48%;
+	text-align: center;
+	/*background-color: GREEN;*/
+}
+.slnav {
+	display: inline-block;
+	margin: 0 auto;
+	padding: .8em 0 0;
+	width: auto;
+	text-align: center;
+	/*background-color: Pink;*/
+}
+/****************************************************************************************************
+Radio Button
+****************************************************************************************************/
+[type="radio"] {display: none;}
+.rbcolor {
+	display: inline-block;
+	margin: 0 auto;
+	padding: .8em 0 0 0;
+	width: auto;
+	background-color: #fff;
+}
+.rbcolor label {
+    display: block;
+		position: relative;
+		padding: 0.3em 0.8em;
+		font-size: 2em;
+		text-align: left;
+		border-bottom: 1px solid rgba(204,204,204,1);
+		cursor: pointer;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+		-moz-user-select: none;     /* Firefox all */
+		-ms-user-select: none;       /* IE 10+ */
+		user-select: none;              /* Likely future */
+}
+.rbcolor label:first-of-type {border-top: 1px solid rgba(204,204,204,1);}
+.nts .rbcolor label:hover, .yts .rbcolor label:active {
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);
+	background: rgba(248,248,248,.5);
+}
+.rbcolor label:hover:after {
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);
+}
+.rbcolor label:before {
+    content: "";
+		position: relative;
+		display: inline-block;
+    width: 60px;
+    height: 60px;
+		left: 0;
+		top: 0;
+		margin: 0 .8em 0 0;
+    background: #fff;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbcolor .crWhite + label:before {border: 5px solid rgba(226,222,219,1);} /*Ton Pierre nuance (Натуральный)*/
+.rbcolor .crBlue + label:before {border: 5px solid rgba(136,186,221,1);} /*Quercy (Желтый)*/
+.rbcolor .crBrilliant + label:before {border: 5px solid rgba(119,104,75,1);} /*Rose provence (Розовый)*/
+.rbcolor .crOnyx + label:before {border: 5px solid rgba(152,108,77,1);} /*Gris nuance (Серый)*/
+.rbcolor .crSapphire + label:before {border: 5px solid rgba(28,95,141,1);} /*Guyenne multiformat (Желто-серый)*/
+.rbcolor label:after {
+    content: "";
+		position: absolute;
+		display: inline-block;
+    width: 60px;
+    height: 60px;
+		left: 0.8em;
+		top: 0.3em;
+		margin: 0 .8em 0 0;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbcolor .crWhite + label:after {background-color: rgba(226,222,219,1);} /*Ton Pierre nuance (Натуральный)*/
+.rbcolor .crBlue + label:after {background-color: rgba(136,186,221,1);} /*Quercy (Желтый)*/
+.rbcolor .crBrilliant + label:after {background-color: rgba(119,104,75,1);} /*Rose provence (Розовый)*/
+.rbcolor .crOnyx + label:after {background-color: rgba(152,108,77,1);} /*Gris nuance (Серый)*/
+.rbcolor .crSapphire + label:after {background-color: rgba(28,95,141,1);} /*Sommieres (Серо-розовый)*/
+.rbcolor .radio:checked + label:after {transform: scale(0.72,0.72);}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .fi-img {width: 49%; }
+  .ord1 {order: 1;}
+  .ord2 {display: none;}
+  .ord3 {order: 2;}
+	.slwrap {width: 100%;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .fc-img {flex-direction: column;}
+	.fi-img {width: 100%; }
+  .ord1 {display: none;}
+  .ord2 {display: none;}
+  .ord3 {order: 1;}
+	.slwrap {width: 100%;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

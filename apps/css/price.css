@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/****************************************************************************************************
+price.css
+****************************************************************************************************/
+/*** Таблица для прайса ***/
+#tprice {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 2em;
+	color: rgb(11,11,11);
+	border-collapse: separate;
+	border-collapse: collapse;
+	border-spacing: 1px;
+	border: 1px solid rgb(204,204,204);
+}
+#tprice caption {
+	padding: 0 0 0.2em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#tprice td {
+	padding: 0.2em 1.2em;
+	white-space: nowrap;
+	border: 1px solid rgb(204,204,204);
+}
+#tprice .tdc {font-weight: bold;}
+#tprice .tdr {padding: 0.3em 1.2em;}
+#tprice .tdrp {padding: 0.2em 1.2em; color: rgb(255,255,255);}
+#tprice .tdh {padding: 0.3em 1.2em; font-weight: bold;}
+#tprice .tdhp {padding: 0.3em 1.2em; color: rgb(255,255,255);}
+#tprice .tdb {padding: 0.2em 0.4em;}
+#tprice .tdbws {white-space: normal;}
+#tprice .tdb a {color: rgba(11,11,11,1); border-bottom: 1px solid rgba(11,11,11,.2);}
+#tprice .tdb a:hover {color: rgba(11,11,77,1); text-decoration: none; border-bottom: 1px solid rgba(11,11,77,1);}
+/*Кнопка*/
+.sprbttn {
+	display: inline-block;
+	width: auto;
+	margin: 0.5em auto;
+	padding: 0.6em 1.6em;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 2em;
+	color: rgb(255,255,255);
+	cursor: pointer;
+	border: solid 1px rgba(0,102,0,1);
+	text-shadow: 0 1px 1px rgba(0,102,0,1),
+		1px 0 1px rgba(0,102,0,1),
+		0 -1px 1px rgba(0,102,0,1),
+		-1px 0 1px rgba(0,102,0,1);
+	background-image: linear-gradient(to bottom,
+		rgba(0,204,0,1) 0%,
+		rgba(0,102,0,1) 100%);
+	box-shadow: 0 0 8px 1px rgba(0,0,0,.2),
+		inset 0 1px 1px 0 rgba(255,255,255,1),
+		inset 0 -1px 1px 0 rgba(0,0,0,.8);
+	transition: box-shadow .3s ease;
+}
+.sprbttn:hover {
+	background-image: linear-gradient(to bottom,
+		rgba(0,102,0,1) 0%,
+		rgba(0,204,0,1) 100%);
+	box-shadow: 0 0 8px 1px rgba(0,0,0,.5),
+		inset 0 -1px 1px 0 rgba(255,255,255,1),
+		inset 0 1px 1px 0 rgba(0,0,0,.8);
+}
+.sprbttn:active {
+box-shadow: 0 0 8px 1px rgba(0,0,0,.2),
+	inset 0 -1px 1px 0 rgba(255,255,255,1),
+	inset 0 1px 1px 0 rgba(255,255,255,1);
+}
+#pvprice {
+	display: none;
+	text-align: center;
+	text-indent: 0;
+	position: relative;
+	clear: both;
+	margin: 24px auto 0;
+	width: 100%;
+}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  #tprice {width: 98%; font-size: 1.8em;}
+	#pvprice {margin: 16px auto 0;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  #tprice {width: 100%; font-size: 1em;}
+	#tprice td {white-space: normal;}
+  .sprbttn {width: 100%;}
+	#pvprice {margin: 8px auto 0;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

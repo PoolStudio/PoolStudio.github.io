@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/****************************************************************************************************
+service.css
+****************************************************************************************************/
+/* img */
+.spool #jpg:before {content: url(../images/service/spool1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.spool #jpg {background-image: url(../images/service/spool.jpg);}
+.spool #jpg:hover {background-image: url(../images/service/spool1.jpg);}
+.spool .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.cpool #jpg:before {content: url(../images/service/cpool1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.cpool #jpg {background-image: url(../images/service/cpool.jpg);}
+.cpool #jpg:hover {background-image: url(../images/service/cpool1.jpg);}
+.cpool .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.rpool #jpg:before {content: url(../images/service/rpool1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rpool #jpg {background-image: url(../images/service/rpool.jpg);}
+.rpool #jpg:hover {background-image: url(../images/service/rpool1.jpg);}
+.rpool .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.ppool #jpg:before {content: url(../images/service/ppool1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ppool #jpg {background-image: url(../images/service/ppool.jpg);}
+.ppool #jpg:hover {background-image: url(../images/service/ppool1.jpg);}
+.ppool .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.bpool #jpg:before {content: url(../images/service/bpool1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.bpool #jpg {background-image: url(../images/service/bpool.jpg);}
+.bpool #jpg:hover {background-image: url(../images/service/bpool1.jpg);}
+.bpool .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.servicei #jpg:before {content: url(../images/super.jpg); width:0; height:0; visibility:hidden; display: none;}
+.servicei #jpg {background-image: url(../images/service/service.jpg);}
+.servicei #jpg:hover {background-image: url(../images/super.jpg);}
+.servicei .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/****************************************************************************************************
+barchemicals.css
+****************************************************************************************************/
+/* img */
+.barchemical #jpg:before {content: url(../images/info/factory/barchemicals/barchemicals0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.barchemical #jpg {background-image: url(../images/info/factory/barchemicals/barchemicals.jpg);}
+.barchemical #jpg:hover {background-image: url(../images/info/factory/barchemicals/barchemicals0.jpg);}
+.barchemical .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 */
+.fc-img {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+  justify-content: space-between;
+	align-items: flex-start;
+  width: 100%;
+}
+.fi-img {
+	flex: 0 1 auto;
+  width: 32%;
+  height: auto;
+}
+.ord1 {order: 1;}
+.ord2 {order: 2;}
+.ord3 {order: 3;}
+/* img 3 123 456*/
+.fimg1, .fimg2, .fimg3 {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	float: none;
+}
+/* img 3 1*/
+.fimg1 #jpg:before {content: url(../images/info/factory/barchemicals/barchemicals2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg1 #jpg {background-image: url(../images/info/factory/barchemicals/barchemicals1.jpg);}
+.fimg1 #jpg:hover {background-image: url(../images/info/factory/barchemicals/barchemicals2.jpg);}
+.fimg1 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 2*/
+.fimg2 #jpg:before {content: url(../images/info/factory/barchemicals/barchemicals4.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg2 #jpg {background-image: url(../images/info/factory/barchemicals/barchemicals3.jpg);}
+.fimg2 #jpg:hover {background-image: url(../images/info/factory/barchemicals/barchemicals4.jpg);}
+.fimg2 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img 3 3*/
+.fimg3 #jpg:before {content: url(../images/info/factory/barchemicals/barchemicals6.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg3 #jpg {background-image: url(../images/info/factory/barchemicals/barchemicals5.jpg);}
+.fimg3 #jpg:hover {background-image: url(../images/info/factory/barchemicals/barchemicals6.jpg);}
+.fimg3 #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .fi-img {width: 49%; }
+  .ord1 {order: 1;}
+  .ord2 {order: 2;}
+	.ord3 {display: none;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .fc-img {flex-direction: column;}
+	.fi-img {width: 100%; }
+	.ord1 {order: 1;}
+	.ord2 {display: none;}
+  .ord3 {display: none;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

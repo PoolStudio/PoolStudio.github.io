@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/****************************************************************************************************
+equip.css
+****************************************************************************************************/
+/* img */
+.kfiltr #jpg:before {content: url(../images/equip/kfiltr1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.kfiltr #jpg {background-image: url(../images/equip/kfiltr.jpg);}
+.kfiltr #jpg:hover {background-image: url(../images/equip/kfiltr1.jpg);}
+.kfiltr .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.sfiltr #jpg:before {content: url(../images/equip/sfiltr1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sfiltr #jpg {background-image: url(../images/equip/sfiltr.jpg);}
+.sfiltr #jpg:hover {background-image: url(../images/equip/sfiltr1.jpg);}
+.sfiltr .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.rollet #jpg:before {content: url(../images/equip/rollet1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rollet #jpg {background-image: url(../images/equip/rollet.jpg);}
+.rollet #jpg:hover {background-image: url(../images/equip/rollet1.jpg);}
+.rollet .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.solar #jpg:before {content: url(../images/equip/solar1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.solar #jpg {background-image: url(../images/equip/solar.jpg);}
+.solar #jpg:hover {background-image: url(../images/equip/solar1.jpg);}
+.solar .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.protect #jpg:before {content: url(../images/equip/protect1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.protect #jpg {background-image: url(../images/equip/protect.jpg);}
+.protect #jpg:hover {background-image: url(../images/equip/protect1.jpg);}
+.protect .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.equipi #jpg:before {content: url(../images/super.jpg); width:0; height:0; visibility:hidden; display: none;}
+.equipi #jpg {background-image: url(../images/equip/equip.jpg);}
+.equipi #jpg:hover {background-image: url(../images/super.jpg);}
+.equipi .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+END
+****************************************************************************************************/

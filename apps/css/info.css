@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/****************************************************************************************************
+info.css
+****************************************************************************************************/
+/* img */
+.pricem #jpg:before {content: url(../images/info/ipriceh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pricem #jpg {background-image: url(../images/info/iprice.jpg);}
+.pricem #jpg:hover {background-image: url(../images/info/ipriceh.jpg);}
+.pricem .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.scost #jpg:before {content: url(../images/info/iscosth.jpg); width:0; height:0; visibility:hidden; display: none;}
+.scost #jpg {background-image: url(../images/info/iscost.jpg);}
+.scost #jpg:hover {background-image: url(../images/info/iscosth.jpg);}
+.scost .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.iswinter #jpg:before {content: url(../images/info/winter/winters.jpg); width:0; height:0; visibility:hidden; display: none;}
+.iswinter #jpg {background-image: url(../images/info/iwinter.jpg);}
+.iswinter #jpg:hover {background-image: url(../images/info/winter/winters.jpg);}
+.iswinter .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.isspring #jpg:before {content: url(../images/info/spring/springs.jpg); width:0; height:0; visibility:hidden; display: none;}
+.isspring #jpg {background-image: url(../images/info/ispring.jpg);}
+.isspring #jpg:hover {background-image: url(../images/info/spring/springs.jpg);}
+.isspring .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.issummer #jpg:before {content: url(../images/info/summer/summers.jpg); width:0; height:0; visibility:hidden; display: none;}
+.issummer #jpg {background-image: url(../images/info/isummer.jpg);}
+.issummer #jpg:hover {background-image: url(../images/info/summer/summers.jpg);}
+.issummer .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.isautumn #jpg:before {content: url(../images/info/autumn/autumns.jpg); width:0; height:0; visibility:hidden; display: none;}
+.isautumn #jpg {background-image: url(../images/info/iautumn.jpg);}
+.isautumn #jpg:hover {background-image: url(../images/info/autumn/autumns.jpg);}
+.isautumn .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.f00 #jpg:before {content: url(../images/info/photo/f00.jpg); width:0; height:0; visibility:hidden; display: none;}
+.f00 #jpg {background-image: url(../images/info/iphoto.jpg);}
+.f00 #jpg:hover {background-image: url(../images/info/photo/f00.jpg);}
+.f00 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.factory #jpg:before {content: url(../images/info/factory/factory.jpg); width:0; height:0; visibility:hidden; display: none;}
+.factory #jpg {background-image: url(../images/info/ifactory.jpg);}
+.factory #jpg:hover {background-image: url(../images/info/factory/factory.jpg);}
+.factory .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+
+/* img */
+.pstudio #jpg:before {content: url(../images/info/studio/flower.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pstudio #jpg {background-image: url(../images/info/istudio.jpg);}
+.pstudio #jpg:hover {background-image: url(../images/info/studio/flower.jpg);}
+.pstudio .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+
+
+
+
+/* img */
+.info #jpg:before {content: url(../images/super.jpg); width:0; height:0; visibility:hidden; display: none;}
+.info #jpg {background-image: url(../images/info/info.jpg);}
+.info #jpg:hover {background-image: url(../images/super.jpg);}
+.info .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+END
+****************************************************************************************************/

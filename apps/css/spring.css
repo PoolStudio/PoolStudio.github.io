@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/****************************************************************************************************
+spring.css
+****************************************************************************************************/
+/* img */
+.delmoom #jpg:before {content: url(../images/info/spring/delmoom.jpg); width:0; height:0; visibility:hidden; display: none;}
+.delmoom #jpg {background-image: url(../images/info/spring/delmooms.jpg);}
+.delmoom #jpg:hover {background-image: url(../images/info/spring/delmoom.jpg);}
+.delmoom #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pierra #jpg:before {content: url(../images/info/spring/pierras.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierra #jpg {background-image: url(../images/info/spring/pierra.jpg);}
+.pierra #jpg:hover {background-image: url(../images/info/spring/pierras.jpg);}
+.pierra #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.srpool #jpg:before {content: url(../images/info/spring/srpoolh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.srpool #jpg {background-image: url(../images/info/spring/srpool.jpg);}
+.srpool #jpg:hover {background-image: url(../images/info/spring/srpoolh.jpg);}
+.srpool #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.fpools #jpg:before {content: url(../images/pools/favorit/8-olimpik/olimpik-1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fpools #jpg {background-image: url(../images/pools/favorit/18-feniks/feniks-1.jpg);}
+.fpools #jpg:hover {background-image: url(../images/pools/favorit/8-olimpik/olimpik-1.jpg);}
+.fpools #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slide*/
+.ifc {width: 100%; height: auto; position: relative; z-index: 0;}
+.ifc .img-wrap {
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1),
+	inset 0 0 12px 1px rgba(255,255,255,1),
+	inset 0 0 16px 1px rgba(255,255,255,1);
+}
+.ifc .img-wrap:before {
+	content: "В весеннем сезоне...";
+	position: absolute;
+	bottom: 12px;
+	width:100%;
+	padding: 6px;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	font-size: 2.4rem;
+	text-align:center;
+	color: rgba(102,102,102,1);
+	background: linear-gradient(to right,
+			transparent 0%,
+			transparent 10%,
+			rgba(255,255,255,1) 40%,
+			rgba(255,255,255,1) 60%,
+			transparent 90%,
+			transparent 100%);
+	opacity: 0;
+}
+.nts .ifc .img-wrap:hover:before, .yts .ifc .img-wrap:active:before {opacity: 1;}
+#slide {position: relative; z-index: -1;}
+.ifc #slide {
+	animation-duration: 30s;
+	animation-timing-function: linear; /*linear ease-in-out*/
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+}
+.slidespring #slide:before {content: url(../images/slide/spring1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.slidespring #slide {background-image: url(../images/slide/spring0.jpg);}
+.slidespring .inner {padding-top: calc(272 / 1496 * 100%); /* высота/ширина изображения */}
+.slidespring #slide {animation-name: slidespring;}
+@keyframes slidespring {
+	from { transform: scale(1); opacity: 1; }
+	31% { transform: scale(1.2); opacity: 1; }
+	40% { transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+	41% { transform: scale(1); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+	50% { transform: scale(1); opacity: 1; }
+	81% { transform: scale(1.2); opacity: 1; }
+	90% { transform: scale(1.26); opacity: 0; background-image: url(../images/slide/spring1.jpg); }
+	91% { transform: scale(1); opacity: 0; background-image: url(../images/slide/spring0.jpg); }
+	to% { transform: scale(1); opacity: 1; }
+}
+
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+	.ifc .img-wrap:before {font-size: 1.8rem; bottom: 8px; padding: 4px;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+	.ifc .img-wrap:before {font-size: 1.4rem; bottom: 4px; padding: 2px;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

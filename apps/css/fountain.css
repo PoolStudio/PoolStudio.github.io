@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/****************************************************************************************************
+fountain.css
+****************************************************************************************************/
+/* img */
+.fountain #jpg:before {content: url(../images/material/fountain1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fountain #jpg {background-image: url(../images/material/fountain.jpg);}
+.fountain #jpg:hover {background-image: url(../images/material/fountain1.jpg);}
+.fountain .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.ifrv {width: 25%; float: right; margin: 0 0 0 48px;}
+/* img */
+.fonbam #jpg:before {content: url(../images/material/fountain/h/FONBAM.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonbam #jpg {background-image: url(../images/material/fountain/FONBAM.jpg);}
+.fonbam #jpg:hover {background-image: url(../images/material/fountain/h/FONBAM.jpg);}
+.fonbam .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonbois #jpg:before {content: url(../images/material/fountain/h/FONBOIS.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonbois #jpg {background-image: url(../images/material/fountain/FONBOIS.jpg);}
+.fonbois #jpg:hover {background-image: url(../images/material/fountain/h/FONBOIS.jpg);}
+.fonbois .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonager #jpg:before {content: url(../images/material/fountain/h/FONAGER.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonager #jpg {background-image: url(../images/material/fountain/FONAGER.jpg);}
+.fonager #jpg:hover {background-image: url(../images/material/fountain/h/FONAGER.jpg);}
+.fonager .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonvi #jpg:before {content: url(../images/material/fountain/h/FONVI.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonvi #jpg {background-image: url(../images/material/fountain/FONVI0.jpg);}
+.fonvi #jpg:hover {background-image: url(../images/material/fountain/h/FONVI.jpg);}
+.fonvi .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonvim #jpg:before {content: url(../images/material/fountain/h/FONVIM.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonvim #jpg {background-image: url(../images/material/fountain/FONVIM.jpg);}
+.fonvim #jpg:hover {background-image: url(../images/material/fountain/h/FONVIM.jpg);}
+.fonvim .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.foneq #jpg:before {content: url(../images/material/fountain/h/FONEQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.foneq #jpg {background-image: url(../images/material/fountain/FONEQ.jpg);}
+.foneq #jpg:hover {background-image: url(../images/material/fountain/h/FONEQ.jpg);}
+.foneq .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonme #jpg:before {content: url(../images/material/fountain/h/FONME.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonme #jpg {background-image: url(../images/material/fountain/FONME.jpg);}
+.fonme #jpg:hover {background-image: url(../images/material/fountain/h/FONME.jpg);}
+.fonme .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonmem #jpg:before {content: url(../images/material/fountain/h/FONME.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonmem #jpg {background-image: url(../images/material/fountain/FONMEM.jpg);}
+.fonmem #jpg:hover {background-image: url(../images/material/fountain/h/FONME.jpg);}
+.fonmem .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonavagr #jpg:before {content: url(../images/material/fountain/h/FONAVAGR.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonavagr #jpg {background-image: url(../images/material/fountain/FONAVAGR.jpg);}
+.fonavagr #jpg:hover {background-image: url(../images/material/fountain/h/FONAVAGR.jpg);}
+.fonavagr .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonecro #jpg:before {content: url(../images/material/fountain/h/FONECRO.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonecro #jpg {background-image: url(../images/material/fountain/FONECRO.jpg);}
+.fonecro #jpg:hover {background-image: url(../images/material/fountain/h/FONECRO.jpg);}
+.fonecro .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonecla #jpg:before {content: url(../images/material/fountain/h/FONECLA.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonecla #jpg {background-image: url(../images/material/fountain/FONECLA.jpg);}
+.fonecla #jpg:hover {background-image: url(../images/material/fountain/h/FONECLA.jpg);}
+.fonecla .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonst #jpg:before {content: url(../images/material/fountain/h/FONST.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonst #jpg {background-image: url(../images/material/fountain/FONST.jpg);}
+.fonst #jpg:hover {background-image: url(../images/material/fountain/h/FONST.jpg);}
+.fonst .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonox #jpg:before {content: url(../images/material/fountain/h/FONOX.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonox #jpg {background-image: url(../images/material/fountain/FONOX.jpg);}
+.fonox #jpg:hover {background-image: url(../images/material/fountain/h/FONOX.jpg);}
+.fonox .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonnosy #jpg:before {content: url(../images/material/fountain/h/FONNOSY.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonnosy #jpg {background-image: url(../images/material/fountain/FONNOSY.jpg);}
+.fonnosy #jpg:hover {background-image: url(../images/material/fountain/h/FONNOSY.jpg);}
+.fonnosy .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/* img */
+.fonsav #jpg:before {content: url(../images/material/fountain/h/FONSAV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fonsav #jpg {background-image: url(../images/material/fountain/FONSAV.jpg);}
+.fonsav #jpg:hover {background-image: url(../images/material/fountain/h/FONSAV.jpg);}
+.fonsav .inner {padding-top: calc(600 / 450 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .ifrv {width: 48%; float: right; margin: 0 0 0 32px;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .ifrv {width: 100%; float: none; margin: 0 auto 16px;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

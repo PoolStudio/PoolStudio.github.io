@@ -1,0 +1,545 @@
+@charset "UTF-8";
+/****************************************************************************************************
+sform.css
+****************************************************************************************************/
+/* img png*/
+.sp00 {
+	float: left;
+	margin: 0;
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+}
+/* img png*/
+.sp02 #png {background-image: url(../images/info/sform/02.png);}
+.sp02 .inner {padding-top: calc(160 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sp03 #png {background-image: url(../images/info/sform/03.png);}
+.sp03 .inner {padding-top: calc(160 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sp04 #png {background-image: url(../images/info/sform/04.png);}
+.sp04 .inner {padding-top: calc(160 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sp05 #png {background-image: url(../images/info/sform/05.png);}
+.sp05 .inner {padding-top: calc(160 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sp06 #png {background-image: url(../images/info/sform/06.png);}
+.sp06 .inner {padding-top: calc(160 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sp07 #png {background-image: url(../images/info/sform/07.png);}
+.sp07 .inner {padding-top: calc(160 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sp08 #png {background-image: url(../images/info/sform/08.png);}
+.sp08 .inner {padding-top: calc(160 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sp01 #png {background-image: url(../images/info/sform/01.png);}
+.sp01 .inner {padding-top: calc(160 / 300 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Flex div
+****************************************************************************************************/
+/* img 3 */
+.fcsf {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	/*justify-content: space-around;*/
+  justify-content: flex-start;
+	align-items: center;
+  width: 100%;
+	height: auto;
+	margin: 0;
+  /*background-color: green;*/
+}
+.fisf {
+	/*background-color: BLUE;*/
+	width: auto;
+  height: auto;
+}
+.or1 {
+	order: 1;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 12rem;
+	/*background-color: Pink;*/
+}
+.or2 {
+	order: 2;
+	align-self: flex-start;
+	flex-grow: 0;
+	flex-shrink: 0;
+	/*flex-basis: content;*/
+	flex-basis: 39rem;
+	/*background-color: silver;*/
+	padding: .6rem 0 0;
+}
+.or2 p {text-align: left;}
+.or3 {
+	order: 3;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 1rem;
+	/*background-color: Pink;*/
+}
+.or4 {
+	order: 4;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: auto;
+	/*background-color: silver;*/
+}
+.or4 p {text-align: left;}
+.or5 {
+	order: 5;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 8rem;
+	/*background-color: Pink;*/
+}
+.sfblank {
+	display: block;
+	width: 100%;
+	height: 24px;
+}
+.pos1 {
+	margin: 0;
+	float: right;
+}
+.pos2 {
+	margin: 0.8rem 0 0;
+	float: right;
+}
+.pos3 {
+	margin: 0.8rem 0 0;
+	float: right;
+}
+/****************************************************************************************************
+Form
+****************************************************************************************************/
+form {display: block;}
+form legend {
+	font-size: 2rem;
+	padding: 0 .1em;
+	color: rgb(102,102,102);
+}
+form fieldset {
+	display: block;
+	width: 100%;
+	margin: 0 0 1.6em;
+	padding: 0 1.1em 1.1em;
+	border-radius: 8px;
+	border: solid 1px rgba(204,204,204,1);
+	/*border-color: rgba(204,204,204,1);*/
+	/*box-shadow: inset 0 0 8px 1px rgba(123,123,123,.2);*/
+}
+form fieldset:last-child {margin: 0;}
+form label {cursor: pointer;}
+form fieldset p {margin: 0;}
+.gsn {
+	display: inline-block;
+	padding: 0 6px;
+	margin: 0 8px;
+	border-radius: 6px;
+	border: 1px solid rgba(123,123,123,.6);
+	color: rgba(11,11,11,.6);
+	background: rgba(252,252,252,1);
+	text-decoration: none;
+}
+.gsn:first-of-type, .gsn:last-of-type {padding: 0 4px;}
+
+.nts .gsn:hover, .yts .gsn:active {
+	/*border-bottom: 1px solid rgba(11,11,77,0);*/
+	border: 1px solid rgba(123,123,123,1);
+	color: rgba(11,11,11,1);
+	box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);
+	text-decoration: none;
+}
+
+/****************************************************************************************************
+Radio Button
+****************************************************************************************************/
+[type="radio"] {display: none;}
+.rbform {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	background-color: #fff;
+	float: left;
+}
+.rbform label {
+    display: block;
+		position: relative;
+		padding: 0.2em 0.8em;
+		margin: 0;
+		font-size: 2em;
+		text-align: left;
+		text-indent: 0;
+		letter-spacing: 0.1rem;
+		word-wrap: normal;
+		overflow-wrap: normal;
+		line-height: normal;
+		border-bottom: 1px solid rgba(204,204,204,1);
+		cursor: pointer;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+		-moz-user-select: none;     /* Firefox all */
+		-ms-user-select: none;       /* IE 10+ */
+		user-select: none;              /* Likely future */
+}
+.rbform label:first-of-type {border-top: 1px solid rgba(204,204,204,1);}
+/*.nts .rbform label:hover, .yts .rbform label:active {*/
+/*.rbform label:hover {*/
+.rbform label:hover {
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);
+	background-color: rgba(248,248,248,1);
+	background-image: linear-gradient(to bottom,
+		rgba(248,248,248,1) 0%,
+		rgba(204,204,204,1) 50%,
+		rgba(248,248,248,1) 100%);
+}
+.rbform .itrc:checked + label:hover {
+	background-image: linear-gradient(to bottom,
+		rgba(204,204,204,1) 0%,
+		rgba(248,248,248,1) 50%,
+		rgba(204,204,204,1) 100%);
+}
+.rbform .itrc:disabled + label {color:  rgba(222,222,222,1);}
+.rbform .itrc:disabled + label:hover {
+	background-image: linear-gradient(to bottom,
+		rgba(252,252,252,1) 0%,
+		rgba(248,248,248,1) 50%,
+		rgba(252,252,252,1) 100%);
+}
+.rbform .itrc + label:before {
+    content: "";
+		position: relative;
+		display: inline-block;
+    width: 32px;
+    height: 32px;
+		left: 0;
+		top: 0;
+		margin: 0 .8em 0 0;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbform .itrc + label:after {
+    content: "";
+		position: absolute;
+		display: inline-block;
+    width: 18px;
+    height: 18px;
+		left: 23px;
+		top: 11px;
+		margin: 0 .8em 0 0;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbform .itrc + label:before {
+	background-color: rgba(242,242,242,1);
+	border: 1px solid rgba(102,102,102,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(255,255,255,1),
+	inset 0 -1px 2px 1px rgba(204,204,204,1);
+}
+.rbform .itrc + label:after {
+	background-color: rgba(242,242,242,1);
+	border: 1px solid rgba(102,102,102,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(204,204,204,1),
+	inset 0 -1px 2px 1px rgba(255,255,255,1);
+}
+.rbform .itrc + label:hover:before {
+	background-color: rgba(204,204,204,1);
+	border-color: rgba(51,51,51,1);
+	box-shadow: 0 0 8px 2px rgba(255,255,255,1),
+	inset 0 1px 2px 1px rgba(255,255,255,1),
+	inset 0 -1px 2px 1px rgba(102,102,102,1);
+}
+.rbform .itrc + label:hover:after {
+	background-color: rgba(153,153,153,1);
+	border: 1px solid rgba(51,51,51,1);
+	box-shadow:
+	inset 0 1px 1px 0px rgba(102,102,102,1),
+	inset 0 -1px 1px 0px rgba(255,255,255,1);
+}
+.rbform .itrc:checked + label:before {
+	background-color: rgba(204,204,204,1);
+	border-color: rgba(11,11,11,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(102,102,102,1),
+	inset 0 -1px 2px 1px rgba(255,255,255,1);
+}
+.rbform .itrc:checked + label:after {
+	background-color: rgba(102,102,102,1);
+	border-color: rgba(11,11,11,1);
+	box-shadow:
+	inset 0 1px 1px 0px rgba(255,255,255,1),
+	inset 0 -1px 1px 0px rgba(51,51,51,1);
+}
+.rbform .itrc:disabled + label:before {
+	background-color: rgba(248,248,248,1);
+	border: 1px solid rgba(204,204,204,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(255,255,255,1),
+	inset 0 -1px 2px 1px rgba(222,222,222,1);
+}
+.rbform .itrc:disabled + label:after {
+	background-color: rgba(248,248,248,1);
+	border: 1px solid rgba(204,204,204,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(222,222,222,1),
+	inset 0 -1px 2px 1px rgba(255,255,255,1);
+}
+/****************************************************************************************************
+Сheckbox Button
+****************************************************************************************************/
+[type="checkbox"] {display: none;}
+.сbform {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	background-color: #fff;
+	float: left;
+}
+.сbform label {
+    display: block;
+		position: relative;
+		padding: 0.2em 0.8em;
+		margin: 0;
+		font-size: 2em;
+		text-align: left;
+		text-indent: 0;
+		letter-spacing: 0.1rem;
+		word-wrap: normal;
+		overflow-wrap: normal;
+		line-height: normal;
+		border-bottom: 1px solid rgba(204,204,204,1);
+		cursor: pointer;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+		-moz-user-select: none;     /* Firefox all */
+		-ms-user-select: none;       /* IE 10+ */
+		user-select: none;              /* Likely future */
+}
+.сbform label:first-of-type {border-top: 1px solid rgba(204,204,204,1);}
+/*.nts .сbform label:hover, .yts .сbform label:active {*/
+/*.сbform label:hover {*/
+.сbform label:hover {
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);
+	background-color: rgba(248,248,248,1);
+	background-image: linear-gradient(to bottom,
+		rgba(248,248,248,1) 0%,
+		rgba(204,204,204,1) 60%,
+		rgba(248,248,248,1) 100%);
+}
+.сbform .itсc:checked +  label:hover {
+	background-image: linear-gradient(to bottom,
+		rgba(204,204,204,1) 0%,
+		rgba(248,248,248,1) 60%,
+		rgba(204,204,204,1) 100%);
+}
+.сbform .itсc:disabled + label {color:  rgba(204,204,204,1);}
+.сbform .itсc:disabled + label:hover {
+	background-image: linear-gradient(to bottom,
+		rgba(248,248,248,1) 0%,
+		rgba(248,248,248,1) 60%,
+		rgba(248,248,248,1) 100%);
+}
+.сbform .itсc + label:before {
+    content: "";
+		position: relative;
+		display: inline-block;
+    width: 32px;
+    height: 32px;
+		left: 0;
+		top: 0;
+		margin: 0 .8em 0 0;
+    border-radius: 4px;
+		vertical-align: middle;
+}
+.сbform .itсc + label:after {
+    content: "";
+		position: absolute;
+		display: inline-block;
+    width: 16px;
+    height: 16px;
+		left: 24px;
+		top: 12px;
+		margin: 0 .8em 0 0;
+    border-radius: 2px;
+		vertical-align: middle;
+}
+.сbform .itсc + label:before {
+	background-color: rgba(242,242,242,1);
+	border: 1px solid rgba(102,102,102,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(255,255,255,1),
+	inset 0 -1px 2px 1px rgba(204,204,204,1);
+}
+.сbform .itсc + label:after {
+	background-color: rgba(242,242,242,1);
+	border: 1px solid rgba(102,102,102,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(204,204,204,1),
+	inset 0 -1px 2px 1px rgba(255,255,255,1);
+}
+.сbform .itсc + label:hover:before {
+	background-color: rgba(204,204,204,1);
+	border-color: rgba(51,51,51,1);
+	box-shadow: 0 0 8px 2px rgba(255,255,255,1),
+	inset 0 1px 2px 1px rgba(255,255,255,1),
+	inset 0 -1px 2px 1px rgba(102,102,102,1);
+}
+.сbform .itсc + label:hover:after {
+	background-color: rgba(153,153,153,1);
+	border: 1px solid rgba(51,51,51,1);
+	box-shadow:
+	inset 0 1px 1px 0px rgba(102,102,102,1),
+	inset 0 -1px 1px 0px rgba(255,255,255,1);
+}
+.сbform .itсc:checked + label:before {
+	background-color: rgba(204,204,204,1);
+	border-color: rgba(11,11,11,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(102,102,102,1),
+	inset 0 -1px 2px 1px rgba(255,255,255,1);
+}
+.сbform .itсc:checked + label:after {
+	background-color: rgba(102,102,102,1);
+	border-color: rgba(11,11,11,1);
+	box-shadow:
+	inset 0 1px 1px 0px rgba(255,255,255,1),
+	inset 0 -1px 1px 0px rgba(51,51,51,1);
+}
+.сbform .itсc:checked + label:hover:before {
+	background-color: rgba(204,204,204,1);
+	border-color: rgba(11,11,11,1);
+	box-shadow: 0 0 8px 2px rgba(255,255,255,1),
+	inset 0 1px 2px 1px rgba(102,102,102,1),
+	inset 0 -1px 2px 1px rgba(255,255,255,1);
+}
+.сbform .itсc:checked + label:hover:after {
+	background-color: rgba(153,153,153,1);
+	border-color: rgba(11,11,11,1);
+	box-shadow:
+	inset 0 1px 1px 0px rgba(255,255,255,1),
+	inset 0 -1px 1px 0px rgba(51,51,51,1);
+}
+.сbform .itсc:disabled + label:before {
+	background-color: rgba(248,248,248,1);
+	border: 1px solid rgba(204,204,204,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(255,255,255,1),
+	inset 0 -1px 2px 1px rgba(222,222,222,1);
+}
+.сbform .itсc:disabled + label:after {
+	background-color: rgba(248,248,248,1);
+	border: 1px solid rgba(204,204,204,1);
+	box-shadow:
+	inset 0 1px 2px 1px rgba(222,222,222,1),
+	inset 0 -1px 2px 1px rgba(255,255,255,1);
+}
+
+
+/****************************************************************************************************
+Number
+****************************************************************************************************/
+.sfw3 {width: 80%;}
+[type="number"] {
+	font-size: 2.2rem;
+	text-align: center;
+	line-height: normal;
+	display: inline-block;
+	margin: 0 2px;
+	padding: 0.4rem 0.2rem 0.25rem;
+	width: 80px;
+}
+input[type='number'] {-moz-appearance:textfield;}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type='number'] {border: 1px solid rgba(204,204,204,1); outline: none;}
+input[type='number']:focus {border: 1px solid rgba(204,204,204,1); outline: none;}
+input::-ms-clear {display: none; width: 0; height: 0;}
+.itncf {border: 1px solid rgba(204,204,204,1); outline: none;}
+.itnc {border: 1px solid rgba(204,204,204,1); outline: none;}
+.numform label {
+    display: inline-block;
+		position: relative;
+		width: 10rem;
+		padding: 0;
+		margin: 0;
+		font-size: 2em;
+		text-align: left;
+		text-indent: 0;
+		letter-spacing: 0.1rem;
+		word-wrap: normal;
+		overflow-wrap: normal;
+		line-height: normal;
+		cursor: pointer;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+		-moz-user-select: none;     /* Firefox all */
+		-ms-user-select: none;       /* IE 10+ */
+		user-select: none;              /* Likely future */
+}
+.numform ul {
+	display: block;
+}
+.numform ul li {
+	display: block;
+	padding: 0 0 11px 0;
+}
+.numform ul li:last-child {padding: 0;}
+.dsmsp {display: inline-block;}
+.dsmsp span {
+	display: inline-block;
+	padding: 0.4rem 1rem 0.25rem;
+	font-size: 2.2em;
+	border: 1px solid rgba(204,204,204,1);
+	cursor: pointer;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;       /* IE 10+ */
+	user-select: none;              /* Likely future */
+}
+.dsmsp span:hover {
+	box-shadow: inset 0 0 8px 1px rgba(204,204,204,1);
+	background-color: rgba(248,248,248,1);
+}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+	.fcsf {width: 100%;}
+	.or1 {display: none;}
+	.or2 {order: 1; flex-basis: 30rem; flex-basis: content;}
+	.or3 {order: 2; flex-basis: 0.8rem;}
+	.or4 {order: 3;}
+	.or5 {order: 4; flex-basis: 5.8rem;}
+	.sfblank {height: 16px;}
+	form fieldset p {margin: 0 32px 0 0;}
+	.rbform label {letter-spacing: 0.05rem;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+	.fcsf {flex-direction: column; align-items: flex-start;}
+	.or1 {display: none;}
+	.or2 {order: 1; flex-basis: 100%; width: 100%;}
+	.or3 {display: none;}
+	.or4 {order: 2; flex-basis: 100%; width: 100%; padding: 0.8rem 0 0;}
+	.or5 {order: 3; flex-basis: auto;}
+	.pos1 {float: left;}
+	.pos2 {float: left; margin: 0 0 0 0.8rem;}
+	.pos3 {float: left; margin: 0 0 0 0.8rem;}
+	.sfblank {height: 8px;}
+	form fieldset p {margin: 0 48px 8px 0;}
+	.rbform label {letter-spacing: normal;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

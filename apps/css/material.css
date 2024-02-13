@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/****************************************************************************************************
+material.css
+****************************************************************************************************/
+/* img */
+.chemical #jpg:before {content: url(../images/material/chemical1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.chemical #jpg {background-image: url(../images/material/chemical.jpg);}
+.chemical #jpg:hover {background-image: url(../images/material/chemical1.jpg);}
+.chemical .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.coping #jpg:before {content: url(../images/material/coping1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.coping #jpg {background-image: url(../images/material/coping.jpg);}
+.coping #jpg:hover {background-image: url(../images/material/coping1.jpg);}
+.coping .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.garden #jpg:before {content: url(../images/material/garden1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.garden #jpg {background-image: url(../images/material/garden.jpg);}
+.garden #jpg:hover {background-image: url(../images/material/garden1.jpg);}
+.garden .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.facade #jpg:before {content: url(../images/material/facade1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.facade #jpg {background-image: url(../images/material/facade.jpg);}
+.facade #jpg:hover {background-image: url(../images/material/facade1.jpg);}
+.facade .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.fountain #jpg:before {content: url(../images/material/fountain1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fountain #jpg {background-image: url(../images/material/fountain.jpg);}
+.fountain #jpg:hover {background-image: url(../images/material/fountain1.jpg);}
+.fountain .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.tiles #jpg:before {content: url(../images/material/tiles1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tiles #jpg {background-image: url(../images/material/tiles.jpg);}
+.tiles #jpg:hover {background-image: url(../images/material/tiles1.jpg);}
+.tiles .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.careprod #jpg:before {content: url(../images/material/careprod1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.careprod #jpg {background-image: url(../images/material/careprod.jpg);}
+.careprod #jpg:hover {background-image: url(../images/material/careprod1.jpg);}
+.careprod .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.materiali #jpg:before {content: url(../images/super.jpg); width:0; height:0; visibility:hidden; display: none;}
+.materiali #jpg {background-image: url(../images/material/material.jpg);}
+.materiali #jpg:hover {background-image: url(../images/super.jpg);}
+.materiali .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+END
+****************************************************************************************************/

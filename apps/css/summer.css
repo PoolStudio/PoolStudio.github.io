@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/****************************************************************************************************
+summer.css
+****************************************************************************************************/
+/* img */
+.solar #jpg:before {content: url(../images/info/summer/solarh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.solar #jpg {background-image: url(../images/info/summer/solar.jpg);}
+.solar #jpg:hover {background-image: url(../images/info/summer/solarh.jpg);}
+.solar #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.spool #jpg:before {content: url(../images/info/summer/servpoolh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.spool #jpg {background-image: url(../images/info/summer/servpool.jpg);}
+.spool #jpg:hover {background-image: url(../images/info/summer/servpoolh.jpg);}
+.spool #jpg .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.hayward #jpg:before {content: url(../images/info/summer/hayward0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.hayward #jpg {background-image: url(../images/info/summer/hayward.jpg);}
+.hayward #jpg:hover {background-image: url(../images/info/summer/hayward0.jpg);}
+.hayward .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slide*/
+.ifc {width: 100%; height: auto; position: relative; z-index: 0;}
+.ifc .img-wrap {
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1),
+	inset 0 0 12px 1px rgba(255,255,255,1),
+	inset 0 0 16px 1px rgba(255,255,255,1);
+}
+.ifc .img-wrap:before {
+	content: "В летнем сезоне...";
+	position: absolute;
+	bottom: 12px;
+	width:100%;
+	padding: 6px;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	font-size: 2.4rem;
+	text-align:center;
+	color: rgba(102,102,102,1);
+	background: linear-gradient(to right,
+			transparent 0%,
+			transparent 10%,
+			rgba(255,255,255,1) 40%,
+			rgba(255,255,255,1) 60%,
+			transparent 90%,
+			transparent 100%);
+	opacity: 0;
+}
+.nts .ifc .img-wrap:hover:before, .yts .ifc .img-wrap:active:before {opacity: 1;}
+#slide {position: relative; z-index: -1;}
+.ifc #slide {
+	animation-duration: 30s;
+	animation-timing-function: linear; /*linear ease-in-out*/
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+}
+.slidesummer #slide:before {content: url(../images/slide/summer1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.slidesummer #slide {background-image: url(../images/slide/summer0.jpg);}
+.slidesummer .inner {padding-top: calc(272 / 1496 * 100%); /* высота/ширина изображения */}
+.slidesummer #slide {animation-name: slidesummer;}
+@keyframes slidesummer {
+	from { transform: scale(1); opacity: 1; }
+	31% { transform: scale(1.2); opacity: 1; }
+	40% { transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+	41% { transform: scale(1); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+	50% { transform: scale(1); opacity: 1; }
+	81% { transform: scale(1.2); opacity: 1; }
+	90% { transform: scale(1.26); opacity: 0; background-image: url(../images/slide/summer1.jpg); }
+	91% { transform: scale(1); opacity: 0; background-image: url(../images/slide/summer0.jpg); }
+	to% { transform: scale(1); opacity: 1; }
+}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+	.ifc .img-wrap:before {font-size: 1.8rem; bottom: 8px; padding: 4px;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+	.ifc .img-wrap:before {font-size: 1.4rem; bottom: 4px; padding: 2px;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

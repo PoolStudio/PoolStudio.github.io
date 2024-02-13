@@ -1,0 +1,713 @@
+@charset "UTF-8";
+/******************************************************************************************************
+facade.css
+******************************************************************************************************/
+/* Sector rbcolor*/
+.sccont {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	/*background-color: BLUE;*/
+}
+.scwrap {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: GREEN;*/
+}
+.scnav {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: Pink;*/
+}
+.dbvo {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+.dnvo {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+/* Sector rbcolor*/
+/******************************************************************************************************
+Radio Button
+******************************************************************************************************/
+[type="radio"] {display: none;}
+.rbcolor {
+	display: inline-block;
+	margin: 0 auto;
+	padding: .8em 0 0 0;
+	width: auto;
+	background-color: #fff;
+}
+.rbcolor label {
+    display: block;
+		position: relative;
+		padding: 0.3em 0.8em;
+		font-size: 2em;
+		letter-spacing: 0.1rem;
+		text-align: left;
+		border-bottom: 1px solid rgba(204,204,204,1);
+		cursor: pointer;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+		-moz-user-select: none;     /* Firefox all */
+		-ms-user-select: none;       /* IE 10+ */
+		user-select: none;              /* Likely future */
+}
+.rbcolor label:first-of-type {border-top: 1px solid rgba(204,204,204,1);}
+.nts .rbcolor label:hover, .yts .rbcolor label:active {
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);
+	background: rgba(248,248,248,.5);
+}
+.rbcolor label:hover:after {box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);}
+.rbcolor label:before {
+    content: "";
+		position: relative;
+		display: inline-block;
+    width: 60px;
+    height: 60px;
+		left: 0;
+		top: 0;
+		margin: 0 .8em 0 0;
+    background: #fff;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbcolor .cTonPierreNuance + label:before {border: 5px solid rgba(211,193,157,1);} /*Ton Pierre nuance (Натуральный)*/
+.rbcolor .cSarlat + label:before {border: 5px solid rgba(211,140,72,1);} /*Sarlat (Охра) BEAUREGARD, ABBAYE margelles a retombee*/
+.rbcolor .cTonDore + label:before {border: 5px solid rgba(211,196,144,1);} /*Ton Dore (Золотой)*/
+.rbcolor .cGris + label:before {border: 5px solid rgba(173,176,178,1);} /*Gris (Серый) ABBAYE, TENNESSEE planche*/
+.rbcolor .cRoseToulouse + label:before {border: 5px solid rgba(242,145,97,1);} /*Rose&nbsp;Toulouse (Розовый Тулуза) BRIQUE / BRIQUETTE / BRICOU*/
+.rbcolor .cRoseToscaneB + label:before {border: 5px solid rgba(224,200,191,1);} /*Rose&nbsp;Toscane (Розовый Тоскана) BRIQUE / BRIQUETTE / BRICOU*/
+.rbcolor .cBlanc + label:before {border: 5px solid rgba(252,252,252,1);} /*Blanc (Белый)*/
+.rbcolor .cAnthracite + label:before {border: 5px solid rgba(99,96,102,1);} /*Anthracite (Антрацит)*/
+.rbcolor .cMetalE + label:before {border: 5px solid rgba(86,81,76,1);} /*Metal (Металлический)*/
+
+.rbcolor label:after {
+    content: "";
+		position: absolute;
+		display: inline-block;
+    width: 60px;
+    height: 60px;
+		left: 0.8em;
+		top: 0.3em;
+		margin: 0 .8em 0 0;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbcolor .cTonPierreNuance + label:after {background-color: rgba(211,193,157,1);} /*Ton Pierre nuance (Натуральный)*/
+.rbcolor .cSarlat + label:after {background-color: rgba(211,140,72,1);} /*Sarlat (Охра) BEAUREGARD, ABBAYE margelles a retombee*/
+.rbcolor .cTonDore + label:after {background-color: rgba(211,196,144,1);} /*Ton Dore (Золотой)*/
+.rbcolor .cGris + label:after {background-color: rgba(173,176,178,1);} /*Gris (Серый) ABBAYE, TENNESSEE planche*/
+.rbcolor .cRoseToulouse + label:after {background-color: rgba(242,145,97,1);} /*Rose&nbsp;Toulouse (Розовый Тулуза) BRIQUE / BRIQUETTE / BRICOU*/
+.rbcolor .cRoseToscaneB + label:after {background-color: rgba(224,200,191,1);} /*Rose&nbsp;Toscane (Розовый Тоскана) BRIQUE / BRIQUETTE / BRICOU*/
+.rbcolor .cBlanc + label:after {background-color: rgba(252,252,252,1);} /*Blanc (Белый)*/
+.rbcolor .cAnthracite + label:after {background-color: rgba(99,96,102,1);} /*Anthracite (Антрацит)*/
+.rbcolor .cMetalE + label:after {background-color: rgba(86,81,76,1);} /*Metal (Металлический)*/
+
+
+.rbcolor .radio:checked + label:after {transform: scale(0.72,0.72);}
+/*End Radio Button*/
+/******************************************************************************************************
+Sector Slider
+******************************************************************************************************/
+.slcont {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	/*background-color: BLUE;*/
+}
+.slwrap {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: GREEN;*/
+}
+.slnav {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: Pink;*/
+}
+.slnav > .bttnsmbl {opacity: 1;}
+/*.slnav:hover > .slbar {box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);}*/
+.slbar {
+	display: block;
+	margin: 10px auto;
+	padding: 0;
+	width: 500px;
+	height: 28px;
+	border-radius: 8px;
+	border: 1px solid rgb(123,123,123);
+	opacity: 1;
+	position: relative;
+	background: rgba(252,252,252,1);
+  /*box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);*/
+}
+.slbar > .bttnsmbl {opacity: 1;}
+.slider {
+	margin: 0 !important;
+	position: relative !important;
+	top: -11px !important;
+	left: 108px;
+  left: 0;
+	cursor: e-resize;
+	/*transition: left .3s ease-in-out;*/
+}
+.prev, .next {cursor: pointer;}
+.slnum {
+	display: block;
+	margin: 0 auto;
+	padding: .8em 0 0;
+	width: auto;
+	text-align: center;
+	/*background-color: silver;*/
+}
+.slrol {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 6px 0 0;
+	width: auto;
+	text-align: center;
+	/*background-color: cyan;*/
+}
+.scroll {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	word-wrap: normal;
+	/*background-color: brown;*/
+}
+/* img */
+.mwfh {max-width: 500px;}
+.mwth {max-width: 300px;}
+.mwrh {max-width: 400px;}
+.slnip {width: 100%; height: auto; margin: 6px auto;}
+.slnip #png {
+	border: 1px solid  rgba(232,232,232,1);
+	border-radius: 8px;
+}
+.slnid {width: 100%; max-width: 96px; height: auto; margin-right: 5px; display: inline-block; position: relative;}
+.slnid {left: 0px; transition: left .1s ease-in-out;}
+.slnid #png {
+	border: 1px solid  rgba(232,232,232,1);
+	border-radius: 4px;
+}
+.nts .slnid:hover #png, .yts .slnid:active #png {
+	border-radius: 8px;
+	border-color: rgba(123,123,123,1);
+	box-shadow: inset 0 0 16px 1px rgba(153,153,153,.8), 0 0 8px 1px rgba(153,153,153,.8);
+	cursor: pointer;
+	box-shadow: 0 0 8px 1px rgba(153,153,153,.8);
+	transition: all .3s ease;
+	transform: scale(0.9);
+}
+.slcur #png {
+	border: 1px solid  rgba(123,123,123,1);
+	box-shadow: inset 0 0 1px 1px rgba(153,153,153,.8);
+}
+.nts .slcur:hover #png, .yts .slcur:active #png {
+	border-radius: 8px;
+	box-shadow: none;
+	border: 1px solid  rgba(51,51,51,1);
+	cursor: inherit;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+.slbut {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 6px 0 0;
+	width: 500px;
+	height: auto;
+	visibility: hidden;
+	/*background-color: cyan;*/
+}
+.sbleft, .sbright {
+	display: block;
+	position: relative;
+	width: 48px;
+	height: 24px;
+	margin: 0 2px 0 0;
+	float: left;
+	border: 1px solid  rgba(123,123,123,1);
+	border-radius: 4px;
+	background: rgba(252,252,252,1);
+	cursor: pointer;
+	font-size: 26px;
+	line-height: 0.9;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;       /* IE 10+ */
+	user-select: none;              /* Likely future */
+}
+.nts .sbleft:hover, .yts .sbleft:active {
+	box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);
+	border-color: rgba(102,102,102,1);
+}
+.nts .sbleft:active {
+	box-shadow: inset 0 0 8px 1px rgba(102,102,102,.8);
+	background: rgba(232,232,232,1);
+	border-color: rgba(51,51,51,1);
+}
+.sbright {margin: 0 0 0 2px;}
+.nts .sbright:hover, .yts .sbright:active {
+	box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);
+	border-color: rgba(102,102,102,1);
+}
+.nts .sbright:active {
+	box-shadow: inset 0 0 8px 1px rgba(102,102,102,.8);
+	background: rgba(232,232,232,1);
+	border-color: rgba(51,51,51,1);
+}
+.dsbleft {
+	position: relative;
+	width: 0;
+	height: 0;
+	left: 12px;
+	top: 2px;
+	border-right: 18px solid rgba(153,153,153,1);
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+}
+.nts .sbleft:hover .dsbleft, .yts .sbleft:active .dsbleft {border-right-color: rgba(102,102,102,1);}
+.nts .sbleft:active .dsbleft {border-right-color: rgba(51,51,51,1);}
+.dsbright {
+	position: relative;
+	width: 0;
+	height: 0;
+	left: 16px;
+	top: 2px;
+	border-left: 18px solid rgba(153,153,153,1);
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+}
+.nts .sbright:hover .dsbright, .yts .sbright:active .dsbright {border-left-color: rgba(102,102,102,1);}
+.nts .sbright:active .dsbright {border-right-color: rgba(51,51,51,1);}
+.sbbar {
+	display: block;
+	position: relative;
+	width: 400px;
+	height: 24px;
+	margin: 0 auto;
+	padding: 0;
+	float: left;
+	border: 1px solid rgb(123,123,123);
+	border-radius: 4px;
+	background: rgba(252,252,252,1);
+}
+.sbslider {
+	display: block;
+	position: relative;
+	margin: 0;
+	left: 0px;
+	width: 0px;
+	height: 22px;
+	border-radius: 4px;
+	border: 1px solid rgb(255,255,255);
+	background: rgba(171,171,171,1);
+	/*cursor: move;*/
+	transition: left .1s ease-in-out;
+	cursor: e-resize;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;       /* IE 10+ */
+	user-select: none;              /* Likely future */
+}
+.nts .sbslider:hover, .yts .sbslider:active {box-shadow: inset 0 0 8px 1px rgba(102,102,102,1); background: rgba(153,153,153,1);}
+.nts .sbslider:active {box-shadow: inset 0 0 8px 1px rgba(255,255,255,1); background: rgba(102,102,102,1);}
+/* img png*/
+.img-wrap #png {transition: background-image .3s ease-in-out;}
+/* End Sector Slider */
+/******************************************************************************************************
+Sector img Zoom
+******************************************************************************************************/
+/* img Zoom*/
+.zoomContainer {
+  /*border-radius: 8px;
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1),
+	inset 0 0 12px 1px rgba(255,255,255,1),
+	inset 0 0 16px 1px rgba(255,255,255,1);*/
+}
+.imgElZoom {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+.wrapElZoom {
+  border-radius: 8px;
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1),
+	inset 0 0 12px 1px rgba(255,255,255,1),
+	inset 0 0 16px 1px rgba(255,255,255,1);
+  background-size: cover;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+.zoomLens {
+  border-radius: 2px;
+  opacity: 0.3 !important;
+}
+/* End img Zoom*/
+/******************************************************************************************************
+Filling with data
+******************************************************************************************************/
+/* img s-nav*/
+.facade #jpg:before {content: url(../images/material/facade/facadeh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.facade #jpg {background-image: url(../images/material/facade/facade.jpg);}
+.facade #jpg:hover {background-image: url(../images/material/facade/facadeh.jpg);}
+.facade .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.rust0 #jpg:before {content: url(../images/material/facade/01-moellon-rustique/rustique1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rust0 #jpg {background-image: url(../images/material/facade/01-moellon-rustique/rustique0.jpg);}
+.rust0 #jpg:hover {background-image: url(../images/material/facade/01-moellon-rustique/rustique1.jpg);}
+.rust0 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img */
+.rust1 #jpg:before {content: url(../images/material/facade/01-moellon-rustique/rustique3.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rust1 #jpg {background-image: url(../images/material/facade/01-moellon-rustique/rustique2.jpg);}
+.rust1 #jpg:hover {background-image: url(../images/material/facade/01-moellon-rustique/rustique3.jpg);}
+.rust1 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img */
+.assi0 #jpg:before {content: url(../images/material/facade/02-moellon-assise/assise1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.assi0 #jpg {background-image: url(../images/material/facade/02-moellon-assise/assise0.jpg);}
+.assi0 #jpg:hover {background-image: url(../images/material/facade/02-moellon-assise/assise1.jpg);}
+.assi0 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img */
+.assi1 #jpg:before {content: url(../images/material/facade/02-moellon-assise/assise3.jpg); width:0; height:0; visibility:hidden; display: none;}
+.assi1 #jpg {background-image: url(../images/material/facade/02-moellon-assise/assise2.jpg);}
+.assi1 #jpg:hover {background-image: url(../images/material/facade/02-moellon-assise/assise3.jpg);}
+.assi1 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img */
+.moellon #jpg:before {content: url(../images/material/facade/03-sem/moellonh.jpg); width:0; height:0; visibility:hidden; display: none;}
+.moellon #jpg {background-image: url(../images/material/facade/03-sem/moellon.jpg);}
+.moellon #jpg:hover {background-image: url(../images/material/facade/03-sem/moellonh.jpg);}
+.moellon .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img rbcolor */
+.ifrcrbc {width: 35%; max-width: 500px; height: auto; float: right; margin: 0 0 0 48px;}
+/* img png ifrcrbc*/
+.rustDore #png:before {content: url(../images/material/facade/01-moellon-rustique/el/colorTonDore.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustDore #png {background-image: url(../images/material/facade/01-moellon-rustique/el/colorTonDore.jpg);}
+.rustDore .inner {padding-top: calc(265 / 500 * 100%); /* высота/ширина изображения */}
+/* img png ifrcrbc*/
+.rustSarlat #png:before {content: url(../images/material/facade/01-moellon-rustique/el/colorSarlat.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustSarlat #png {background-image: url(../images/material/facade/01-moellon-rustique/el/colorSarlat.jpg);}
+.rustSarlat .inner {padding-top: calc(265 / 500 * 100%); /* высота/ширина изображения */}
+/* img png ifrcrbc*/
+.rustPierreN #png:before {content: url(../images/material/facade/01-moellon-rustique/el/colorTonPierreNuance.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustPierreN #png {background-image: url(../images/material/facade/01-moellon-rustique/el/colorTonPierreNuance.jpg);}
+.rustPierreN .inner {padding-top: calc(265 / 500 * 100%); /* высота/ширина изображения */}
+/* img png ifrcrbc*/
+.assiDore #png:before {content: url(../images/material/facade/02-moellon-assise/el/colorTonDore.jpg); width:0; height:0; visibility:hidden; display: none;}
+.assiDore #png {background-image: url(../images/material/facade/02-moellon-assise/el/colorTonDore.jpg);}
+.assiDore .inner {padding-top: calc(265 / 500 * 100%); /* высота/ширина изображения */}
+/* img png ifrcrbc*/
+.assiSarlat #png:before {content: url(../images/material/facade/02-moellon-assise/el/colorSarlat.jpg); width:0; height:0; visibility:hidden; display: none;}
+.assiSarlat #png {background-image: url(../images/material/facade/02-moellon-assise/el/colorSarlat.jpg);}
+.assiSarlat .inner {padding-top: calc(265 / 500 * 100%); /* высота/ширина изображения */}
+/* img png ifrcrbc*/
+.assiGris #png:before {content: url(../images/material/facade/02-moellon-assise/el/colorGris.jpg); width:0; height:0; visibility:hidden; display: none;}
+.assiGris #png {background-image: url(../images/material/facade/02-moellon-assise/el/colorGris.jpg);}
+.assiGris .inner {padding-top: calc(265 / 500 * 100%); /* высота/ширина изображения */}
+/* img png ifrcrbc*/
+.assiPierreN #png:before {content: url(../images/material/facade/02-moellon-assise/el/colorTonPierreNuance.jpg); width:0; height:0; visibility:hidden; display: none;}
+.assiPierreN #png {background-image: url(../images/material/facade/02-moellon-assise/el/colorTonPierreNuance.jpg);}
+.assiPierreN .inner {padding-top: calc(265 / 500 * 100%); /* высота/ширина изображения */}
+/* End img rbcolor */
+/*Slider sem*/
+/* img png*/
+.sem01 #png:before {content: url(../images/material/facade/03-sem/el/01-VOUT.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem01 #png {background-image: url(../images/material/facade/03-sem/el/01-VOUT.jpg);}
+.sem01 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem02 #png:before {content: url(../images/material/facade/03-sem/el/02-A32.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem02 #png {background-image: url(../images/material/facade/03-sem/el/02-A32.jpg);}
+.sem02 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem03 #png:before {content: url(../images/material/facade/03-sem/el/03-A25.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem03 #png {background-image: url(../images/material/facade/03-sem/el/03-A25.jpg);}
+.sem03 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem04 #png:before {content: url(../images/material/facade/03-sem/el/04-A2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem04 #png {background-image: url(../images/material/facade/03-sem/el/04-A2.jpg);}
+.sem04 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem05 #png:before {content: url(../images/material/facade/03-sem/el/05-L90.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem05 #png {background-image: url(../images/material/facade/03-sem/el/05-L90.jpg);}
+.sem05 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem06 #png:before {content: url(../images/material/facade/03-sem/el/06-L120.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem06 #png {background-image: url(../images/material/facade/03-sem/el/06-L120.jpg);}
+.sem06 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem07 #png:before {content: url(../images/material/facade/03-sem/el/07-L150.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem07 #png {background-image: url(../images/material/facade/03-sem/el/07-L150.jpg);}
+.sem07 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem08 #png:before {content: url(../images/material/facade/03-sem/el/08-L902.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem08 #png {background-image: url(../images/material/facade/03-sem/el/08-L902.jpg);}
+.sem08 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem09 #png:before {content: url(../images/material/facade/03-sem/el/09-L1202.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem09 #png {background-image: url(../images/material/facade/03-sem/el/09-L1202.jpg);}
+.sem09 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem10 #png:before {content: url(../images/material/facade/03-sem/el/10-CLE.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem10 #png {background-image: url(../images/material/facade/03-sem/el/10-CLE.jpg);}
+.sem10 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.sem11 #png:before {content: url(../images/material/facade/03-sem/el/11-OEIL.jpg); width:0; height:0; visibility:hidden; display: none;}
+.sem11 #png {background-image: url(../images/material/facade/03-sem/el/11-OEIL.jpg);}
+.sem11 .inner {padding-top: calc(350 / 500 * 100%); /* высота/ширина изображения */}
+/*End Slider sem*/
+/* img Zoom */
+.rustiqueZ {background-image: url(../images/material/facade/01-moellon-rustique/rustique.jpg);}
+/* img Zoom */
+.assiseZ {background-image: url(../images/material/facade/02-moellon-assise/assise.jpg);}
+/* End img Zoom*/
+/* img */
+.brique #jpg:before {content: url(../images/material/facade/04-brique/brique1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.brique #jpg {background-image: url(../images/material/facade/04-brique/brique0.jpg);}
+.brique #jpg:hover {background-image: url(../images/material/facade/04-brique/brique1.jpg);}
+.brique .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider briq*/
+/* img png*/
+.briq01 #png:before {content: url(../images/material/facade/04-brique/el/01.jpg); width:0; height:0; visibility:hidden; display: none;}
+.briq01 #png {background-image: url(../images/material/facade/04-brique/el/01.jpg);}
+.briq01 .inner {padding-top: calc(300 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.briq02 #png:before {content: url(../images/material/facade/04-brique/el/02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.briq02 #png {background-image: url(../images/material/facade/04-brique/el/02.jpg);}
+.briq02 .inner {padding-top: calc(300 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.briq03 #png:before {content: url(../images/material/facade/04-brique/el/03.jpg); width:0; height:0; visibility:hidden; display: none;}
+.briq03 #png {background-image: url(../images/material/facade/04-brique/el/03.jpg);}
+.briq03 .inner {padding-top: calc(300 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.briq04 #png:before {content: url(../images/material/facade/04-brique/el/04.jpg); width:0; height:0; visibility:hidden; display: none;}
+.briq04 #png {background-image: url(../images/material/facade/04-brique/el/04.jpg);}
+.briq04 .inner {padding-top: calc(300 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.briq05 #png:before {content: url(../images/material/facade/04-brique/el/05.jpg); width:0; height:0; visibility:hidden; display: none;}
+.briq05 #png {background-image: url(../images/material/facade/04-brique/el/05.jpg);}
+.briq05 .inner {padding-top: calc(300 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.briq06 #png:before {content: url(../images/material/facade/04-brique/el/06.jpg); width:0; height:0; visibility:hidden; display: none;}
+.briq06 #png {background-image: url(../images/material/facade/04-brique/el/06.jpg);}
+.briq06 .inner {padding-top: calc(300 / 300 * 100%); /* высота/ширина изображения */}
+/*End Slider briq*/
+/* img Zoom*/
+.briqueZ {background-image: url(../images/material/facade/04-brique/brique.jpg);}
+
+
+/* img */
+.genoises #jpg:before {content: url(../images/material/facade/05-genoises/genoises1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genoises #jpg {background-image: url(../images/material/facade/05-genoises/genoises0.jpg);}
+.genoises #jpg:hover {background-image: url(../images/material/facade/05-genoises/genoises1.jpg);}
+.genoises .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider genois*/
+/* img png*/
+.genois01 #png:before {content: url(../images/material/facade/05-genoises/el/01.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois01 #png {background-image: url(../images/material/facade/05-genoises/el/01.jpg);}
+.genois01 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois02 #png:before {content: url(../images/material/facade/05-genoises/el/02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois02 #png {background-image: url(../images/material/facade/05-genoises/el/02.jpg);}
+.genois02 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois03 #png:before {content: url(../images/material/facade/05-genoises/el/03.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois03 #png {background-image: url(../images/material/facade/05-genoises/el/03.jpg);}
+.genois03 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois04 #png:before {content: url(../images/material/facade/05-genoises/el/04.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois04 #png {background-image: url(../images/material/facade/05-genoises/el/04.jpg);}
+.genois04 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois05 #png:before {content: url(../images/material/facade/05-genoises/el/05.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois05 #png {background-image: url(../images/material/facade/05-genoises/el/05.jpg);}
+.genois05 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois06 #png:before {content: url(../images/material/facade/05-genoises/el/06.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois06 #png {background-image: url(../images/material/facade/05-genoises/el/06.jpg);}
+.genois06 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois07 #png:before {content: url(../images/material/facade/05-genoises/el/07.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois07 #png {background-image: url(../images/material/facade/05-genoises/el/07.jpg);}
+.genois07 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois08 #png:before {content: url(../images/material/facade/05-genoises/el/08.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois08 #png {background-image: url(../images/material/facade/05-genoises/el/08.jpg);}
+.genois08 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois09 #png:before {content: url(../images/material/facade/05-genoises/el/09.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois09 #png {background-image: url(../images/material/facade/05-genoises/el/09.jpg);}
+.genois09 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois10 #png:before {content: url(../images/material/facade/05-genoises/el/10.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois10 #png {background-image: url(../images/material/facade/05-genoises/el/10.jpg);}
+.genois10 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois11 #png:before {content: url(../images/material/facade/05-genoises/el/11.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois11 #png {background-image: url(../images/material/facade/05-genoises/el/11.jpg);}
+.genois11 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois12 #png:before {content: url(../images/material/facade/05-genoises/el/12.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois12 #png {background-image: url(../images/material/facade/05-genoises/el/12.jpg);}
+.genois12 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois13 #png:before {content: url(../images/material/facade/05-genoises/el/13.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois13 #png {background-image: url(../images/material/facade/05-genoises/el/13.jpg);}
+.genois13 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois14 #png:before {content: url(../images/material/facade/05-genoises/el/14.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois14 #png {background-image: url(../images/material/facade/05-genoises/el/14.jpg);}
+.genois14 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.genois15 #png:before {content: url(../images/material/facade/05-genoises/el/15.jpg); width:0; height:0; visibility:hidden; display: none;}
+.genois15 #png {background-image: url(../images/material/facade/05-genoises/el/15.jpg);}
+.genois15 .inner {padding-top: calc(200 / 300 * 100%); /* высота/ширина изображения */}
+/*End Slider genois*/
+/* img Zoom*/
+.genoisZ {background-image: url(../images/material/facade/05-genoises/genoises.jpg);}
+
+
+/* img */
+.pierreseche #jpg:before {content: url(../images/material/facade/06-seche/pierre-seche1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierreseche #jpg {background-image: url(../images/material/facade/06-seche/pierre-seche0.jpg);}
+.pierreseche #jpg:hover {background-image: url(../images/material/facade/06-seche/pierre-seche1.jpg);}
+.pierreseche .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider genois*/
+/* img png*/
+.pseche01 #png:before {content: url(../images/material/facade/06-seche/el/01.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pseche01 #png {background-image: url(../images/material/facade/06-seche/el/01.jpg);}
+.pseche01 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.pseche02 #png:before {content: url(../images/material/facade/06-seche/el/02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pseche02 #png {background-image: url(../images/material/facade/06-seche/el/02.jpg);}
+.pseche02 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.pseche03 #png:before {content: url(../images/material/facade/06-seche/el/03.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pseche03 #png {background-image: url(../images/material/facade/06-seche/el/03.jpg);}
+.pseche03 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.pseche04 #png:before {content: url(../images/material/facade/06-seche/el/04.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pseche04 #png {background-image: url(../images/material/facade/06-seche/el/04.jpg);}
+.pseche04 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.pseche05 #png:before {content: url(../images/material/facade/06-seche/el/05.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pseche05 #png {background-image: url(../images/material/facade/06-seche/el/05.jpg);}
+.pseche05 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.pseche06 #png:before {content: url(../images/material/facade/06-seche/el/06.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pseche06 #png {background-image: url(../images/material/facade/06-seche/el/06.jpg);}
+.pseche06 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.pseche07 #png:before {content: url(../images/material/facade/06-seche/el/07.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pseche07 #png {background-image: url(../images/material/facade/06-seche/el/07.jpg);}
+.pseche07 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/*End Slider genois*/
+/* img Zoom*/
+.pierresecheZ {background-image: url(../images/material/facade/06-seche/pierre-seche.jpg);}
+.pierresecheB {background-image: url(../images/material/facade/06-seche/pierre-secheB.jpg);}
+
+
+
+/* img */
+.pierresciee #jpg:before {content: url(../images/material/facade/07-sciee/pierre-sciee1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierresciee #jpg {background-image: url(../images/material/facade/07-sciee/pierre-sciee0.jpg);}
+.pierresciee #jpg:hover {background-image: url(../images/material/facade/07-sciee/pierre-sciee1.jpg);}
+.pierresciee .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider genois*/
+/* img png*/
+.psciee01 #png:before {content: url(../images/material/facade/07-sciee/el/01.jpg); width:0; height:0; visibility:hidden; display: none;}
+.psciee01 #png {background-image: url(../images/material/facade/07-sciee/el/01.jpg);}
+.psciee01 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.psciee02 #png:before {content: url(../images/material/facade/07-sciee/el/02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.psciee02 #png {background-image: url(../images/material/facade/07-sciee/el/02.jpg);}
+.psciee02 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/* img png*/
+.psciee03 #png:before {content: url(../images/material/facade/07-sciee/el/03.jpg); width:0; height:0; visibility:hidden; display: none;}
+.psciee03 #png {background-image: url(../images/material/facade/07-sciee/el/03.jpg);}
+.psciee03 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/*End Slider genois*/
+/* img Zoom*/
+.pierrescieeZ {background-image: url(../images/material/facade/07-sciee/pierre-sciee.jpg);}
+
+
+/* img */
+.eclat #jpg:before {content: url(../images/material/facade/08-eclat/eclat1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.eclat #jpg {background-image: url(../images/material/facade/08-eclat/eclat0.jpg);}
+.eclat #jpg:hover {background-image: url(../images/material/facade/08-eclat/eclat1.jpg);}
+.eclat .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider genois*/
+/* img png*/
+.eclat01 #png:before {content: url(../images/material/facade/08-eclat/el/01.jpg); width:0; height:0; visibility:hidden; display: none;}
+.eclat01 #png {background-image: url(../images/material/facade/08-eclat/el/01.jpg);}
+.eclat01 .inner {padding-top: calc(250 / 400 * 100%); /* высота/ширина изображения */}
+/*End Slider genois*/
+/* img Zoom*/
+.eclatZ {background-image: url(../images/material/facade/08-eclat/eclat.jpg);}
+.eclatP {background-image: url(../images/material/facade/08-eclat/eclatTP.jpg);}
+
+
+/******************************************************************************************************
+End Filling with data
+******************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+	.rbcolor label {letter-spacing: 0.05rem;}
+	.slwrap {width: auto;}
+	.slbar {width: 500px;}
+	.mwfh {max-width: 500px;}
+	.mwth {max-width: 300px;}
+	.mwrh {max-width: 400px;}
+	.slbut {width: 500px}
+	.sbbar {width: 400px;}
+	.ifrcrbc {width: 100%; max-width: 500px; height: auto; float: none; margin: 0 auto;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+	.scwrap {width: 100%;}
+	.rbcolor label {letter-spacing: normal;}
+	.slwrap {width: 100%;}
+	.slbar {width: 214px;}
+	.scroll {max-width: 320px;}
+	.mwfh {max-width: 320px;}
+	.mwth {max-width: 300px;}
+	.mwrh {max-width: 320px;}
+
+	.slnid {max-width: 60px;}
+	.slbut {width: 320px;}
+	.sbbar {width: 220px;}
+	.ifrcrbc {width: 100%; max-width: 500px; height: auto; float: none; margin: 0 auto 16px;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

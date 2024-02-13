@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/****************************************************************************************************
+rollet.css
+****************************************************************************************************/
+/* img */
+.awrollet #jpg:before {content: url(../images/equip/rollet/aw/mooveo/mooveo08.jpg); width:0; height:0; visibility:hidden; display: none;}
+.awrollet #jpg {background-image: url(../images/equip/rollet/aw/mooveo/mooveo04.jpg);}
+.awrollet #jpg:hover {background-image: url(../images/equip/rollet/aw/mooveo/mooveo08.jpg);}
+.awrollet .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.mooveo #jpg:before {content: url(../images/equip/rollet/aw/mooveo/mooveo03.jpg); width:0; height:0; visibility:hidden; display: none;}
+.mooveo #jpg {background-image: url(../images/equip/rollet/aw/mooveo/mooveo01.jpg);}
+.mooveo #jpg:hover {background-image: url(../images/equip/rollet/aw/mooveo/mooveo03.jpg);}
+.mooveo .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.tixit #jpg:before {content: url(../images/equip/rollet/aw/tixit/tixit02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tixit #jpg {background-image: url(../images/equip/rollet/aw/tixit/tixit01.jpg);}
+.tixit #jpg:hover {background-image: url(../images/equip/rollet/aw/tixit/tixit02.jpg);}
+.tixit .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.rolleasy #jpg:before {content: url(../images/equip/rollet/aw/rolleasy/rolleasy02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rolleasy #jpg {background-image: url(../images/equip/rollet/aw/rolleasy/rolleasy06.jpg);}
+.rolleasy #jpg:hover {background-image: url(../images/equip/rollet/aw/rolleasy/rolleasy02.jpg);}
+.rolleasy .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.moon #jpg:before {content: url(../images/equip/rollet/aw/moon/moon04.jpg); width:0; height:0; visibility:hidden; display: none;}
+.moon #jpg {background-image: url(../images/equip/rollet/aw/moon/moon05.jpg);}
+.moon #jpg:hover {background-image: url(../images/equip/rollet/aw/moon/moon04.jpg);}
+.moon .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.contura #jpg:before {content: url(../images/equip/rollet/aw/contura/contura02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.contura #jpg {background-image: url(../images/equip/rollet/aw/contura/contura01.jpg);}
+.contura #jpg:hover {background-image: url(../images/equip/rollet/aw/contura/contura02.jpg);}
+.contura .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.dune #jpg:before {content: url(../images/equip/rollet/aw/dune/dune03.jpg); width:0; height:0; visibility:hidden; display: none;}
+.dune #jpg {background-image: url(../images/equip/rollet/aw/dune/dune01.jpg);}
+.dune #jpg:hover {background-image: url(../images/equip/rollet/aw/dune/dune03.jpg);}
+.dune .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.rollover #jpg:before {content: url(../images/equip/rollet/aw/rollover/rollover04.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rollover #jpg {background-image: url(../images/equip/rollet/aw/rollover/rollover01.jpg);}
+.rollover #jpg:hover {background-image: url(../images/equip/rollet/aw/rollover/rollover04.jpg);}
+.rollover .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+
+/* img */
+.uwrollet #jpg:before {content: url(../images/equip/rollet/uw/rollinside/rollinside14.jpg); width:0; height:0; visibility:hidden; display: none;}
+.uwrollet #jpg {background-image: url(../images/equip/rollet/uw/rollinside/rollinside13.jpg);}
+.uwrollet #jpg:hover {background-image: url(../images/equip/rollet/uw/rollinside/rollinside14.jpg);}
+.uwrollet .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+
+
+/* img */
+.rollenergy #jpg:before {content: url(../images/equip/rollet/uw/rollenergy/rollenergy02.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rollenergy #jpg {background-image: url(../images/equip/rollet/uw/rollenergy/rollenergy01.jpg);}
+.rollenergy #jpg:hover {background-image: url(../images/equip/rollet/uw/rollenergy/rollenergy02.jpg);}
+.rollenergy .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.rollin #jpg:before {content: url(../images/equip/rollet/uw/rollin/rollin14.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rollin #jpg {background-image: url(../images/equip/rollet/uw/rollin/rollin15.jpg);}
+.rollin #jpg:hover {background-image: url(../images/equip/rollet/uw/rollin/rollin14.jpg);}
+.rollin .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.rollinside #jpg:before {content: url(../images/equip/rollet/uw/rollinside/rollinside07.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rollinside #jpg {background-image: url(../images/equip/rollet/uw/rollinside/rollinside02.jpg);}
+.rollinside #jpg:hover {background-image: url(../images/equip/rollet/uw/rollinside/rollinside07.jpg);}
+.rollinside .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img */
+.rollfit #jpg:before {content: url(../images/equip/rollet/uw/rollfit/rollfit03.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rollfit #jpg {background-image: url(../images/equip/rollet/uw/rollfit/rollfit02.jpg);}
+.rollfit #jpg:hover {background-image: url(../images/equip/rollet/uw/rollfit/rollfit03.jpg);}
+.rollfit .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img 3 */
+.fc-img {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+  justify-content: space-between;
+	align-items: flex-start;
+  width: 100%;
+}
+.fi-img {
+	flex: 0 1 auto;
+  width: 32%;
+  height: auto;
+}
+.ord1 {order: 1;}
+.ord2 {order: 2;}
+.ord3 {order: 3;}
+/* img 3 123 456*/
+.fimg1, .fimg2, .fimg3, .fimg4, .fimg5, .fimg6 {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	float: none;
+}
+/* img 3 1*/
+.fimg1 #jpg:before {content: url(../images/equip/rollet/aw/moon/moon11.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg1 #jpg {background-image: url(../images/equip/rollet/aw/moon/moon02.jpg);}
+.fimg1 #jpg:hover {background-image: url(../images/equip/rollet/aw/moon/moon11.jpg);}
+.fimg1 #jpg .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img 3 2*/
+.fimg2 #jpg:before {content: url(../images/equip/rollet/aw/moon/moon24.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg2 #jpg {background-image: url(../images/equip/rollet/aw/moon/moon19.jpg);}
+.fimg2 #jpg:hover {background-image: url(../images/equip/rollet/aw/moon/moon24.jpg);}
+.fimg2 #jpg .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img 3 3*/
+.fimg3 #jpg:before {content: url(../images/equip/rollet/aw/rollover/rollover06.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg3 #jpg {background-image: url(../images/equip/rollet/aw/rollover/rollover07.jpg);}
+.fimg3 #jpg:hover {background-image: url(../images/equip/rollet/aw/rollover/rollover06.jpg);}
+.fimg3 #jpg .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img 3 4*/
+.fimg4 #jpg:before {content: url(../images/equip/rollet/uw/rollin/rollin10.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg4 #jpg {background-image: url(../images/equip/rollet/uw/rollin/rollin09.jpg);}
+.fimg4 #jpg:hover {background-image: url(../images/equip/rollet/uw/rollin/rollin10.jpg);}
+.fimg4 #jpg .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img 3 4*/
+.fimg5 #jpg:before {content: url(../images/equip/rollet/uw/rollenergy/rollenergy09.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg5 #jpg {background-image: url(../images/equip/rollet/uw/rollenergy/rollenergy08.jpg);}
+.fimg5 #jpg:hover {background-image: url(../images/equip/rollet/uw/rollenergy/rollenergy09.jpg);}
+.fimg5 #jpg .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/* img 3 4*/
+.fimg6 #jpg:before {content: url(../images/equip/rollet/uw/rollenergy/rollenergy07.jpg); width:0; height:0; visibility:hidden; display: none;}
+.fimg6 #jpg {background-image: url(../images/equip/rollet/uw/rollenergy/rollenergy06.jpg);}
+.fimg6 #jpg:hover {background-image: url(../images/equip/rollet/uw/rollenergy/rollenergy07.jpg);}
+.fimg6 #jpg .inner {padding-top: 66.66666666666667%; /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .fi-img {width: 49%; }
+  .ord1 {order: 1;}
+  .ord2 {order: 2;}
+	.ord3 {display: none;}
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .fc-img {flex-direction: column;}
+	.fi-img {width: 100%; }
+	.ord1 {order: 1;}
+	.ord2 {display: none;}
+  .ord3 {display: none;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

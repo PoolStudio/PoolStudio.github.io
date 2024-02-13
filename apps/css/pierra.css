@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/****************************************************************************************************
+pierra.css
+****************************************************************************************************/
+/* img */
+.pierra #jpg:before {content: url(../images/info/factory/pierra/pierra0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierra #jpg {background-image: url(../images/info/factory/pierra/pierra.jpg);}
+.pierra #jpg:hover {background-image: url(../images/info/factory/pierra/pierra0.jpg);}
+.pierra .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pierra1 #jpg:before {content: url(../images/info/factory/pierra/pierra2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierra1 #jpg {background-image: url(../images/info/factory/pierra/pierra1.jpg);}
+.pierra1 #jpg:hover {background-image: url(../images/info/factory/pierra/pierra2.jpg);}
+.pierra1 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pierra2 #jpg:before {content: url(../images/info/factory/pierra/pierra4.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierra2 #jpg {background-image: url(../images/info/factory/pierra/pierra3.jpg);}
+.pierra2 #jpg:hover {background-image: url(../images/info/factory/pierra/pierra4.jpg);}
+.pierra2 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pierra3 #jpg:before {content: url(../images/info/factory/pierra/pierra6.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierra3 #jpg {background-image: url(../images/info/factory/pierra/pierra5.jpg);}
+.pierra3 #jpg:hover {background-image: url(../images/info/factory/pierra/pierra6.jpg);}
+.pierra3 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pierra4 #jpg:before {content: url(../images/info/factory/pierra/pierra8.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierra4 #jpg {background-image: url(../images/info/factory/pierra/pierra7.jpg);}
+.pierra4 #jpg:hover {background-image: url(../images/info/factory/pierra/pierra8.jpg);}
+.pierra4 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+END
+****************************************************************************************************/

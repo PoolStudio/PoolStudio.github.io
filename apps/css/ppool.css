@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/****************************************************************************************************
+ppool.css
+****************************************************************************************************/
+/* img */
+.ppool #jpg:before {content: url(../images/service/ppool/ppool2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ppool #jpg {background-image: url(../images/service/ppool/ppool1.jpg);}
+.ppool #jpg:hover {background-image: url(../images/service/ppool/ppool2.jpg);}
+.ppool .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.ppool1 #jpg:before {content: url(../images/service/ppool/ppool4.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ppool1 #jpg {background-image: url(../images/service/ppool/ppool3.jpg);}
+.ppool1 #jpg:hover {background-image: url(../images/service/ppool/ppool4.jpg);}
+.ppool1 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.ppool2 #jpg:before {content: url(../images/service/ppool/ppool6.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ppool2 #jpg {background-image: url(../images/service/ppool/ppool5.jpg);}
+.ppool2 #jpg:hover {background-image: url(../images/service/ppool/ppool6.jpg);}
+.ppool2 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.ppool3 #jpg:before {content: url(../images/service/ppool/ppool8.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ppool3 #jpg {background-image: url(../images/service/ppool/ppool7.jpg);}
+.ppool3 #jpg:hover {background-image: url(../images/service/ppool/ppool8.jpg);}
+.ppool3 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.ppool4 #jpg:before {content: url(../images/service/ppool/ppool10.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ppool4 #jpg {background-image: url(../images/service/ppool/ppool9.jpg);}
+.ppool4 #jpg:hover {background-image: url(../images/service/ppool/ppool10.jpg);}
+.ppool4 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.ppool5 #jpg:before {content: url(../images/service/ppool/ppool12.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ppool5 #jpg {background-image: url(../images/service/ppool/ppool11.jpg);}
+.ppool5 #jpg:hover {background-image: url(../images/service/ppool/ppool12.jpg);}
+.ppool5 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

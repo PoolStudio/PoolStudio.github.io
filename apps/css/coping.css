@@ -1,0 +1,1059 @@
+@charset "UTF-8";
+/****************************************************************************************************
+coping.css
+****************************************************************************************************/
+/* Sector rbcolor*/
+.sccont {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	/*background-color: BLUE;*/
+}
+.scwrap {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: GREEN;*/
+}
+.scnav {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: Pink;*/
+}
+.dbvo {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+.dnvo {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+/* Sector rbcolor*/
+/******************************************************************************************************
+Radio Button
+******************************************************************************************************/
+[type="radio"] {display: none;}
+.rbcolor {
+	display: inline-block;
+	margin: 0 auto;
+	padding: .8em 0 0 0;
+	width: auto;
+	background-color: #fff;
+}
+.rbcolor label {
+    display: block;
+		position: relative;
+		padding: 0.3em 0.8em;
+		font-size: 2em;
+		letter-spacing: 0.1rem;
+		text-align: left;
+		border-bottom: 1px solid rgba(204,204,204,1);
+		cursor: pointer;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+		-moz-user-select: none;     /* Firefox all */
+		-ms-user-select: none;       /* IE 10+ */
+		user-select: none;              /* Likely future */
+}
+.rbcolor label:first-of-type {border-top: 1px solid rgba(204,204,204,1);}
+.nts .rbcolor label:hover, .yts .rbcolor label:active {
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);
+	background: rgba(248,248,248,.5);
+}
+.rbcolor label:hover:after {box-shadow: inset 0 0 8px 1px rgba(255,255,255,1);}
+.rbcolor label:before {
+    content: "";
+		position: relative;
+		display: inline-block;
+    width: 60px;
+    height: 60px;
+		left: 0;
+		top: 0;
+		margin: 0 .8em 0 0;
+    background: #fff;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbcolor .cTonPierreNuance + label:before {border: 5px solid rgba(211,193,157,1);} /*Ton Pierre nuance (Натуральный)*/
+.rbcolor .cRoseProvence + label:before {border: 5px solid rgba(219,160,125,1);} /*Rose provence (Розовый)*/
+.rbcolor .cQuercy + label:before {border: 5px solid rgba(233,172,53,1);} /*Quercy (Желтый)*/
+.rbcolor .cGrisNuance + label:before {border: 5px solid rgba(175,177,178,1);} /*GrisNuance (Серый)*/
+.rbcolor .cSommieres + label:before {border: 5px solid rgba(226,194,173,1);} /*Sommieres (Светло-розовый)*/
+.rbcolor .cGuyenne + label:before {border: 5px solid rgba(238,213,185,1);} /*Guyenne (Светло-розовый)*/
+.rbcolor .cVendome + label:before {border: 5px solid rgba(232,214,188,1);} /*Vendome (Светло-бежевый)*/
+.rbcolor .cSarlat + label:before {border: 5px solid rgba(211,140,72,1);} /*Sarlat (Охра)*/
+.rbcolor .cAnthracite + label:before {border: 5px solid rgba(99,96,102,1);} /*Anthracite (Антрацит)*/
+.rbcolor .cMetalG + label:before {border: 5px solid rgba(56,51,46,1);} /*Metal (Металлический)*/
+.rbcolor .cGrisClairN + label:before {border: 5px solid rgba(208,212,215,1);} /*Gris (Серый)*/
+.rbcolor .cBoisD + label:before {border: 5px solid rgba(157,115,73,1);} /*Dalle&nbsp;Bois (Дерево)*/
+.rbcolor .cBoisL + label:before {border: 5px solid rgba(155,120,89,1);} /*Lame&nbsp;Bois (Дерево)*/
+.rbcolor .cBoisP + label:before {border: 5px solid rgba(94,51,26,1);} /*Planche&nbsp;Bois (Дерево)*/
+.rbcolor .cTaupeTp + label:before {border: 5px solid rgba(141,126,119,1);} /*Planche&nbsp;Taupe (Темно-серый)*/
+.rbcolor .cGris + label:before {border: 5px solid rgba(173,176,178,1);} /*Planche&nbsp;Gris (Серый)*/
+.rbcolor .cGrisClair + label:before {border: 5px solid rgba(175,177,178,1);} /*Gris&nbsp;clair (Светло-серый)*/
+.rbcolor label:after {
+    content: "";
+		position: absolute;
+		display: inline-block;
+    width: 60px;
+    height: 60px;
+		left: 0.8em;
+		top: 0.3em;
+		margin: 0 .8em 0 0;
+    border-radius: 50%;
+		vertical-align: middle;
+}
+.rbcolor .cTonPierreNuance + label:after {background-color: rgba(211,193,157,1);} /*Ton Pierre nuance (Натуральный)*/
+.rbcolor .cRoseProvence + label:after {background-color: rgba(219,160,125,1);} /*Rose provence (Розовый)*/
+.rbcolor .cQuercy + label:after {background-color: rgba(233,172,53,1);} /*Quercy (Желтый)*/
+.rbcolor .cGrisNuance + label:after {background-color: rgba(175,177,178,1);} /*GrisNuance (Серый)*/
+.rbcolor .cSommieres + label:after {background-color: rgba(226,194,173,1);} /*Sommieres (Светло-розовый)*/
+.rbcolor .cGuyenne + label:after {background-color: rgba(238,213,185,1);} /*Guyenne (Светло-розовый)*/
+.rbcolor .cVendome + label:after {background-color: rgba(232,214,188,1);} /*Vendome (Светло-бежевый)*/
+.rbcolor .cSarlat + label:after {background-color: rgba(211,140,72,1);} /*Sarlat (Охра)*/
+.rbcolor .cAnthracite + label:after {background-color: rgba(99,96,102,1);} /*Anthracite (Антрацит)*/
+.rbcolor .cMetalG + label:after {background-color: rgba(56,51,46,1);} /*Metal (Металлический)*/
+.rbcolor .cGrisClairN + label:after {background-color: rgba(208,212,215,1);} /*Gris (Серый)*/
+.rbcolor .cBoisD + label:after {background-color: rgba(157,115,73,1);} /*Dalle&nbsp;Bois (Дерево)*/
+.rbcolor .cBoisL + label:after {background-color: rgba(155,120,89,1);} /*Lame&nbsp;Bois (Дерево)*/
+.rbcolor .cBoisP + label:after {background-color: rgba(94,51,26,1);} /*Planche&nbsp;Bois (Дерево)*/
+.rbcolor .cTaupeTp + label:after {background-color: rgba(141,126,119,1);} /*Planche&nbsp;Taupe (Темно-серый)*/
+.rbcolor .cGris + label:after {background-color: rgba(173,176,178,1);} /*Planche&nbsp;Gris (Серый)*/
+.rbcolor .cGrisClair + label:after {background-color: rgba(175,177,178,1);} /*Gris&nbsp;clair (Светло-серый)*/
+.rbcolor .radio:checked + label:after {transform: scale(0.72,0.72);}
+/*End Radio Button*/
+/******************************************************************************************************
+Sector Slider
+******************************************************************************************************/
+.slcont {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	/*background-color: BLUE;*/
+}
+.slwrap {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: GREEN;*/
+}
+.slnav {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	/*background-color: Pink;*/
+}
+.slnav > .bttnsmbl {opacity: 1;}
+/*.slnav:hover > .slbar {box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);}*/
+.slbar {
+	display: block;
+	margin: 10px auto;
+	padding: 0;
+	width: 500px;
+	height: 28px;
+	border-radius: 8px;
+	border: 1px solid rgb(123,123,123);
+	opacity: 1;
+	position: relative;
+	background: rgba(252,252,252,1);
+  /*box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);*/
+}
+.slbar > .bttnsmbl {opacity: 1;}
+.slider {
+	margin: 0 !important;
+	position: relative !important;
+	top: -11px !important;
+	left: 108px;
+  left: 0;
+	cursor: e-resize;
+	/*transition: left .3s ease-in-out;*/
+}
+.prev, .next {cursor: pointer;}
+.slnum {
+	display: block;
+	margin: 0 auto;
+	padding: .8em 0 0;
+	width: auto;
+	text-align: center;
+	/*background-color: silver;*/
+}
+.slrol {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 6px 0 0;
+	width: auto;
+	text-align: center;
+	/*background-color: cyan;*/
+}
+.scroll {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	word-wrap: normal;
+	/*background-color: brown;*/
+}
+/* img */
+.slnip .inner {padding-top: calc(300 / 300 * 100%); /* высота/ширина изображения */}
+.slnip {width: 100%; max-width: 300px; height: auto; margin: 6px auto;}
+.slnip #png {
+	border: 1px solid  rgba(232,232,232,1);
+	border-radius: 8px;
+}
+.slnid .inner {padding-top: calc(300 / 300 * 100%); /* высота/ширина изображения */}
+.slnid {width: 100%; max-width: 96px; height: auto; margin-right: 5px; display: inline-block; position: relative;}
+.slnid {left: 0px; transition: left .1s ease-in-out;}
+.slnid #png {
+	border: 1px solid  rgba(232,232,232,1);
+	border-radius: 4px;
+}
+.nts .slnid:hover #png, .yts .slnid:active #png {
+	border-radius: 8px;
+	border-color: rgba(123,123,123,1);
+	box-shadow: inset 0 0 16px 1px rgba(153,153,153,.8), 0 0 8px 1px rgba(153,153,153,.8);
+	cursor: pointer;
+	box-shadow: 0 0 8px 1px rgba(153,153,153,.8);
+	transition: all .3s ease;
+	transform: scale(0.9);
+}
+.slcur #png {
+	border: 1px solid  rgba(123,123,123,1);
+	box-shadow: inset 0 0 1px 1px rgba(153,153,153,.8);
+}
+.nts .slcur:hover #png, .yts .slcur:active #png {
+	border-radius: 8px;
+	box-shadow: none;
+	border: 1px solid  rgba(51,51,51,1);
+	cursor: inherit;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+.slbut {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 6px 0 0;
+	width: 500px;
+	height: auto;
+	visibility: hidden;
+	/*background-color: cyan;*/
+}
+.sbleft, .sbright {
+	display: block;
+	position: relative;
+	width: 48px;
+	height: 24px;
+	margin: 0 2px 0 0;
+	float: left;
+	border: 1px solid  rgba(123,123,123,1);
+	border-radius: 4px;
+	background: rgba(252,252,252,1);
+	cursor: pointer;
+	font-size: 26px;
+	line-height: 0.9;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;       /* IE 10+ */
+	user-select: none;              /* Likely future */
+}
+.nts .sbleft:hover, .yts .sbleft:active {
+	box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);
+	border-color: rgba(102,102,102,1);
+}
+.nts .sbleft:active {
+	box-shadow: inset 0 0 8px 1px rgba(102,102,102,.8);
+	background: rgba(232,232,232,1);
+	border-color: rgba(51,51,51,1);
+}
+.sbright {margin: 0 0 0 2px;}
+.nts .sbright:hover, .yts .sbright:active {
+	box-shadow: inset 0 0 8px 1px rgba(153,153,153,.8);
+	border-color: rgba(102,102,102,1);
+}
+.nts .sbright:active {
+	box-shadow: inset 0 0 8px 1px rgba(102,102,102,.8);
+	background: rgba(232,232,232,1);
+	border-color: rgba(51,51,51,1);
+}
+.dsbleft {
+	position: relative;
+	width: 0;
+	height: 0;
+	left: 12px;
+	top: 2px;
+	border-right: 18px solid rgba(153,153,153,1);
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+}
+.nts .sbleft:hover .dsbleft, .yts .sbleft:active .dsbleft {border-right-color: rgba(102,102,102,1);}
+.nts .sbleft:active .dsbleft {border-right-color: rgba(51,51,51,1);}
+.dsbright {
+	position: relative;
+	width: 0;
+	height: 0;
+	left: 16px;
+	top: 2px;
+	border-left: 18px solid rgba(153,153,153,1);
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+}
+.nts .sbright:hover .dsbright, .yts .sbright:active .dsbright {border-left-color: rgba(102,102,102,1);}
+.nts .sbright:active .dsbright {border-right-color: rgba(51,51,51,1);}
+.sbbar {
+	display: block;
+	position: relative;
+	width: 400px;
+	height: 24px;
+	margin: 0 auto;
+	padding: 0;
+	float: left;
+	border: 1px solid rgb(123,123,123);
+	border-radius: 4px;
+	background: rgba(252,252,252,1);
+}
+.sbslider {
+	display: block;
+	position: relative;
+	margin: 0;
+	left: 0px;
+	width: 0px;
+	height: 22px;
+	border-radius: 4px;
+	border: 1px solid rgb(255,255,255);
+	background: rgba(171,171,171,1);
+	/*cursor: move;*/
+	transition: left .1s ease-in-out;
+	cursor: e-resize;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;       /* IE 10+ */
+	user-select: none;              /* Likely future */
+}
+.nts .sbslider:hover, .yts .sbslider:active {box-shadow: inset 0 0 8px 1px rgba(102,102,102,1); background: rgba(153,153,153,1);}
+.nts .sbslider:active {box-shadow: inset 0 0 8px 1px rgba(255,255,255,1); background: rgba(102,102,102,1);}
+/* img png*/
+.img-wrap #png {transition: background-image .3s ease-in-out;}
+/* End Sector Slider */
+/******************************************************************************************************
+Sector img Zoom
+******************************************************************************************************/
+/* img Zoom*/
+.zoomContainer {
+  /*border-radius: 8px;
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1),
+	inset 0 0 12px 1px rgba(255,255,255,1),
+	inset 0 0 16px 1px rgba(255,255,255,1);*/
+}
+.imgElZoom {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+.wrapElZoom {
+  border-radius: 8px;
+	box-shadow: inset 0 0 8px 1px rgba(255,255,255,1),
+	inset 0 0 12px 1px rgba(255,255,255,1),
+	inset 0 0 16px 1px rgba(255,255,255,1);
+  background-size: cover;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+.zoomLens {
+  border-radius: 2px;
+  opacity: 0.3 !important;
+}
+/* End img Zoom*/
+/******************************************************************************************************
+Filling with data
+******************************************************************************************************/
+/* img s-nav*/
+.coping #jpg:before {content: url(../images/material/coping/pierra0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.coping #jpg {background-image: url(../images/material/coping/pierra1.jpg);}
+.coping #jpg:hover {background-image: url(../images/material/coping/pierra0.jpg);}
+.coping .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.rustiquebullee #jpg:before {content: url(../images/material/coping/01-rustique-bullee/rustique-bullee1.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustiquebullee #jpg {background-image: url(../images/material/coping/01-rustique-bullee/rustique-bullee2.jpg);}
+.rustiquebullee #jpg:hover {background-image: url(../images/material/coping/01-rustique-bullee/rustique-bullee1.jpg);}
+.rustiquebullee .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.rustiquebullee0 #jpg:before {content: url(../images/material/coping/01-rustique-bullee/rustique-bullee.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustiquebullee0 #jpg {background-image: url(../images/material/coping/01-rustique-bullee/rustique-bullee0.jpg);}
+.rustiquebullee0 #jpg:hover {background-image: url(../images/material/coping/01-rustique-bullee/rustique-bullee.jpg);}
+.rustiquebullee0 .inner {padding-top: calc(400 / 600 * 100%); }
+/*Slider rustb*/
+/* img png*/
+.rustb01 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/01-MD25.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb01 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/01-MD25.jpg);}
+/* img png*/
+.rustb02 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/02-MA2510.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb02 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/02-MA2510.jpg);}
+/* img png*/
+.rustb03 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/03-MA25IV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb03 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/03-MA25IV.jpg);}
+/* img png*/
+.rustb04 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/04-MA25IG9075.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb04 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/04-MA25IG9075.jpg);}
+/* img png*/
+.rustb05 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/05-MA25IG4595.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb05 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/05-MA25IG4595.jpg);}
+/* img png*/
+.rustb06 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/06-MA25ID90150.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb06 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/06-MA25ID90150.jpg);}
+/* img png*/
+.rustb07 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/07-MC2575.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb07 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/07-MC2575.jpg);}
+/* img png*/
+.rustb08 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/08-MC2595.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb08 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/08-MC2595.jpg);}
+/* img png*/
+.rustb09 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/09-MC25150.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb09 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/09-MC25150.jpg);}
+/* img png*/
+.rustb10 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/10-MP28.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb10 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/10-MP28.jpg);}
+/* img png*/
+.rustb11 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/11-MAP2815.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb11 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/11-MAP2815.jpg);}
+/* img png*/
+.rustb12 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/12-MAP28V.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb12 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/12-MAP28V.jpg);}
+/* img png*/
+.rustb13 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/13-MAP28IV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb13 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/13-MAP28IV.jpg);}
+/* img png*/
+.rustb14 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/14-MAP28ID.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb14 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/14-MAP28ID.jpg);}
+/* img png*/
+.rustb15 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/15-MCP2850.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb15 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/15-MCP2850.jpg);}
+/* img png*/
+.rustb16 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/16-MCP28I150.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb16 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/16-MCP28I150.jpg);}
+/* img png*/
+.rustb17 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/17-MD32.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb17 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/17-MD32.jpg);}
+/* img png*/
+.rustb18 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/18-MA3215.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb18 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/18-MA3215.jpg);}
+/* img png*/
+.rustb19 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/19-MA32V.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb19 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/19-MA32V.jpg);}
+/* img png*/
+.rustb20 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/20-MA32I.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb20 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/20-MA32I.jpg);}
+/* img png*/
+.rustb21 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/21-MA32IV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb21 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/21-MA32IV.jpg);}
+/* img png*/
+.rustb22 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/22-MA32ID.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb22 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/22-MA32ID.jpg);}
+/* img png*/
+.rustb23 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/23-MC3261.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb23 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/23-MC3261.jpg);}
+/* img png*/
+.rustb24 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/24-MC32I61.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb24 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/24-MC32I61.jpg);}
+/* img png*/
+.rustb25 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/25-MP33.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb25 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/25-MP33.jpg);}
+/* img png*/
+.rustb26 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/26-MP33I2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb26 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/26-MP33I2.jpg);}
+/* img png*/
+.rustb27 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/27-MP3315.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb27 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/27-MP3315.jpg);}
+/* img png*/
+.rustb28 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/28-MAP33V.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb28 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/28-MAP33V.jpg);}
+/* img png*/
+.rustb29 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/29-MAP33IV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb29 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/29-MAP33IV.jpg);}
+/* img png*/
+.rustb30 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/30-MAP33IG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb30 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/30-MAP33IG.jpg);}
+/* img png*/
+.rustb31 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/31-MCP3350.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb31 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/31-MCP3350.jpg);}
+/* img png*/
+.rustb32 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/32-MCP33I100.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb32 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/32-MCP33I100.jpg);}
+/* img png*/
+.rustb33 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/33-MP28I2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb33 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/33-MP28I2.jpg);}
+/* img png*/
+.rustb34 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/34-DA75.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb34 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/34-DA75.jpg);}
+/* img png*/
+.rustb35 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/35-DA50.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb35 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/35-DA50.jpg);}
+/* img png*/
+.rustb36 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/36-DACOSKIRB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb36 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/36-DACOSKIRB.jpg);}
+/* img png*/
+.rustb37 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/37-GRIL.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb37 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/37-GRIL.jpg);}
+/* img png*/
+.rustb38 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/38-AGRILG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb38 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/38-AGRILG.jpg);}
+/* img png*/
+.rustb39 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/39-MARPLA.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb39 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/39-MARPLA.jpg);}
+/* img png*/
+.rustb40 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/40-MARRET.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb40 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/40-MARRET.jpg);}
+/* img png*/
+.rustb41 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/41-PEDI68.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb41 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/41-PEDI68.jpg);}
+/* img png*/
+.rustb42 #png:before {content: url(../images/material/coping/01-rustique-bullee/el/42-PEDI503.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rustb42 #png {background-image: url(../images/material/coping/01-rustique-bullee/el/42-PEDI503.jpg);}
+/*End Slider rustb*/
+/* img Zoom*/
+.rustiquebulleeZ {background-image: url(../images/material/coping/01-rustique-bullee/z/rustique-bullee.jpg);}
+/* img */
+.pierredulot #jpg:before {content: url(../images/material/coping/02-pierre-du-lot/pierre-du-lot2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierredulot #jpg {background-image: url(../images/material/coping/02-pierre-du-lot/pierre-du-lot1.jpg);}
+.pierredulot #jpg:hover {background-image: url(../images/material/coping/02-pierre-du-lot/pierre-du-lot2.jpg);}
+.pierredulot .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.pierredulot0 #jpg:before {content: url(../images/material/coping/02-pierre-du-lot/pierre-du-lot.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierredulot0 #jpg {background-image: url(../images/material/coping/02-pierre-du-lot/pierre-du-lot0.jpg);}
+.pierredulot0 #jpg:hover {background-image: url(../images/material/coping/02-pierre-du-lot/pierre-du-lot.jpg);}
+.pierredulot0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider pierdl*/
+/* img png*/
+.pierdl01 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/01-MPDPL.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl01 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/01-MPDPL.jpg);}
+/* img png*/
+.pierdl02 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/02-MAPPL.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl02 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/02-MAPPL.jpg);}
+/* img png*/
+.pierdl03 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/03-MAPPLV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl03 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/03-MAPPLV.jpg);}
+/* img png*/
+.pierdl04 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/04-MAPPLI.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl04 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/04-MAPPLI.jpg);}
+/* img png*/
+.pierdl05 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/05-MAPPLIG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl05 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/05-MAPPLIG.jpg);}
+/* img png*/
+.pierdl06 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/06-MCPPL150.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl06 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/06-MCPPL150.jpg);}
+/* img png*/
+.pierdl07 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/07-MCPPLI150.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl07 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/07-MCPPLI150.jpg);}
+/* img png*/
+.pierdl08 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/08-DA502PL.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl08 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/08-DA502PL.jpg);}
+/* img png*/
+.pierdl09 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/09-DA50PLG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl09 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/09-DA50PLG.jpg);}
+/* img png*/
+.pierdl10 #png:before {content: url(../images/material/coping/02-pierre-du-lot/el/10-DACOSKIPLG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.pierdl10 #png {background-image: url(../images/material/coping/02-pierre-du-lot/el/10-DACOSKIPLG.jpg);}
+/*End Slider pierdl*/
+/* img */
+.pierredulotZ {background-image: url(../images/material/coping/02-pierre-du-lot/z/pierre-du-lot.jpg);}
+/* img */
+.collegiale #jpg:before {content: url(../images/material/coping/03-collegiale/collegiale2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.collegiale #jpg {background-image: url(../images/material/coping/03-collegiale/collegiale1.jpg);}
+.collegiale #jpg:hover {background-image: url(../images/material/coping/03-collegiale/collegiale2.jpg);}
+.collegiale .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.collegiale0 #jpg:before {content: url(../images/material/coping/03-collegiale/collegiale.jpg); width:0; height:0; visibility:hidden; display: none;}
+.collegiale0 #jpg {background-image: url(../images/material/coping/03-collegiale/collegiale0.jpg);}
+.collegiale0 #jpg:hover {background-image: url(../images/material/coping/03-collegiale/collegiale.jpg);}
+.collegiale0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider colleg*/
+/* img png*/
+.colleg01 #png:before {content: url(../images/material/coping/03-collegiale/el/01-MPDCOQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colleg01 #png {background-image: url(../images/material/coping/03-collegiale/el/01-MPDCOQ.jpg);}
+/* img png*/
+.colleg02 #png:before {content: url(../images/material/coping/03-collegiale/el/02-MAPCOQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colleg02 #png {background-image: url(../images/material/coping/03-collegiale/el/02-MAPCOQ.jpg);}
+/* img png*/
+.colleg03 #png:before {content: url(../images/material/coping/03-collegiale/el/03-MAPCOIQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colleg03 #png {background-image: url(../images/material/coping/03-collegiale/el/03-MAPCOIQ.jpg);}
+/* img png*/
+.colleg04 #png:before {content: url(../images/material/coping/03-collegiale/el/04-MAPCOID150Q.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colleg04 #png {background-image: url(../images/material/coping/03-collegiale/el/04-MAPCOID150Q.jpg);}
+/* img png*/
+.colleg05 #png:before {content: url(../images/material/coping/03-collegiale/el/05-MCPCO150Q.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colleg05 #png {background-image: url(../images/material/coping/03-collegiale/el/05-MCPCO150Q.jpg);}
+/* img png*/
+.colleg06 #png:before {content: url(../images/material/coping/03-collegiale/el/06-OPCOQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colleg06 #png {background-image: url(../images/material/coping/03-collegiale/el/06-OPCOQ.jpg);}
+/* img png*/
+.colleg07 #png:before {content: url(../images/material/coping/03-collegiale/el/07-DRCO64Q.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colleg07 #png {background-image: url(../images/material/coping/03-collegiale/el/07-DRCO64Q.jpg);}
+/* img png*/
+.colleg08 #png:before {content: url(../images/material/coping/03-collegiale/el/08-PLINCOQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colleg08 #png {background-image: url(../images/material/coping/03-collegiale/el/08-PLINCOQ.jpg);}
+/* img png*/
+.colleg09 #png:before {content: url(../images/material/coping/03-collegiale/el/09-DACOSKICOQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.colleg09 #png {background-image: url(../images/material/coping/03-collegiale/el/09-DACOSKICOQ.jpg);}
+/*End Slider colleg*/
+/* img */
+.collegialeZ {background-image: url(../images/material/coping/03-collegiale/z/collegiale.jpg);}
+/* img */
+.florence #jpg:before {content: url(../images/material/coping/04-florence/florence2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.florence #jpg {background-image: url(../images/material/coping/04-florence/florence1.jpg);}
+.florence #jpg:hover {background-image: url(../images/material/coping/04-florence/florence2.jpg);}
+.florence .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.florence0 #jpg:before {content: url(../images/material/coping/04-florence/florence.jpg); width:0; height:0; visibility:hidden; display: none;}
+.florence0 #jpg {background-image: url(../images/material/coping/04-florence/florence0.jpg);}
+.florence0 #jpg:hover {background-image: url(../images/material/coping/04-florence/florence.jpg);}
+.florence0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider floren*/
+/* img png*/
+.floren01 #png:before {content: url(../images/material/coping/04-florence/el/01-MPDFLQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren01 #png {background-image: url(../images/material/coping/04-florence/el/01-MPDFLQ.jpg);}
+/* img png*/
+.floren02 #png:before {content: url(../images/material/coping/04-florence/el/02-MAPFLQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren02 #png {background-image: url(../images/material/coping/04-florence/el/02-MAPFLQ.jpg);}
+/* img png*/
+.floren03 #png:before {content: url(../images/material/coping/04-florence/el/03-MAPFLVQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren03 #png {background-image: url(../images/material/coping/04-florence/el/03-MAPFLVQ.jpg);}
+/* img png*/
+.floren04 #png:before {content: url(../images/material/coping/04-florence/el/04-MAPFLIQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren04 #png {background-image: url(../images/material/coping/04-florence/el/04-MAPFLIQ.jpg);}
+/* img png*/
+.floren05 #png:before {content: url(../images/material/coping/04-florence/el/05-MAPFLIGQ.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren05 #png {background-image: url(../images/material/coping/04-florence/el/05-MAPFLIGQ.jpg);}
+/* img png*/
+.floren06 #png:before {content: url(../images/material/coping/04-florence/el/06-MCPFL150Q.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren06 #png {background-image: url(../images/material/coping/04-florence/el/06-MCPFL150Q.jpg);}
+/* img png*/
+.floren07 #png:before {content: url(../images/material/coping/04-florence/el/07-MCPFLI150Q.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren07 #png {background-image: url(../images/material/coping/04-florence/el/07-MCPFLI150Q.jpg);}
+/* img png*/
+.floren08 #png:before {content: url(../images/material/coping/04-florence/el/08-MPDFLLTP.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren08 #png {background-image: url(../images/material/coping/04-florence/el/08-MPDFLLTP.jpg);}
+/* img png*/
+.floren09 #png:before {content: url(../images/material/coping/04-florence/el/09-MAPFLLTP.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren09 #png {background-image: url(../images/material/coping/04-florence/el/09-MAPFLLTP.jpg);}
+/* img png*/
+.floren10 #png:before {content: url(../images/material/coping/04-florence/el/10-MAPFLLITP.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren10 #png {background-image: url(../images/material/coping/04-florence/el/10-MAPFLLITP.jpg);}
+/* img png*/
+.floren11 #png:before {content: url(../images/material/coping/04-florence/el/11-DCFL50Q.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren11 #png {background-image: url(../images/material/coping/04-florence/el/11-DCFL50Q.jpg);}
+/* img png*/
+.floren12 #png:before {content: url(../images/material/coping/04-florence/el/12-OPFLP.jpg); width:0; height:0; visibility:hidden; display: none;}
+.floren12 #png {background-image: url(../images/material/coping/04-florence/el/12-OPFLP.jpg);}
+/*End Slider floren*/
+/* img */
+.florenceZ {background-image: url(../images/material/coping/04-florence/z/florence.jpg);}
+/* img */
+.abbaye #jpg:before {content: url(../images/material/coping/05-abbaye/abbaye2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbaye #jpg {background-image: url(../images/material/coping/05-abbaye/abbaye1.jpg);}
+.abbaye #jpg:hover {background-image: url(../images/material/coping/05-abbaye/abbaye2.jpg);}
+.abbaye .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.abbaye0 #jpg:before {content: url(../images/material/coping/05-abbaye/abbaye.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbaye0 #jpg {background-image: url(../images/material/coping/05-abbaye/abbaye0.jpg);}
+.abbaye0 #jpg:hover {background-image: url(../images/material/coping/05-abbaye/abbaye.jpg);}
+.abbaye0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider abbay*/
+/* img png*/
+.abbay01 #png:before {content: url(../images/material/coping/05-abbaye/el/01-MPDAB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay01 #png {background-image: url(../images/material/coping/05-abbaye/el/01-MPDAB.jpg);}
+/* img png*/
+.abbay02 #png:before {content: url(../images/material/coping/05-abbaye/el/02-MAPAB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay02 #png {background-image: url(../images/material/coping/05-abbaye/el/02-MAPAB.jpg);}
+/* img png*/
+.abbay03 #png:before {content: url(../images/material/coping/05-abbaye/el/03-MAPABI.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay03 #png {background-image: url(../images/material/coping/05-abbaye/el/03-MAPABI.jpg);}
+/* img png*/
+.abbay04 #png:before {content: url(../images/material/coping/05-abbaye/el/04-MAPABIG150.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay04 #png {background-image: url(../images/material/coping/05-abbaye/el/04-MAPABIG150.jpg);}
+/* img png*/
+.abbay05 #png:before {content: url(../images/material/coping/05-abbaye/el/05-MCPAB150.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay05 #png {background-image: url(../images/material/coping/05-abbaye/el/05-MCPAB150.jpg);}
+/* img png*/
+.abbay06 #png:before {content: url(../images/material/coping/05-abbaye/el/06-MCPABI61.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay06 #png {background-image: url(../images/material/coping/05-abbaye/el/06-MCPABI61.jpg);}
+/* img png*/
+.abbay07 #png:before {content: url(../images/material/coping/05-abbaye/el/07-MBR.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay07 #png {background-image: url(../images/material/coping/05-abbaye/el/07-MBR.jpg);}
+/* img png*/
+.abbay08 #png:before {content: url(../images/material/coping/05-abbaye/el/08-MBRG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay08 #png {background-image: url(../images/material/coping/05-abbaye/el/08-MBRG.jpg);}
+/* img png*/
+.abbay09 #png:before {content: url(../images/material/coping/05-abbaye/el/09-MBRS.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay09 #png {background-image: url(../images/material/coping/05-abbaye/el/09-MBRS.jpg);}
+/* img png*/
+.abbay10 #png:before {content: url(../images/material/coping/05-abbaye/el/10-MBRV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay10 #png {background-image: url(../images/material/coping/05-abbaye/el/10-MBRV.jpg);}
+/* img png*/
+.abbay11 #png:before {content: url(../images/material/coping/05-abbaye/el/11-MBRET50.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay11 #png {background-image: url(../images/material/coping/05-abbaye/el/11-MBRET50.jpg);}
+/* img png*/
+.abbay12 #png:before {content: url(../images/material/coping/05-abbaye/el/12-MBRA.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay12 #png {background-image: url(../images/material/coping/05-abbaye/el/12-MBRA.jpg);}
+/* img png*/
+.abbay13 #png:before {content: url(../images/material/coping/05-abbaye/el/13-MBBA.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay13 #png {background-image: url(../images/material/coping/05-abbaye/el/13-MBBA.jpg);}
+/* img png*/
+.abbay14 #png:before {content: url(../images/material/coping/05-abbaye/el/14-DCAB50.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay14 #png {background-image: url(../images/material/coping/05-abbaye/el/14-DCAB50.jpg);}
+/* img png*/
+.abbay15 #png:before {content: url(../images/material/coping/05-abbaye/el/15-OPAB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay15 #png {background-image: url(../images/material/coping/05-abbaye/el/15-OPAB.jpg);}
+/* img png*/
+.abbay16 #png:before {content: url(../images/material/coping/05-abbaye/el/16-DRAB66.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay16 #png {background-image: url(../images/material/coping/05-abbaye/el/16-DRAB66.jpg);}
+/* img png*/
+.abbay17 #png:before {content: url(../images/material/coping/05-abbaye/el/17-DRAB80.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay17 #png {background-image: url(../images/material/coping/05-abbaye/el/17-DRAB80.jpg);}
+/* img png*/
+.abbay18 #png:before {content: url(../images/material/coping/05-abbaye/el/18-СС352.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay18 #png {background-image: url(../images/material/coping/05-abbaye/el/18-СС352.jpg);}
+/* img png*/
+.abbay19 #png:before {content: url(../images/material/coping/05-abbaye/el/19-СС118.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay19 #png {background-image: url(../images/material/coping/05-abbaye/el/19-СС118.jpg);}
+/* img png*/
+.abbay20 #png:before {content: url(../images/material/coping/05-abbaye/el/20-СС196.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay20 #png {background-image: url(../images/material/coping/05-abbaye/el/20-СС196.jpg);}
+/* img png*/
+.abbay21 #png:before {content: url(../images/material/coping/05-abbaye/el/21-СС274RA.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay21 #png {background-image: url(../images/material/coping/05-abbaye/el/21-СС274RA.jpg);}
+/* img png*/
+.abbay22#png:before {content: url(../images/material/coping/05-abbaye/el/22-СС352.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay22 #png {background-image: url(../images/material/coping/05-abbaye/el/22-СС352.jpg);}
+/* img png*/
+.abbay23 #png:before {content: url(../images/material/coping/05-abbaye/el/23-PLINAB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay23 #png {background-image: url(../images/material/coping/05-abbaye/el/23-PLINAB.jpg);}
+/* img png*/
+.abbay24 #png:before {content: url(../images/material/coping/05-abbaye/el/24-DACOSKIAB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay24 #png {background-image: url(../images/material/coping/05-abbaye/el/24-DACOSKIAB.jpg);}
+/* img png*/
+.abbay25 #png:before {content: url(../images/material/coping/05-abbaye/el/25-CANIAB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay25 #png {background-image: url(../images/material/coping/05-abbaye/el/25-CANIAB.jpg);}
+/* img png*/
+.abbay26 #png:before {content: url(../images/material/coping/05-abbaye/el/26-CANIABE.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay26 #png {background-image: url(../images/material/coping/05-abbaye/el/26-CANIABE.jpg);}
+/* img png*/
+.abbay27 #png:before {content: url(../images/material/coping/05-abbaye/el/27-CANIABA.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay27 #png {background-image: url(../images/material/coping/05-abbaye/el/27-CANIABA.jpg);}
+/* img png*/
+.abbay28 #png:before {content: url(../images/material/coping/05-abbaye/el/28-CANIABAE.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay28 #png {background-image: url(../images/material/coping/05-abbaye/el/28-CANIABAE.jpg);}
+/* img png*/
+.abbay29 #png:before {content: url(../images/material/coping/05-abbaye/el/29-CANIABC.jpg); width:0; height:0; visibility:hidden; display: none;}
+.abbay29 #png {background-image: url(../images/material/coping/05-abbaye/el/29-CANIABC.jpg);}
+/*End Slider abbay*/
+/* img */
+.abbayeZ {background-image: url(../images/material/coping/05-abbaye/z/abbaye.jpg);}
+/* img */
+.beauregard #jpg:before {content: url(../images/material/coping/06-beauregard/beauregard2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beauregard #jpg {background-image: url(../images/material/coping/06-beauregard/beauregard1.jpg);}
+.beauregard #jpg:hover {background-image: url(../images/material/coping/06-beauregard/beauregard2.jpg);}
+.beauregard .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.beauregard0 #jpg:before {content: url(../images/material/coping/06-beauregard/beauregard.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beauregard0 #jpg {background-image: url(../images/material/coping/06-beauregard/beauregard0.jpg);}
+.beauregard0 #jpg:hover {background-image: url(../images/material/coping/06-beauregard/beauregard.jpg);}
+.beauregard0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider beaur*/
+/* img png*/
+.beaur01 #png:before {content: url(../images/material/coping/06-beauregard/el/01-MPDBEAUVV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur01 #png {background-image: url(../images/material/coping/06-beauregard/el/01-MPDBEAUVV.jpg);}
+/* img png*/
+.beaur02 #png:before {content: url(../images/material/coping/06-beauregard/el/02-MAPBEAUVV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur02 #png {background-image: url(../images/material/coping/06-beauregard/el/02-MAPBEAUVV.jpg);}
+/* img png*/
+.beaur03 #png:before {content: url(../images/material/coping/06-beauregard/el/03-MCPBEA150VV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur03 #png {background-image: url(../images/material/coping/06-beauregard/el/03-MCPBEA150VV.jpg);}
+/* img png*/
+.beaur04 #png:before {content: url(../images/material/coping/06-beauregard/el/04-BEAUVV.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur04 #png {background-image: url(../images/material/coping/06-beauregard/el/04-BEAUVV.jpg);}
+/* img png*/
+.beaur05 #png:before {content: url(../images/material/coping/06-beauregard/el/05-BEAUVS.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur05 #png {background-image: url(../images/material/coping/06-beauregard/el/05-BEAUVS.jpg);}
+/* img png*/
+.beaur06 #png:before {content: url(../images/material/coping/06-beauregard/el/06-BEAUCC118V.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur06 #png {background-image: url(../images/material/coping/06-beauregard/el/06-BEAUCC118V.jpg);}
+/* img png*/
+.beaur07 #png:before {content: url(../images/material/coping/06-beauregard/el/07-BEAUCC196V.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur07 #png {background-image: url(../images/material/coping/06-beauregard/el/07-BEAUCC196V.jpg);}
+/* img png*/
+.beaur08 #png:before {content: url(../images/material/coping/06-beauregard/el/08-BEAUCC274V.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur08 #png {background-image: url(../images/material/coping/06-beauregard/el/08-BEAUCC274V.jpg);}
+/* img png*/
+.beaur09 #png:before {content: url(../images/material/coping/06-beauregard/el/09-BEAUCC352V.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur09 #png {background-image: url(../images/material/coping/06-beauregard/el/09-BEAUCC352V.jpg);}
+/* img png*/
+.beaur10 #png:before {content: url(../images/material/coping/06-beauregard/el/10-BEAUCC352V.jpg); width:0; height:0; visibility:hidden; display: none;}
+.beaur10 #png {background-image: url(../images/material/coping/06-beauregard/el/10-BEAUCC352V.jpg);}
+/*End Slider beaur*/
+/* img */
+.beauregardZ {background-image: url(../images/material/coping/06-beauregard/z/beauregard.jpg);}
+/* img */
+.ardoisiere #jpg:before {content: url(../images/material/coping/07-ardoisiere/ardoisiere2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardoisiere #jpg {background-image: url(../images/material/coping/07-ardoisiere/ardoisiere1.jpg);}
+.ardoisiere #jpg:hover {background-image: url(../images/material/coping/07-ardoisiere/ardoisiere2.jpg);}
+.ardoisiere .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.ardoisiere0 #jpg:before {content: url(../images/material/coping/07-ardoisiere/ardoisiere.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardoisiere0 #jpg {background-image: url(../images/material/coping/07-ardoisiere/ardoisiere0.jpg);}
+.ardoisiere0 #jpg:hover {background-image: url(../images/material/coping/07-ardoisiere/ardoisiere.jpg);}
+.ardoisiere0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider ardo*/
+/* img png*/
+.ardo01 #png:before {content: url(../images/material/coping/07-ardoisiere/el/01-MPDARG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo01 #png {background-image: url(../images/material/coping/07-ardoisiere/el/01-MPDARG.jpg);}
+/* img png*/
+.ardo02 #png:before {content: url(../images/material/coping/07-ardoisiere/el/02-MAPAR15G.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo02 #png {background-image: url(../images/material/coping/07-ardoisiere/el/02-MAPAR15G.jpg);}
+/* img png*/
+.ardo03 #png:before {content: url(../images/material/coping/07-ardoisiere/el/03-MAPARVG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo03 #png {background-image: url(../images/material/coping/07-ardoisiere/el/03-MAPARVG.jpg);}
+/* img png*/
+.ardo04 #png:before {content: url(../images/material/coping/07-ardoisiere/el/04-MAPARIVG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo04 #png {background-image: url(../images/material/coping/07-ardoisiere/el/04-MAPARIVG.jpg);}
+/* img png*/
+.ardo05 #png:before {content: url(../images/material/coping/07-ardoisiere/el/05-DRAR60G.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo05 #png {background-image: url(../images/material/coping/07-ardoisiere/el/05-DRAR60G.jpg);}
+/* img png*/
+.ardo06 #png:before {content: url(../images/material/coping/07-ardoisiere/el/06-DACOSKIARG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo06 #png {background-image: url(../images/material/coping/07-ardoisiere/el/06-DACOSKIARG.jpg);}
+/* img png*/
+.ardo07 #png:before {content: url(../images/material/coping/07-ardoisiere/el/07-CANIARG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo07 #png {background-image: url(../images/material/coping/07-ardoisiere/el/07-CANIARG.jpg);}
+/* img png*/
+.ardo08 #png:before {content: url(../images/material/coping/07-ardoisiere/el/08-CANIAREG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo08 #png {background-image: url(../images/material/coping/07-ardoisiere/el/08-CANIAREG.jpg);}
+/* img png*/
+.ardo09 #png:before {content: url(../images/material/coping/07-ardoisiere/el/09-CANIARAG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo09 #png {background-image: url(../images/material/coping/07-ardoisiere/el/09-CANIARAG.jpg);}
+/* img png*/
+.ardo10 #png:before {content: url(../images/material/coping/07-ardoisiere/el/10-CANIARAEG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo10 #png {background-image: url(../images/material/coping/07-ardoisiere/el/10-CANIARAEG.jpg);}
+/* img png*/
+.ardo11 #png:before {content: url(../images/material/coping/07-ardoisiere/el/11-CANIARCG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ardo11 #png {background-image: url(../images/material/coping/07-ardoisiere/el/11-CANIARCG.jpg);}
+/*End Slider ardo*/
+/* img */
+.ardoisiereZ {background-image: url(../images/material/coping/07-ardoisiere/z/ardoisiere.jpg);}
+/* img */
+.ghisa #jpg:before {content: url(../images/material/coping/08-ghisa/ghisa2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ghisa #jpg {background-image: url(../images/material/coping/08-ghisa/ghisa1.jpg);}
+.ghisa #jpg:hover {background-image: url(../images/material/coping/08-ghisa/ghisa2.jpg);}
+.ghisa .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.ghisa0 #jpg:before {content: url(../images/material/coping/08-ghisa/ghisa.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ghisa0 #jpg {background-image: url(../images/material/coping/08-ghisa/ghisa0.jpg);}
+.ghisa0 #jpg:hover {background-image: url(../images/material/coping/08-ghisa/ghisa.jpg);}
+.ghisa0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider ghis*/
+/* img png*/
+.ghis01 #png:before {content: url(../images/material/coping/08-ghisa/el/01-MPDGH.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ghis01 #png {background-image: url(../images/material/coping/08-ghisa/el/01-MPDGH.jpg);}
+/* img png*/
+.ghis02 #png:before {content: url(../images/material/coping/08-ghisa/el/02-MPDGHG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ghis02 #png {background-image: url(../images/material/coping/08-ghisa/el/02-MPDGHG.jpg);}
+/* img png*/
+.ghis03 #png:before {content: url(../images/material/coping/08-ghisa/el/03-DRGH752M.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ghis03 #png {background-image: url(../images/material/coping/08-ghisa/el/03-DRGH752M.jpg);}
+/* img png*/
+.ghis04 #png:before {content: url(../images/material/coping/08-ghisa/el/04-DRGH75.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ghis04 #png {background-image: url(../images/material/coping/08-ghisa/el/04-DRGH75.jpg);}
+/* img png*/
+.ghis05 #png:before {content: url(../images/material/coping/08-ghisa/el/05-BORMERI75G.jpg); width:0; height:0; visibility:hidden; display: none;}
+.ghis05 #png {background-image: url(../images/material/coping/08-ghisa/el/05-BORMERI75G.jpg);}
+/*End Slider ghis*/
+/* img */
+.ghisaZ {background-image: url(../images/material/coping/08-ghisa/z/ghisa.jpg);}
+/* img */
+.nevada #jpg:before {content: url(../images/material/coping/09-nevada/nevada2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.nevada #jpg {background-image: url(../images/material/coping/09-nevada/nevada1.jpg);}
+.nevada #jpg:hover {background-image: url(../images/material/coping/09-nevada/nevada2.jpg);}
+.nevada .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.nevada0 #jpg:before {content: url(../images/material/coping/09-nevada/nevada.jpg); width:0; height:0; visibility:hidden; display: none;}
+.nevada0 #jpg {background-image: url(../images/material/coping/09-nevada/nevada0.jpg);}
+.nevada0 #jpg:hover {background-image: url(../images/material/coping/09-nevada/nevada.jpg);}
+.nevada0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider neva*/
+/* img png*/
+.neva01 #png:before {content: url(../images/material/coping/09-nevada/el/01-DA602NETP.jpg); width:0; height:0; visibility:hidden; display: none;}
+.neva01 #png {background-image: url(../images/material/coping/09-nevada/el/01-DA602NETP.jpg);}
+/* img png*/
+.neva02 #png:before {content: url(../images/material/coping/09-nevada/el/02-DA602NEG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.neva02 #png {background-image: url(../images/material/coping/09-nevada/el/02-DA602NEG.jpg);}
+/*End Slider neva*/
+/* img */
+.nevadaZ {background-image: url(../images/material/coping/09-nevada/z/nevada.jpg);}
+/* img */
+.tennesseeD #jpg:before {content: url(../images/material/coping/10-tennessee/tennesseeD2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tennesseeD #jpg {background-image: url(../images/material/coping/10-tennessee/tennesseeD1.jpg);}
+.tennesseeD #jpg:hover {background-image: url(../images/material/coping/10-tennessee/tennesseeD2.jpg);}
+.tennesseeD .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.tennesseeD0 #jpg:before {content: url(../images/material/coping/10-tennessee/tennesseeD.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tennesseeD0 #jpg {background-image: url(../images/material/coping/10-tennessee/tennesseeD0.jpg);}
+.tennesseeD0 #jpg:hover {background-image: url(../images/material/coping/10-tennessee/tennesseeD.jpg);}
+.tennesseeD0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.tennesseeDZ {background-image: url(../images/material/coping/10-tennessee/z/tennesseeD.jpg);}
+/* img */
+.tennesseeL #jpg:before {content: url(../images/material/coping/10-tennessee/tennesseeL2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tennesseeL #jpg {background-image: url(../images/material/coping/10-tennessee/tennesseeL1.jpg);}
+.tennesseeL #jpg:hover {background-image: url(../images/material/coping/10-tennessee/tennesseeL2.jpg);}
+.tennesseeL .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.tennesseeL0 #jpg:before {content: url(../images/material/coping/10-tennessee/tennesseeL.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tennesseeL0 #jpg {background-image: url(../images/material/coping/10-tennessee/tennesseeL0.jpg);}
+.tennesseeL0 #jpg:hover {background-image: url(../images/material/coping/10-tennessee/tennesseeL.jpg);}
+.tennesseeL0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.tennesseeLZ {background-image: url(../images/material/coping/10-tennessee/z/tennesseeL.jpg);}
+/* img */
+.tennesseeL01 #jpg:before {content: url(../images/material/coping/10-tennessee/tennesseeB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tennesseeL01 #jpg {background-image: url(../images/material/coping/10-tennessee/tennesseeB01.jpg);}
+.tennesseeL01 #jpg:hover {background-image: url(../images/material/coping/10-tennessee/tennesseeB.jpg);}
+.tennesseeL01 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.tennesseeG #jpg:before {content: url(../images/material/coping/10-tennessee/tennesseeG2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tennesseeG #jpg {background-image: url(../images/material/coping/10-tennessee/tennesseeG1.jpg);}
+.tennesseeG #jpg:hover {background-image: url(../images/material/coping/10-tennessee/tennesseeG2.jpg);}
+.tennesseeG .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.tennesseeG0 #jpg:before {content: url(../images/material/coping/10-tennessee/tennesseeG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tennesseeG0 #jpg {background-image: url(../images/material/coping/10-tennessee/tennesseeG0.jpg);}
+.tennesseeG0 #jpg:hover {background-image: url(../images/material/coping/10-tennessee/tennesseeG.jpg);}
+.tennesseeG0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.tennesseeGZ {background-image: url(../images/material/coping/10-tennessee/z/tennesseeG.jpg);}
+/*Slider tenn*/
+/* img png*/
+.tenn01 #png:before {content: url(../images/material/coping/10-tennessee/el/01-MPDTEB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tenn01 #png {background-image: url(../images/material/coping/10-tennessee/el/01-MPDTEB.jpg);}
+/* img png*/
+.tenn02 #png:before {content: url(../images/material/coping/10-tennessee/el/02-MAPTEVB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tenn02 #png {background-image: url(../images/material/coping/10-tennessee/el/02-MAPTEVB.jpg);}
+/* img png*/
+.tenn03 #png:before {content: url(../images/material/coping/10-tennessee/el/03-MAPTEIVB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tenn03 #png {background-image: url(../images/material/coping/10-tennessee/el/03-MAPTEIVB.jpg);}
+/* img png*/
+.tenn04 #png:before {content: url(../images/material/coping/10-tennessee/el/04-DA50TEB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tenn04 #png {background-image: url(../images/material/coping/10-tennessee/el/04-DA50TEB.jpg);}
+/* img png*/
+.tenn05 #png:before {content: url(../images/material/coping/10-tennessee/el/05-LAMEB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tenn05 #png {background-image: url(../images/material/coping/10-tennessee/el/05-LAMEB.jpg);}
+/* img png*/
+.tenn06 #png:before {content: url(../images/material/coping/10-tennessee/el/06-PLAN35.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tenn06 #png {background-image: url(../images/material/coping/10-tennessee/el/06-PLAN35.jpg);}
+/* img png*/
+.tenn07 #png:before {content: url(../images/material/coping/10-tennessee/el/07-DACOSKITEB.jpg); width:0; height:0; visibility:hidden; display: none;}
+.tenn07 #png {background-image: url(../images/material/coping/10-tennessee/el/07-DACOSKITEB.jpg);}
+/*End Slider tenn*/
+/* img */
+.angeroise #jpg:before {content: url(../images/material/coping/11-angeroise/angeroise2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.angeroise #jpg {background-image: url(../images/material/coping/11-angeroise/angeroise1.jpg);}
+.angeroise #jpg:hover {background-image: url(../images/material/coping/11-angeroise/angeroise2.jpg);}
+.angeroise .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.angeroise0 #jpg:before {content: url(../images/material/coping/11-angeroise/angeroise.jpg); width:0; height:0; visibility:hidden; display: none;}
+.angeroise0 #jpg {background-image: url(../images/material/coping/11-angeroise/angeroise0.jpg);}
+.angeroise0 #jpg:hover {background-image: url(../images/material/coping/11-angeroise/angeroise.jpg);}
+.angeroise0 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/*Slider anger*/
+/* img png*/
+.anger01 #png:before {content: url(../images/material/coping/11-angeroise/el/01-MPDANG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger01 #png {background-image: url(../images/material/coping/11-angeroise/el/01-MPDANG.jpg);}
+/* img png*/
+.anger02 #png:before {content: url(../images/material/coping/11-angeroise/el/02-MAPAN15G.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger02 #png {background-image: url(../images/material/coping/11-angeroise/el/02-MAPAN15G.jpg);}
+/* img png*/
+.anger03 #png:before {content: url(../images/material/coping/11-angeroise/el/03-MAPANVG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger03 #png {background-image: url(../images/material/coping/11-angeroise/el/03-MAPANVG.jpg);}
+/* img png*/
+.anger04 #png:before {content: url(../images/material/coping/11-angeroise/el/04-MAPANIVG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger04 #png {background-image: url(../images/material/coping/11-angeroise/el/04-MAPANIVG.jpg);}
+/* img png*/
+.anger05 #png:before {content: url(../images/material/coping/11-angeroise/el/05-DANG60.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger05 #png {background-image: url(../images/material/coping/11-angeroise/el/05-DANG60.jpg);}
+/* img png*/
+.anger06 #png:before {content: url(../images/material/coping/11-angeroise/el/06-DANGSKIA.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger06 #png {background-image: url(../images/material/coping/11-angeroise/el/06-DANGSKIA.jpg);}
+/* img png*/
+.anger07 #png:before {content: url(../images/material/coping/11-angeroise/el/07-CANIANG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger07 #png {background-image: url(../images/material/coping/11-angeroise/el/07-CANIANG.jpg);}
+/* img png*/
+.anger08 #png:before {content: url(../images/material/coping/11-angeroise/el/08-CANIANEG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger08 #png {background-image: url(../images/material/coping/11-angeroise/el/08-CANIANEG.jpg);}
+/* img png*/
+.anger09 #png:before {content: url(../images/material/coping/11-angeroise/el/09-CANIANAG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger09 #png {background-image: url(../images/material/coping/11-angeroise/el/09-CANIANAG.jpg);}
+/* img png*/
+.anger10 #png:before {content: url(../images/material/coping/11-angeroise/el/10-CANIANAEG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger10 #png {background-image: url(../images/material/coping/11-angeroise/el/10-CANIANAEG.jpg);}
+/* img png*/
+.anger11 #png:before {content: url(../images/material/coping/11-angeroise/el/11-CANIANCG.jpg); width:0; height:0; visibility:hidden; display: none;}
+.anger11 #png {background-image: url(../images/material/coping/11-angeroise/el/11-CANIANCG.jpg);}
+/*End Slider anger*/
+/* img */
+.angeroiseZ {background-image: url(../images/material/coping/11-angeroise/z/angeroise.jpg);}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+  .rbcolor label {letter-spacing: 0.05rem;}
+	.slwrap {width: auto;}
+	.slbar {width: 500px;}
+	.slnip {max-width: 300px;}
+	.slbut {width: 500px}
+	.sbbar {width: 400px;}
+	.ifrcrbc {width: 100%; max-width: 500px; height: auto; float: none; margin: 0 auto;}
+
+  .contElZoom {
+    display: inline-block;
+    padding: 0 0 16px;
+    width: 100%;
+  }
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+  .scwrap {width: 100%;}
+  .rbcolor label {letter-spacing: normal;}
+  .slwrap {width: 100%;}
+  .slbar {width: 214px;}
+  .scroll {max-width: 320px;}
+  .slnip {max-width: 300px;}
+  .slnid {max-width: 60px;}
+  .slbut {width: 320px;}
+  .sbbar {width: 220px;}
+  .ifrcrbc {width: 100%; max-width: 500px; height: auto; float: none; margin: 0 auto 16px;}
+
+  .contElZoom {padding: 0;}
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/

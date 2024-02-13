@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/****************************************************************************************************
+rpool.css
+****************************************************************************************************/
+/* img */
+.rpool #jpg:before {content: url(../images/service/rpool/rpool0.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rpool #jpg {background-image: url(../images/service/rpool/rpool.jpg);}
+.rpool #jpg:hover {background-image: url(../images/service/rpool/rpool0.jpg);}
+.rpool .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.rpool1 #jpg:before {content: url(../images/service/rpool/rpool2.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rpool1 #jpg {background-image: url(../images/service/rpool/rpool1.jpg);}
+.rpool1 #jpg:hover {background-image: url(../images/service/rpool/rpool2.jpg);}
+.rpool1 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/* img */
+.rpool2 #jpg:before {content: url(../images/service/rpool/rpool4.jpg); width:0; height:0; visibility:hidden; display: none;}
+.rpool2 #jpg {background-image: url(../images/service/rpool/rpool3.jpg);}
+.rpool2 #jpg:hover {background-image: url(../images/service/rpool/rpool4.jpg);}
+.rpool2 .inner {padding-top: calc(400 / 600 * 100%); /* высота/ширина изображения */}
+/****************************************************************************************************
+Медиа-запросы
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1024px и 768px 1200px и 900px
+****************************************************************************************************/
+/****************************************************************************************************
+Медиа-запросы 1200px
+****************************************************************************************************/
+@media only screen and (max-width : 1024px) {
+}
+/****************************************************************************************************
+Медиа-запросы 900px
+****************************************************************************************************/
+@media screen and (max-width : 768px) {
+}
+/****************************************************************************************************
+END
+****************************************************************************************************/
