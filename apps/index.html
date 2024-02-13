@@ -1,1 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta http-equiv="refresh" content="60;URL=https://www.pearldragon.ru/" />
+<style>
+outer {
+  position: relative;
+  width: auto;
+  margin: auto;
+  float: none;
+  display: block;
+  text-align: center;
+}
+.inner {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+a {
+  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+ 	font-size: 3rem;
+	text-decoration: none;
+	outline-style: none;
+	color: #0B0B4D;
+  border-bottom: 1px solid #0B0B4D;
+}
+a:hover {
+	color: #00008B;
+  border-color: #00008B;
+}
+p {
+  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+  color: #0B0B4D;
+  font-size: 2rem;
+}
 
+@import url(https://fonts.googleapis.com/css?family=Poiret+One); 
+
+body {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  padding-top: 1em;
+  background: #fff;
+}
+ol {
+  background-color: black;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0.5em;
+  height: 6em;
+  overflow: hidden;
+  //min-width: 590px;
+  border-style: solid;
+  border-color: black;
+  border-width: 20px 10px;
+}
+
+li {
+  float: left;
+  padding: 0 0.5em;
+  background-color: #333;
+  margin: 0 0.5em;
+  font-family: Poiret One, monospace;
+  color: #ddd;
+}
+
+div {
+  float: none;
+  position: relative;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+span {
+  display: block;
+  font-size: 6em;
+  line-height: 1em;
+}
+
+.sec .one {
+  float: left;
+  animation-name: one-step-sec;
+  animation-duration: 10s;
+}
+
+.sec .ten {
+  float: left;
+  animation-name: ten-step-sec;
+  animation-duration: 60s;
+}
+
+.min .one {
+  float: left;
+  animation-name: one-step-min;
+  animation-duration: 600s;
+}
+
+.min .ten {
+  float: left;
+  animation-name: ten-step-min;
+  animation-duration: 3600s;
+}
+
+.hour .one {
+  float: left;
+  animation-name: one-step-hour;
+  animation-duration: 36000s;
+}
+
+.hour .ten {
+  float: left;
+  animation-name: ten-step-hour;
+  animation-duration: 360000s;
+}
+
+@keyframes one-step-sec {
+  from {
+    top: 0;
+  }
+  to {
+    top: -60em; 
+  }
+}
+
+@keyframes ten-step-sec {
+  15% { top: 0; }
+  16.66666666666667%, 31.66666666666667% { top: -6em;}
+  33.33333333333334%, 48.33333333333333% { top: -12em;}
+  50%, 65% { top: -18em;}
+  66.66666666666668%, 81.66666666666667% { top: -24em;}
+  83.33333333333335%, 98.33333333333333% { top: -30em;}
+  100% { top: -36em;}
+}
+
+@keyframes one-step-min {
+  9.83% { top: 0; }
+  10%, 19.83% { top: -6em;}
+  20%, 29.83% { top: -12em;}
+  30%, 39.83% { top: -18em;}
+  40%, 49.83% { top: -24em;}
+  50%, 59.83% { top: -30em;}
+  60%, 69.83% { top: -36em;}
+  70%, 79.83% { top: -42em;}
+  80%, 89.83% { top: -48em;}
+  90%, 99.83% { top: -54em;}
+  100% { top: -60em;}
+}
+
+@keyframes ten-step-min {
+  16.6383% { top: 0; }
+  16.66666666666667%, 33.30496% { top: -6em;}
+  33.33333333333334%, 49.97163% { top: -12em;}
+  50%, 66.638296% { top: -18em;}
+  66.66666666666668%, 83.30496% { top: -24em;}
+  83.33333333333335%, 99.97163% { top: -30em;}
+  100% { top: -36em;}
+}
+
+@keyframes one-step-hour {
+  9.83% { top: 0; }
+  10%, 19.83% { top: -6em;}
+  20%, 29.83% { top: -12em;}
+  30%, 39.83% { top: -18em;}
+  40%, 49.83% { top: -24em;}
+  50%, 59.83% { top: -30em;}
+  60%, 69.83% { top: -36em;}
+  70%, 79.83% { top: -42em;}
+  80%, 89.83% { top: -48em;}
+  90%, 99.83% { top: -54em;}
+  100% { top: -60em;}
+}
+
+@keyframes ten-step-hour {
+  9.83% { top: 0; }
+  10%, 19.83% { top: -6em;}
+  20%, 29.83% { top: -12em;}
+  30%, 39.83% { top: -18em;}
+  40%, 49.83% { top: -24em;}
+  50%, 59.83% { top: -30em;}
+  60%, 69.83% { top: -36em;}
+  70%, 79.83% { top: -42em;}
+  80%, 89.83% { top: -48em;}
+  90%, 99.83% { top: -54em;}
+  100% { top: -60em;}
+}
+
+</style>
+</head>
+<body>
+  <div class="outer">  
+    <div class="inner">
+      <p>Timer: 60 sec</p>
+    </div>
+
+  <div class="outer">
+
+<ol class="clock">
+  <li class="hour">
+    <div class="ten">
+      <span>0</span>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>0</span>
+    </div>
+    <div class="one">
+      <span>0</span>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>0</span>
+    </div>
+  </li>
+  <li class="min">
+    <div class="ten">
+      <span>0</span>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>0</span>
+    </div>
+    <div class="one">
+      <span>0</span>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>0</span>
+    </div>
+  </li>
+  <li class="sec">
+    <div class="ten">
+      <span>0</span>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>0</span>
+    </div>
+    <div class="one">
+      <span>0</span>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>0</span>
+    </div>
+  </li>
+</ol>
+
+
+  </div>
+
+  <div class="outer">
+    <div class="inner">
+      <a href="https://www.pearldragon.ru/">pearldragon.ru</a>
+      <!--img src="loading.gif" alt="Loading"-->
+    </div>
+    <div class="inner">
+      <a href="https://PoolStudio.github.io/apps/">apps</a>
+      <!--img src="loading.gif" alt="Loading"-->
+    </div>
+  </div>
+  </div>
+</body>
+</html>
