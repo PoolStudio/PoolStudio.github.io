@@ -142,8 +142,8 @@ function setvar(dn,fn) {
   }
   else {
     weboff = false; /*Net*/
-    pshttp = 'http://poolstudio.github.io/';
-    aphttp = 'http://poolstudio.github.io/';
+    pshttp = 'http://poolstudio.github.io/apps/';
+    aphttp = 'http://poolstudio.github.io/apps/';
     /*gsps = pshttp;*/
     gsps = '/';
     gsap = aphttp;
