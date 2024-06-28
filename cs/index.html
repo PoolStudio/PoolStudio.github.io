@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send Screen Info</title>
+</head>
+<body>
+    <script>
+        // Тут получаем разрешение экрана
+        const screenWidth = window.screen.width;
+        const screenHeight = window.screen.height;
+
+        // Тут определяем ориентацию экрана
+        let orientation = (screenWidth > screenHeight) ? 'Landscape' : 'Portrait';
+
+        // Формируем данные для отправки в Qnext
+        const data = {
+            width: screenWidth,
+            height: screenHeight,
+            orientation: orientation
+        };
+
+        // Ссылка WebHook (Qnext)
+        const webhookUrl = 'https://qnext.app/bin/webhooks/8588/619/1MRTTiQ9RKAy8aD3';
+
+        // Функция для отправки данных на WebHook
+        async function sendData(url, data) {
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                console.log('Success:', result);
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        // Отправляем данные
+        sendData(webhookUrl, data);
+
+ //window.location.replace('https://t.me/PoolStudioBot'); // Куда будем перенаправлять пользователя
+    </script>
+</body>
+</html>
 
