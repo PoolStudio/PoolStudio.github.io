@@ -3,19 +3,6 @@
 <head>
     <title>Info</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-<script>
-const postData = async (url = '', data = {}) => {
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  });
-  return response.json(); 
-}
-postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp })
-</script> 
 </head>
 <body>
   <!--div class="outer">  
@@ -36,14 +23,15 @@ postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: wind
     let browser = navigator.userAgent;
     document.writeln('<p>'+browser+"</p>");
 
-    let data = {
+    let inf = {
           width: screenWidth,
           height: screenHeight,
           orient: orientation,
           brows: browser
         };
 
-    const sendData = async (url = '', data = {}) => {
+
+    const postData = async (url = '', data = {}) => {
       const response = await fetch(url, {
         method: 'POST',
         headers: {
@@ -53,10 +41,9 @@ postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: wind
       });
       return response.json(); 
     }
-    sendData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: data })
+    postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp, info: inf })
 
   </script>
-
 
 <br><br><br>
 <div id="navig" class="alert alert-waring">
