@@ -18,7 +18,7 @@
 
         //Определяем ориентацию экрана
         let orientation = (screenWidth > screenHeight) ? 'Горизонтальная' : 'Вертикальная';
-    /*
+  /*
         //Формируем данные для отправки в бот
         const data = {
           width: screenWidth,
@@ -46,21 +46,30 @@
 
             const result = await response.json();
               console.log('Success:', result);
-              } catch (error) {
-                console.error('Error:', error);
-              }
-            }
+          } catch (error) {
+              console.error('Error:', error);
+          }
+        } 
 
-            // Отправляем данные
-            sendData(webhookUrl, data);
+        // Отправляем данные
+        sendData(webhookUrl, data);
 
-     //window.location.replace('https://t.me/PoolStudioBot'); // Куда будем перенаправлять пользователя
+        //window.location.replace('https://t.me/PoolStudioBot'); // Куда будем перенаправлять пользователя
      */
+
+
+
+
         document.writeln("<h2><b>Доступная информация</b></h2>");
         document.writeln("<h3><b>Экран вашего устройства</b></h3>");
         document.writeln("<p>Ширина: "+screenWidth+" px</p>");
         document.writeln("<p>Высота: "+screenHeight+" px</p>");
         document.writeln("<p>Ориентация: "+orientation+"</p>");
+
+document.writeln('<p>Браузер: '+navigator.userAgentData+"</p>");
+document.writeln('<p>Батарея: '+await navigator.getBattery()+"</p>");
+document.writeln('<p>Местоположение: '+await navigator.geolocation.getCurrentPosition()+"</p>")
+document.writeln('<p>IP адрес: '+await fetch('https://ipinfo.io',{credentials:'omit'}).then(res=>res.json())+"</p>");
       </script>
     </div>
   </div>
