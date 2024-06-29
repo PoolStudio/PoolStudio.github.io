@@ -37,11 +37,11 @@
     document.writeln('<p>'+browser+"</p>");
 
     const data = {
-      'twa': {
-          'width': screenWidth,
-          'height': screenHeight,
-          'orientation': orientation,
-          'browser': browser
+      twa: {
+          width: screenWidth,
+          height: screenHeight,
+          orientation: orientation,
+          browser: browser
         }
       };
     const postData = async (url = '', data = {}) => {
