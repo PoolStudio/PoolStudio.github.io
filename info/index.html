@@ -60,19 +60,6 @@
 <br><br><br>
 <div id="navig" class="alert alert-waring">
 </div>
-<script>
-  const postData = async (url = '', data = {}) => {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    });
-    return response.json(); 
-  }
-  postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp })
-</script>
 
 <!--script>
 
