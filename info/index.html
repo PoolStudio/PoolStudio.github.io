@@ -35,12 +35,43 @@
     document.write("<h3><b>Браузер</b></h3>");
     let browser = navigator.userAgent;
     document.writeln('<p>'+browser+"</p>");
+
+    const data = {
+          width: screenWidth,
+          height: screenHeight,
+          orientation: orientation,
+          browser: browser
+        };
+    const postData = async (url = '', data = {}) => {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      return response.json(); 
+    }
+    postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: data })
   </script>
 
 
 <br><br><br>
 <div id="navig" class="alert alert-waring">
 </div>
+<script>
+  const postData = async (url = '', data = {}) => {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+    return response.json(); 
+  }
+  postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp })
+</script>
 
 <!--script>
 
