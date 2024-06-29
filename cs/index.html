@@ -61,15 +61,25 @@
 
 
         document.writeln("<h2><b>Доступная информация</b></h2>");
-        document.writeln("<h3><b>Экран вашего устройства</b></h3>");
-        document.writeln("<p>Ширина: "+screenWidth+" px</p>");
-        document.writeln("<p>Высота: "+screenHeight+" px</p>");
-        document.writeln("<p>Ориентация: "+orientation+"</p>");
+        document.write("<h3><b>Экран вашего устройства</b></h3>");
+        document.write("<p>Ширина: "+screenWidth+" px</p>");
+        document.write("<p>Высота: "+screenHeight+" px</p>");
+        document.write("<p>Ориентация: "+orientation+"</p>");
 
+
+console.log('Браузер: ',navigator.userAgentData);
+console.log('Батарея: ',await navigator.getBattery());
+console.log('Местоположение: ',await navigator.geolocation.getCurrentPosition())
+console.log('IP адрес: ', await fetch('https://ipinfo.io',{credentials:'omit'}).then(res=>res.json()));
+
+
+
+/*
 document.writeln('<p>Браузер: '+navigator.userAgentData+"</p>");
 document.writeln('<p>Батарея: '+await navigator.getBattery()+"</p>");
 document.writeln('<p>Местоположение: '+await navigator.geolocation.getCurrentPosition()+"</p>")
 document.writeln('<p>IP адрес: '+await fetch('https://ipinfo.io',{credentials:'omit'}).then(res=>res.json())+"</p>");
+  */
       </script>
     </div>
   </div>
