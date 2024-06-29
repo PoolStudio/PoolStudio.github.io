@@ -9,84 +9,32 @@
       <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="PoolStudioBot" data-size="large" data-radius="10" data-auth-url="https://poolstudio.github.io/cs/" data-request-access="write"></script>
     </div>
   </div-->
-  <div class="outer">  
-    <div class="inner">
-      <script>
-        //Получаем разрешение экрана
-        const screenWidth = window.screen.width;
-        const screenHeight = window.screen.height;
-
-        //Определяем ориентацию экрана
-        let orientation = (screenWidth > screenHeight) ? 'Горизонтальная' : 'Вертикальная';
-  /*
-        //Формируем данные для отправки в бот
-        const data = {
-          width: screenWidth,
-          height: screenHeight,
-          orientation: orientation
-        };
-
-        //Ссылка WebHook (бот)
-        const webhookUrl = 'https://qnext.app/bin/webhooks/8588/619/1MRTTiQ9RKAy8aD3';
-
-        //Отправка данных на WebHook
-        async function sendData(url, data) {
-          try {
-            const response = await fetch(url, {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(data)
-            });
-
-            if (!response.ok) {
-              throw new Error(`Error: ${response.statusText}`);
-            }
-
-            const result = await response.json();
-              console.log('Success:', result);
-          } catch (error) {
-              console.error('Error:', error);
-          }
-        } 
-
-        // Отправляем данные
-        sendData(webhookUrl, data);
-
-        //window.location.replace('https://t.me/PoolStudioBot'); // Куда будем перенаправлять пользователя
-     */
+  <script>
+    document.writeln("<h2><b>Доступная информация</b></h2>");
+    document.write("<h3><b>Экран вашего устройства</b></h3>");
+    let screenWidth = window.screen.width;
+    document.write("<p>Ширина: "+screenWidth+" px</p>");
+    let screenHeight = window.screen.height;
+    document.write("<p>Высота: "+screenHeight+" px</p>");
+    let orientation = (screenWidth > screenHeight) ? 'Горизонтальная' : 'Вертикальная';
+    document.write("<p>Ориентация: "+orientation+"</p>");
+    let browser = navigator.userAgent;
+    document.writeln('<p>Браузер: '+browser+"</p>");
+  </script>
 
 
+<br><br><br>
+<div id="navig" class="alert alert-waring">
+</div>
 
+<!--script>
 
-        document.writeln("<h2><b>Доступная информация</b></h2>");
-        document.write("<h3><b>Экран вашего устройства</b></h3>");
-        document.write("<p>Ширина: "+screenWidth+" px</p>");
-        document.write("<p>Высота: "+screenHeight+" px</p>");
-        document.write("<p>Ориентация: "+orientation+"</p>");
-
-
-console.log('Браузер: ',navigator.userAgentData);
-console.log('Батарея: ',await navigator.getBattery());
-console.log('Местоположение: ',await navigator.geolocation.getCurrentPosition())
-console.log('IP адрес: ', await fetch('https://ipinfo.io',{credentials:'omit'}).then(res=>res.json()));
-
-const browser = navigator.userAgentData;
-document.writeln('<p>Браузер: '+browser+"</p>");
-const battery = await navigator.getBattery();
-document.writeln('<p>Батарея: '+battery+"</p>");
-
-
-
-/*
-document.writeln('<p>Браузер: '+navigator.userAgentData+"</p>");
-document.writeln('<p>Батарея: '+await navigator.getBattery()+"</p>");
-document.writeln('<p>Местоположение: '+await navigator.geolocation.getCurrentPosition()+"</p>")
-document.writeln('<p>IP адрес: '+await fetch('https://ipinfo.io',{credentials:'omit'}).then(res=>res.json())+"</p>");
-  */
-      </script>
-    </div>
-  </div>
+var navig = "";
+for (var property in navigator) {
+  navig += "<strong>"+property+"</strong> :" + navigator[property];
+  navig +="<br />";
+}
+document.getElementById("navig").innerHTML = navig;
+</script-->
 </body>
 </html>
