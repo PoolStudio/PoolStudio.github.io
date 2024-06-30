@@ -3,66 +3,15 @@
 <head>
     <title>Info</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+    * {
+      line-height: .5;
+    }
+  </style>
 </head>
 <body>
-  <!--div class="outer">  
-    <div class="inner">
-      <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="PoolStudioBot" data-size="large" data-radius="10" data-auth-url="https://poolstudio.github.io/cs/" data-request-access="write"></script>
-    </div>
-  </div-->
-  <script>
-    document.writeln("<h2><b>Доступная информация</b></h2>");
-    document.write("<h3><b>Экран вашего устройства</b></h3>");
-    let screenWidth = window.screen.width;
-    document.write("<p>Ширина: "+screenWidth+" px</p>");
-    let screenHeight = window.screen.height;
-    document.write("<p>Высота: "+screenHeight+" px</p>");
-    let orientation = (screenWidth > screenHeight) ? 'Горизонтальная' : 'Вертикальная';
-    document.write("<p>Ориентация: "+orientation+"</p>");
-    document.write("<h3><b>Браузер</b></h3>");
-    let browser = navigator.userAgent;
-    document.writeln('<p>'+browser+"</p>");
-    var ipAddress = '';
-    fetch('https://api.ipify.org?format=json')
-      .then(d => d.json())
-      .then(d => ipAddress = d.ip);
-    document.writeln('<p>IP адрес: '+ipAddress+"</p>");
-  //.then(d => document.querySelector('#ip').innerHTML = "<p>IP адрес: "+d.ip+"</p>");
-    let inf = {
-          width: screenWidth,
-          height: screenHeight,
-          orient: orientation,
-          brows: browser,
-          ipAddr: ipAddress
-        };
-
-    const postData = async (url = '', data = {}) => {
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      });
-      return response.json(); 
-    }
-    postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp, info: inf })
-
-  </script>
-
-<!--div id="ip"></div>
-<br><br><br>
-<div id="navig" class="alert alert-waring">
-</div-->
-
-<!--script>
-
-var navig = "";
-for (var property in navigator) {
-  navig += "<strong>"+property+"</strong> :" + navigator[property];
-  navig +="<br />";
-}
-document.getElementById("navig").innerHTML = navig;
-</script-->
+  <div id="inf"></div>
+  <script src="inf.js"></script>
 </body>
 </html>
+
