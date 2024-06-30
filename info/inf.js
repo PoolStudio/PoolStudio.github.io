@@ -37,6 +37,7 @@ async function infData() {
       +"<p>Регион: "+d.region+"</p>"
       +"<p>Населенный пункт: "+d.city+"</p>"
       +"<p>Google карта: <a href='https://www.google.ru/maps/search/?api=1&map_action=map&zoom=15&query="+d.latitude+","+d.longitude+"'>"+d.latitude+","+d.longitude+"</a></p>"
+      +"<p>Провайдер: "+d.org+"</p>"
       );
   document.getElementById("inf").innerHTML = it;
   let ipData = document.getElementById('inf').innerText;
