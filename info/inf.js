@@ -17,11 +17,27 @@ async function infData() {
   let offsetHours = -(offset / 60);
   let utcTime = (offsetHours >= 0 ? "+" : "") + offsetHours;
   it = it+"<p>UTC: "+utcTime+"</p>";
+  it = it+"<h3><b>Локация</b></h3>";
   //https://ipapi.co/json/
   //https://api.ipify.org?format=json
+/*
   it = await fetch('https://api.ipify.org?format=json')
     .then(res => res.json())
     .then(d => document.getElementById("inf").innerHTML = it+"<p>IP адрес: "+d.ip+"</p>");
+*/
+  it = await fetch('https://ipapi.co/json/')
+    .then(res => res.json())
+    .then(d => 
+      document.getElementById("inf").innerHTML = it
+      +"<p>IP адрес: "+d.ip+"</p>"
+      +"<p>Страна: "+d.country_name+" ("+d.country_code+")</p>"
+      +"<p>Валюта: "+d.currency_name+" ("+d.currency+")</p>"
+      +"<p>Площадь: "+d.country_area+" км²</p>"
+      +"<p>Население: "+d.country_population+" чел.</p>"
+      +"<p>Регион: "+d.region+"</p>"
+      +"<p>Населенный пункт: "+d.city+"</p>"
+      +"<p>Google карта: <a href='https://www.google.ru/maps/search/?api=1&map_action=map&zoom=15&query="+d.latitude+","+d.longitude+"'>"+d.latitude+","+d.longitude+"</a></p>"
+      );
   document.getElementById("inf").innerHTML = it;
   let ipData = document.getElementById('inf').innerText;
   //let ipData = it;
