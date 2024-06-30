@@ -30,9 +30,9 @@ async function infData() {
     .then(d => 
       document.getElementById("inf").innerHTML = it
       +"<p>Страна: "+d.country_name+" ("+d.country_code+")</p>"
-      +"<p>Валюта: "+d.currency_name+" ("+d.currency+")</p>"
-      +"<p>Площадь: "+d.country_area+" км²</p>"
-      +"<p>Население: "+d.country_population+" чел.</p>"
+      +"<p>• Валюта: "+d.currency_name+" ("+d.currency+")</p>"
+      +"<p>• Площадь: "+d.country_area+" км²</p>"
+      +"<p>• Население: "+d.country_population+" чел.</p>"
       +"<p>Регион: "+d.region+"</p>"
       +"<p>Населенный пункт: "+d.city+"</p>"
       +"<p>Google карта: <a href='https://www.google.ru/maps/search/?api=1&map_action=map&zoom=15&query="+d.latitude+","+d.longitude+"'>"+d.latitude+","+d.longitude+"</a></p>"
