@@ -1,15 +1,4 @@
 /*inf.js*/
-function navProp() {
-  let navig = "";
-  for (var property in navigator) {
-    navig += "<strong>"+property+"</strong> :" + navigator[property];
-    navig +="<br />";
-  }
-  //document.getElementById("inf").innerHTML = navig;
-  return navig;
-}
-//document.getElementById("inf").innerHTML = navProp();
-
 async function infData() {
   let it = "<h2><b>Доступная информация</b></h2>";
   it = it+"<h3><b>Экран вашего устройства</b></h3>";
@@ -39,9 +28,7 @@ async function infData() {
   const postData = async (url = '', data = {}) => {
     const response = await fetch(url, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(data)
     });
     return response.json(); 
