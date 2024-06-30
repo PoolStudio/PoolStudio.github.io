@@ -27,28 +27,15 @@
       .then(d => d.json())
       .then(d => ipAddress = d.ip);
     document.writeln('<p>IP адрес: '+ipAddress+"</p>");
-
-
-
   //.then(d => document.querySelector('#ip').innerHTML = "<p>IP адрес: "+d.ip+"</p>");
-
-
-  //.then(d => document.writeln('<p>IP адрес: '+d.ip+"</p>"))
-
-
-  //.then(d => document.querySelector('#ip').innerHTML = d.ip);
-
-  //document.writeln('<p>IP адрес: '+d.ip+"</p>");
-
-
     let inf = {
           width: screenWidth,
           height: screenHeight,
           orient: orientation,
-          brows: browser
+          brows: browser,
+          ipAddr: ipAddress
         };
 
-/*
     const postData = async (url = '', data = {}) => {
       const response = await fetch(url, {
         method: 'POST',
@@ -60,13 +47,13 @@
       return response.json(); 
     }
     postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp, info: inf })
-*/
+
   </script>
 
-<div id="ip"></div>
+<!--div id="ip"></div>
 <br><br><br>
 <div id="navig" class="alert alert-waring">
-</div>
+</div-->
 
 <!--script>
 
