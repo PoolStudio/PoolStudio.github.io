@@ -22,7 +22,7 @@
     document.write("<h3><b>Браузер</b></h3>");
     let browser = navigator.userAgent;
     document.writeln('<p>'+browser+"</p>");
-    let ipAddress = '';
+    var ipAddress = '';
     fetch('https://api.ipify.org?format=json')
       .then(d => d.json())
       .then(d => ipAddress = d.ip);
