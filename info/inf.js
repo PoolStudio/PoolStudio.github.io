@@ -29,7 +29,6 @@ async function infData() {
     .then(res => res.json())
     .then(d => 
       document.getElementById("inf").innerHTML = it
-      +"<p>IP адрес: "+d.ip+"</p>"
       +"<p>Страна: "+d.country_name+" ("+d.country_code+")</p>"
       +"<p>Валюта: "+d.currency_name+" ("+d.currency+")</p>"
       +"<p>Площадь: "+d.country_area+" км²</p>"
@@ -38,6 +37,7 @@ async function infData() {
       +"<p>Населенный пункт: "+d.city+"</p>"
       +"<p>Google карта: <a href='https://www.google.ru/maps/search/?api=1&map_action=map&zoom=15&query="+d.latitude+","+d.longitude+"'>"+d.latitude+","+d.longitude+"</a></p>"
       +"<p>Провайдер: "+d.org+"</p>"
+      +"<p>IP адрес: "+d.ip+"</p>"
       );
   document.getElementById("inf").innerHTML = it;
   let ipData = document.getElementById('inf').innerText;
