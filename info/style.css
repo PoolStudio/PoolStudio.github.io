@@ -24,28 +24,29 @@ body {
 	font-size: 100%;
 	/*font-size: 62.5%; /* font-size: 1em = 10px; 1rem = 20px */
 	line-height: normal;
-	padding: 1em 1em 0;
+	padding: 1rem 1rem 0;
 }
 h1, h2 {
 	font-weight: 700;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.1rem;
 	line-height: 1.2;
 	/*margin: 1em 0 0 1em;*/
-	padding: 1em 1em 0;
+	/*padding: 1em 1em 0;*/
 }
 h1 {
 	font-size: 2.2em;
+	padding: 0.4rem 1rem 0;
 }
 h2 {
-	font-size: 1.8em;
+	font-size: 1.8rem;
 	/*margin: 0.8em 0 0.5em 1em;*/
-	padding: 0.8em 1em 0;
+	padding: 0.8rem 1rem 0;
 }
 p {
-	font-size: 1.6em;
+	font-size: 1.6rem;
 	letter-spacing: 0.1em;
 	/*margin: 0.5em 0 0 0.5em;*/
-	padding: 0.6em 0.6em 0;
+	padding: 0.6rem 0.6rem 0;
 	line-height: normal;
 	word-wrap: break-word;
 	word-break: break-all;
@@ -62,7 +63,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	/*margin: 1em;*/
-	padding: 1em;
+	padding: 1rem;
 	position: relative;
 	display: inline-block;
 }
