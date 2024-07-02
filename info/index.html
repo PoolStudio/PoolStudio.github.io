@@ -1,18 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Info</title>
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-  <link href="favicon.png" rel="icon">
-  <link href="style.css" rel="stylesheet">
-</head>
-<body>
-  <div id="inf"></div>
-  <script src="inf.js"></script>
-</body>
-</html>
-
-
+/*style.css*/
+@charset "UTF-8";
+/*
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic');
+*/
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	padding: 0;
+}
+body *::selection {background-color: rgba(255,255,255,1); color: rgb(0,0,0,1);}
+html {
+	height: 100%;
+	font-size: 62.5%; /* font-size: 1em = 10px; 1rem = 10px */
+}
+body {
+	height: 100%;
+	font-family: "Roboto", sans-serif;
+	font-size: 10px;
+	font-size: 1em;
+	font-size: 1rem;
+	font-size: 100%;
+	/*font-size: 62.5%; /* font-size: 1em = 10px; 1rem = 20px */
+	line-height: normal;
+}
+h1, h2 {
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	line-height: 1.2;
+	/*margin: 1em 0 0 1em;*/
+	padding: 1em 0 0 1em;
+}
+h1 {
+	font-size: 2.2em;
+}
+h2 {
+	font-size: 1.8em;
+	/*margin: 0.8em 0 0.5em 1em;*/
+	padding: 0.8em 0 0 1em;
+}
+p {
+	font-size: 1.6em;
+	letter-spacing: 0.1em;
+	/*margin: 0.5em 0 0 0.5em;*/
+	padding: 0.5em 0 0 0.5em;
+	line-height: normal;
+}
+a {
+	font-size: inherit;
+	text-decoration: none;
+	outline-style: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#inf {
+	width: 100%;
+	height: 100%;
+	margin: 1em;
+	padding: 1em;
+	position: relative;
+	display: block;
+}
+/*END*/
