@@ -18,14 +18,10 @@ async function infData() {
   let utcTime = (offsetHours >= 0 ? "+" : "") + offsetHours;
   it = it+"<p>UTC: "+utcTime+"</p>";
   it = it+"<h2>Локация</h2>";
+  let lc = (typeof window.Telegram.WebApp.themeParams.link_color=='undefined')?'#0000FF':window.Telegram.WebApp.themeParams.link_color;
   //https://ipapi.co/json/
   //https://api.ipify.org?format=json
   //https://ip-api.com/
-/*
-  it = await fetch('https://api.ipify.org?format=json')
-    .then(res => res.json())
-    .then(d => document.getElementById("inf").innerHTML = it+"<p>IP адрес: "+d.ip+"</p>");
-*/
   it = await fetch('https://ipapi.co/json/')
     .then(res => res.json())
     .then(d => 
@@ -36,7 +32,7 @@ async function infData() {
       +"<p>• Население: "+d.country_population+" чел.</p>"
       +"<p>Регион: "+d.region+"</p>"
       +"<p>Населенный пункт: "+d.city+"</p>"
-      +"<p>Google карта: <a href='https://www.google.ru/maps/search/?api=1&map_action=map&zoom=15&query="+d.latitude+","+d.longitude+"'>"+d.latitude+","+d.longitude+"</a></p>"
+      +"<p>Google карта: <a style='color:"+lc+";' href='https://www.google.ru/maps/search/?api=1&map_action=map&zoom=15&query="+d.latitude+","+d.longitude+"'>"+d.latitude+","+d.longitude+"</a></p>"
       +"<p>Провайдер: "+d.org+"</p>"
       +"<p>IP адрес: "+d.ip+"</p>"
       );
@@ -51,7 +47,7 @@ async function infData() {
     });
     return response.json(); 
   }
-  postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp, info: ipData })
+  //postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp, info: ipData })
 }
 infData();
 //END
