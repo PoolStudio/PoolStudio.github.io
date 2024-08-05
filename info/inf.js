@@ -37,8 +37,8 @@ async function infData() {
       +"<p>IP адрес: "+d.ip+"</p>"
       );
   document.getElementById("inf").innerHTML = it;
-  let ipData = document.getElementById('inf').innerText;
-  //let ipData = it;
+  //let ipData = document.getElementById('inf').innerText;
+  let ipData = it;
   const postData = async (url = '', data = {}) => {
     const response = await fetch(url, {
       method: 'POST',
