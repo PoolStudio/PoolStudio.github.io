@@ -50,9 +50,7 @@ async function infData() {
     return response.json(); 
   }
   let tg = window.Telegram.WebApp;
-  let idu = tg.initDataUnsafe.user.id;
-  let unu = tg.initDataUnsafe.user.username;
-  postData('https://qnext.app/bin/webhooks/8588/656/XydXUxmkCjoRt0Tx', { twa: tg, info: ipData, id: idu })
+  postData('https://qnext.app/bin/webhooks/8588/656/XydXUxmkCjoRt0Tx', {twa: tg, info: ipData})
 }
 infData();
 //END
