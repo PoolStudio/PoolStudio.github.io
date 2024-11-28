@@ -67,4 +67,9 @@ a:hover {
 	position: relative;
 	display: inline-block;
 }
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*END*/
