@@ -1,7 +1,7 @@
 /*inf.js*/
 async function infData() {
   let it = "<b>Информация</b>\n";
-  it = it+"<b><i>Экран</i></b>\n";
+  it = it+"🖥 <b><i>Экран</i></b>\n";
   let scrWid = window.screen.width;
   let scrHei = window.screen.height;
   let orient = (scrWid > scrHei)?'<code>Гор.</code>':'<code>Вер.</code>';
@@ -17,7 +17,7 @@ async function infData() {
   let offsetHours = -(offset / 60);
   let utcTime = (offsetHours >= 0 ? "+" : "") + offsetHours;
   it = it+"<b>• UTC:</b> <code>"+utcTime+"</code>\n";
-  it = it+"<b><i>Локация</i></b>\n";
+  it = it+"🗺 <b><i>Локация</i></b>\n";
   //let lc = (typeof window.Telegram.WebApp.themeParams.link_color=='undefined')?'#0000FF':window.Telegram.WebApp.themeParams.link_color;
   //https://ipapi.co/json/
   //https://api.ipify.org?format=json
