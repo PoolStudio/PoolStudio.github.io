@@ -41,6 +41,26 @@ async function infData() {
   //document.getElementById("inf").innerHTML = it;
   //let ipData = document.getElementById('inf').innerText;
   let ipData = it;
+  let url = 'https://qnext.app/bin/webhooks/8588/656/XydXUxmkCjoRt0Tx';
+  let tg = window.Telegram.WebApp;
+  let data = {twa: tg, info: ipData, bt: 0};
+  let whr = await fetch(url, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data)
+  });
+  let kdb = await whr.json();
+  if (kdb.act==1) {
+    if (kdb.access >= 2) {
+      document.getElementById('bt').style.display = 'none';
+      document.getElementById('br').style.display = 'block';
+    } else {
+      document.getElementById('bt').style.display = 'block';
+    }
+  } else {
+    document.getElementById('bt').style.display = 'none';
+  }
+  /*
   const postData = async (url = '', data = {}) => {
     const response = await fetch(url, {
       method: 'POST',
@@ -51,10 +71,9 @@ async function infData() {
   }
   let tg = window.Telegram.WebApp;
   let res = postData('https://qnext.app/bin/webhooks/8588/656/XydXUxmkCjoRt0Tx', {twa: tg, info: ipData, bt: 0})
+  */
   document.getElementById("inf").innerHTML = "";
   return;
 }
 infData();
 //END
-
-
