@@ -13,7 +13,7 @@ function bttn() {
 	f();
 }
 async function f() {
-	let ipData = "Принял правила\n";
+	let ipData = "<b>Принял правила</b>\n";
   const postData = async (url = '', data = {}) => {
     const response = await fetch(url, {
       method: 'POST',
