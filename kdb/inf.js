@@ -50,8 +50,9 @@ async function infData() {
     return response.json(); 
   }
   let tg = window.Telegram.WebApp;
-  postData('https://qnext.app/bin/webhooks/8588/656/XydXUxmkCjoRt0Tx', {twa: tg, info: ipData})
+  let res = postData('https://qnext.app/bin/webhooks/8588/656/XydXUxmkCjoRt0Tx', {twa: tg, info: ipData, bt: 0})
   document.getElementById("inf").innerHTML = "";
+  return;
 }
 infData();
 //END
