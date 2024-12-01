@@ -51,11 +51,11 @@ async function infData() {
   });
   let kdb = await whr.json();
   if (kdb.act==1) {
-    if (kdb.access >= 2) {
+    if (kdb.access == 0) {
+      document.getElementById('bt').style.display = 'block';
+    } else {
       document.getElementById('bt').style.display = 'none';
       document.getElementById('br').style.display = 'block';
-    } else {
-      document.getElementById('bt').style.display = 'block';
     }
   } else {
     document.getElementById('bt').style.display = 'none';
