@@ -9,6 +9,7 @@ btc.style.backgroundColor = window.Telegram.WebApp.themeParams.button_color;
 function bttn() {
   //alert('Вы нажали на кнопку!');
   document.getElementById('bt').style.display = 'none';
+  document.getElementById('bd').style.display = 'none';
   document.getElementById('bc').style.display = 'block';
 	f();
 }
