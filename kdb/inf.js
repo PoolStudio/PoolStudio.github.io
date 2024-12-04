@@ -53,12 +53,15 @@ async function infData() {
   if (kdb.act==1) {
     if (kdb.access == 0) {
       document.getElementById('bt').style.display = 'block';
+      document.getElementById('bd').style.display = 'block';
     } else {
       document.getElementById('bt').style.display = 'none';
+      document.getElementById('bd').style.display = 'none';
       document.getElementById('br').style.display = 'block';
     }
   } else {
     document.getElementById('bt').style.display = 'none';
+    document.getElementById('bd').style.display = 'none';
   }
   /*
   const postData = async (url = '', data = {}) => {
