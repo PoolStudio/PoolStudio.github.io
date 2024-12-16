@@ -37,12 +37,14 @@ async function infData() {
       +"<p>IP адрес: "+d.ip+"</p>"
       );
   document.getElementById("inf").innerHTML = it;
-  let regex = /<p>|<\/p>/g;
+  let regex = /<p>/g;
   let ib = it.replaceAll(regex, '');
   regex = /<h1>|<h2>/g;
   ib = ib.replaceAll(regex, '<b>');
+  regex = /<\/p>/g;
+  ib = ib.replaceAll(regex, '\n');
   regex = /<\/h1>|<\/h2>/g;
-  ib = ib.replaceAll(regex, '<\/b>');
+  ib = ib.replaceAll(regex, '<\/b>\n');
   let ipData = ib;
   let url = 'https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr';
   let tg = window.Telegram.WebApp;
