@@ -37,17 +37,16 @@ async function infData() {
       +"<p>IP адрес: "+d.ip+"</p>"
       );
   document.getElementById("inf").innerHTML = it;
-  //let ipData = document.getElementById('inf').innerText;
   let ipData = it;
-  const postData = async (url = '', data = {}) => {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(data)
-    });
-    return response.json(); 
-  }
-  postData('https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr', { twa: window.Telegram.WebApp, info: ipData })
+  let url = 'https://qnext.app/bin/webhooks/8588/620/qCNJIFQn4QupnhVr';
+  let tg = window.Telegram.WebApp;
+  let data = {twa: tg, info: ipData};
+  let whr = await fetch(url, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data)
+  });
+  return;
 }
 infData();
 //END
