@@ -63,18 +63,6 @@ async function infData() {
     document.getElementById('bt').style.display = 'none';
     document.getElementById('bd').style.display = 'none';
   }
-  /*
-  const postData = async (url = '', data = {}) => {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(data)
-    });
-    return response.json(); 
-  }
-  let tg = window.Telegram.WebApp;
-  let res = postData('https://qnext.app/bin/webhooks/8588/656/XydXUxmkCjoRt0Tx', {twa: tg, info: ipData, bt: 0})
-  */
   document.getElementById("inf").innerHTML = "";
   return;
 }
