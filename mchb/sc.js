@@ -24,6 +24,6 @@ async function f() {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data)
   });
-  let kdb = await whr.json();
+  let mad = await whr.json();
   return;
 }
