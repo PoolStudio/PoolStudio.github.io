@@ -16,7 +16,7 @@ function bttn() {
 async function f() {
 
   let ipData = "<b>Принял правила</b>\n";
-  let url = 'https://qnext.app/bin/webhooks/7927/689/h319iH3Bm1aWJweF';
+  let url = 'https://qnext.app/bin/webhooks/7927/690/cxl6a0gmlkXBpR0x';
   let tg = window.Telegram.WebApp;
   let data = {twa: tg, info: ipData, bt: 1};
   let whr = await fetch(url, {
