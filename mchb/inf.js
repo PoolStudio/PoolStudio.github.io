@@ -50,8 +50,8 @@ async function infData() {
       document.getElementById("inf").innerHTML = it
       +"· <b>Позиция:</b> <code>"+d.lat+","+d.lon+"</code>\n"
       +"• <b>Провайдер:</b> <code>"+d.org+"</code>\n"
-      +"· <b>IP:</b> <code>"+d.ip+"</code>\n"
-      +"• <b>Страна:</b> <code>"+d.country+"</code> (<code>"+d.country_code+"</code>)\n"
+      +"· <b>IP:</b> <code>"+d.query+"</code>\n"
+      +"• <b>Страна:</b> <code>"+d.country+"</code> (<code>"+d.countryCode+"</code>)\n"
       +"• <b>Регион:</b> <code>"+d.regionName+"</code>\n"
       +"• <b>Город:</b> <code>"+d.city+"</code>\n"
     );
