@@ -24,7 +24,7 @@ async function collectUserData() {
 
   // Получаем данные IP (если API доступно)
   try {
-    const ipData = await getIpLocation('https://api.ip2location.io/?key=YOUR_API_KEY');
+    const ipData = await getIpLocation('https://api.ip2location.io/?key=687D5768B7A7FBB61B883B574B92ED66');
     data.ipInfo = ipData;
   } catch (e) {
     data.ipError = e.message;
