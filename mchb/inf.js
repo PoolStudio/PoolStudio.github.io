@@ -20,7 +20,7 @@ async function infData() {
   let uk = url+key;
   let response = await fetch(uk, {
     method: 'GET',
-    headers: {'Content-Type': 'application/json'}
+    mode: 'no-cors'
   });
   inf.res = await response.json();
   //inf.res.text = await response.text();
