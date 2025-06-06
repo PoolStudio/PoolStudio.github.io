@@ -13,10 +13,10 @@ async function infData() {
   let dat = {};
   dat.winscr = window.screen;
   dat.navua = navigator.userAgent;
-  dat.tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  dat.tzname = Intl.DateTimeFormat().resolvedOptions().timeZone;
   let offset = new Date().getTimezoneOffset();
   let offsetHours = -(offset / 60);
-  dat.utcTime = (offsetHours >= 0 ? "+" : "") + offsetHours;
+  dat.tzutc = (offsetHours >= 0 ? "+" : "") + offsetHours;
   dat.ip = await getVisitorIP();
   url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
   let tg = window.Telegram.WebApp;
