@@ -2,7 +2,7 @@
 async function getIpLocation(url) {  
   try {
     const response = await fetch(url, {
-    method: 'GET',
+    method: 'POST',
     mode: 'no-cors'
   });
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
