@@ -1,7 +1,10 @@
 /*inf.js*/
 async function getIpLocation(url) {  
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, {
+    method: 'GET',
+    mode: 'no-cors'
+  });
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
     return await response.json(); // Возвращаем данные
   } catch (error) {
