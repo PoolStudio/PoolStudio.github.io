@@ -27,7 +27,7 @@ async function infData() {
   .catch(error => console.log('Error:', error));
   //inf.res = await response.json();
   //inf.res.text = await response.text();
-  inf.res.url = url;
+  //inf.res.url = url;
   //towhb
   url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
   let tg = window.Telegram.WebApp;
