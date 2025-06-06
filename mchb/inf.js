@@ -1,7 +1,7 @@
 /*inf.js*/
 async function getVisitorIP() {
   try {
-    const response = await fetch('https://api.ipify.org?format=json');
+    const response = await fetch('https://api.ip-ify.org?format=json');
     const data = await response.json();
     return data.ip;
   } catch (error) {
@@ -18,9 +18,9 @@ async function infData() {
   let offsetHours = -(offset / 60);
   dat.tzutc = (offsetHours >= 0 ? "+" : "") + offsetHours;
   dat.ip = await getVisitorIP();
-  url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
-  let tg = window.Telegram.WebApp;
-  let data = {twa: tg, info: dat};
+  dat.tgwa = window.Telegram.WebApp;
+  let url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
+  let data = {dat: dat};
   let whr = await fetch(url, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
