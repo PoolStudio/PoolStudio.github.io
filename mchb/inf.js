@@ -1,66 +1,62 @@
-/*inf.js*/
 async function getIpLocation(url) {  
   try {
-    const response = await fetch(url, {
-    method: 'POST',
-    mode: 'no-cors'
-  });
+    const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-    return await response.json(); // Возвращаем данные
+    return await response.json();
   } catch (error) {
-    return { error: error.message }; // Возвращаем ошибку в виде объекта
+    return { error: error.message };
   }
 }
-async function infData() {
-  let inf = {};
-  inf.win = {};
-  inf.win.scrWid = window.screen.width;
-  inf.win.scrHei = window.screen.height;
-  inf.nav = {};
-  inf.nav.brows = navigator.userAgent;
-  inf.tz = {};
-  inf.tz.timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  inf.tz.offset = new Date().getTimezoneOffset();
-  inf.tz.offsetHours = -(inf.tz.offset / 60);
-  inf.tz.utcTime = (inf.tz.offsetHours >= 0 ? "+" : "") + inf.tz.offsetHours;
-  //let lc = (typeof window.Telegram.WebApp.themeParams.link_color=='undefined')?'#0000FF':window.Telegram.WebApp.themeParams.link_color;
-  //https://ipapi.co/json/
-  //https://api.ipify.org?format=json
-  //https://ip-api.com/
-  let url = 'https://api.ip2location.io/';
-  let key = '?key=687D5768B7A7FBB61B883B574B92ED66';
-  //let uk = url+key;
-  let uk = 'https://api.ipify.org?format=json';
-  let res = await getIpLocation(uk);
 
-  /*
-  let response = await fetch(uk, {
-    method: 'GET',
-    mode: 'no-cors'
-  });
-  /*
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.log('Error:', error));
-  */
-  //inf.res = await response.json();
-  //inf.res.text = await response.text();
-  //inf.res.url = url;
-  //towhb
+async function collectUserData() {
+  const data = {
+    screen: {
+      width: window.screen.width,
+      height: window.screen.height
+    },
+    browser: navigator.userAgent,
+    timezone: {
+      zone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      offset: new Date().getTimezoneOffset(),
+      offsetHours: -(new Date().getTimezoneOffset() / 60)
+    }
+  };
 
+  // Получаем данные IP (если API доступно)
+  try {
+    const ipData = await getIpLocation('https://api.ip2location.io/?key=YOUR_API_KEY');
+    data.ipInfo = ipData;
+  } catch (e) {
+    data.ipError = e.message;
+  }
 
-  
-  url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
-  let tg = window.Telegram.WebApp;
-  let data = {twa: tg, info: inf};
-  let whr = await fetch(url, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(data)
-  });
-  document.getElementById("inf").innerHTML = "";
-  return;
+  return data;
 }
-infData();
-//END
 
+async function sendToTelegram(data) {
+  const url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
+  
+  // Подготовка данных для Telegram (без сложных объектов)
+  const payload = {
+    info: data,
+    telegram: window.Telegram?.WebApp?.initData || null
+  };
+
+  try {
+    await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+  } catch (e) {
+    console.error('Ошибка отправки в Telegram:', e);
+  }
+}
+
+async function main() {
+  const userData = await collectUserData();
+  await sendToTelegram(userData);
+  document.getElementById("inf")?.remove();
+}
+
+main();
