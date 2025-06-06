@@ -30,7 +30,7 @@ async function infData() {
   let url = 'https://api.ip2location.io/';
   let key = '?key=687D5768B7A7FBB61B883B574B92ED66';
   let uk = url+key;
-  inf.res = await getIpLocation(uk);
+  let res = await getIpLocation(uk);
 
 
   /*
