@@ -9,7 +9,6 @@ async function getVisitorIP() {
     return null;
   }
 }
-
 async function infData() {
   let nf = {};
   nf.win = {};
@@ -22,7 +21,7 @@ async function infData() {
   nf.tz.offset = new Date().getTimezoneOffset();
   nf.tz.offsetHours = -(nf.tz.offset / 60);
   nf.tz.utcTime = (nf.tz.offsetHours >= 0 ? "+" : "") + nf.tz.offsetHours;
-  const visitorIP = await getVisitorIP();
+  nf.ip = await getVisitorIP();
   url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
   let tg = window.Telegram.WebApp;
   let data = {twa: tg, info: nf};
