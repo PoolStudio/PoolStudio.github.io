@@ -1,4 +1,13 @@
 /*inf.js*/
+async function getIpLocation(url) {  
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+    return await response.json(); // Возвращаем данные
+  } catch (error) {
+    return { error: error.message }; // Возвращаем ошибку в виде объекта
+  }
+}
 async function infData() {
   let inf = {};
   inf.win = {};
@@ -18,18 +27,7 @@ async function infData() {
   let url = 'https://api.ip2location.io/';
   let key = '?key=687D5768B7A7FBB61B883B574B92ED66';
   let uk = url+key;
-
-  try {
-    const response = await fetch(uk);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    console.log('Полученные данные:', data);
-    return data;
-  } catch (error) {
-    console.error('Ошибка при получении данных:', error);
-  }
+  inf.res = await getIpLocation(uk);
 
 
   /*
