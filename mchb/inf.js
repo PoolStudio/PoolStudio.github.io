@@ -48,7 +48,7 @@ async function infData() {
   //towhb
 
 
-  */
+  
   url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
   let tg = window.Telegram.WebApp;
   let data = {twa: tg, info: inf};
