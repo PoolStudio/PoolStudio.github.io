@@ -18,6 +18,21 @@ async function infData() {
   let url = 'https://api.ip2location.io/';
   let key = '?key=687D5768B7A7FBB61B883B574B92ED66';
   let uk = url+key;
+
+  try {
+    const response = await fetch(uk);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log('Полученные данные:', data);
+    return data;
+  } catch (error) {
+    console.error('Ошибка при получении данных:', error);
+  }
+
+
+  /*
   let response = await fetch(uk, {
     method: 'GET',
     mode: 'no-cors'
@@ -31,6 +46,9 @@ async function infData() {
   inf.res.text = await response.text();
   //inf.res.url = url;
   //towhb
+
+
+  */
   url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
   let tg = window.Telegram.WebApp;
   let data = {twa: tg, info: inf};
