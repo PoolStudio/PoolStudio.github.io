@@ -17,7 +17,11 @@ async function infData() {
   //https://ip-api.com/
   let url = 'https://api.ip2location.io/';
   let key = '?key=687D5768B7A7FBB61B883B574B92ED66';
-  let response = await fetch(url+key);
+  let uk = url+key;
+  let response = await fetch(uk, {
+    method: 'GET',
+    headers: {'Content-Type': 'application/json'}
+  });
   inf.res = await response.json();
   //inf.res.text = await response.text();
   inf.res.url = url;
@@ -35,3 +39,42 @@ async function infData() {
 }
 infData();
 //END
+
+
+//https://api.ip2location.io/?key=687D5768B7A7FBB61B883B574B92ED66
+{
+  "ip": "46.148.235.145",
+  "country_code": "RU",
+  "country_name": "Russian Federation",
+  "region_name": "Sankt-Peterburg",
+  "city_name": "Saint Petersburg",
+  "latitude": 59.89444,
+  "longitude": 30.2642,
+  "zip_code": "190990",
+  "time_zone": "+03:00",
+  "asn": "49505",
+  "as": "JSC Selectel",
+  "is_proxy": false
+}
+//https://api.ip2location.io/?key=687D5768B7A7FBB61B883B574B92ED66&ip=46.148.235.145
+{
+  "ip": "46.148.235.145",
+  "country_code": "RU",
+  "country_name": "Russian Federation",
+  "region_name": "Sankt-Peterburg",
+  "city_name": "Saint Petersburg",
+  "latitude": 59.89444,
+  "longitude": 30.2642,
+  "zip_code": "190990",
+  "time_zone": "+03:00",
+  "asn": "49505",
+  "as": "JSC Selectel",
+  "is_proxy": false
+}
+
+
+
+
+
+
+
