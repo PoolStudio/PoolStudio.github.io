@@ -11,15 +11,12 @@ async function getVisitorIP() {
 }
 async function infData() {
   let dat = {};
-  dat.win = {};
-  dat.win = window;
-  dat.nav = {};
-  dat.nav.brows = navigator;
-  dat.tz = {};
-  dat.tz.timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  dat.tz.offset = new Date().getTimezoneOffset();
-  dat.tz.offsetHours = -(nf.tz.offset / 60);
-  dat.tz.utcTime = (nf.tz.offsetHours >= 0 ? "+" : "") + nf.tz.offsetHours;
+  dat.winscr = window.screen;
+  dat.navua = navigator.userAgent;
+  dat.tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  let offset = new Date().getTimezoneOffset();
+  let offsetHours = -(offset / 60);
+  dat.utcTime = (offsetHours >= 0 ? "+" : "") + offsetHours;
   dat.ip = await getVisitorIP();
   url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
   let tg = window.Telegram.WebApp;
