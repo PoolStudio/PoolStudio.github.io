@@ -21,8 +21,11 @@ async function infData() {
   let response = await fetch(uk, {
     method: 'GET',
     mode: 'no-cors'
-  });
-  inf.res = await response.json();
+  })
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log('Error:', error));
+  //inf.res = await response.json();
   //inf.res.text = await response.text();
   inf.res.url = url;
   //towhb
