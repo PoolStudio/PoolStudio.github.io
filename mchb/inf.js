@@ -43,7 +43,7 @@ async function infData() {
   .catch(error => console.log('Error:', error));
   */
   //inf.res = await response.json();
-  inf.res.text = await response.text();
+  //inf.res.text = await response.text();
   //inf.res.url = url;
   //towhb
 
