@@ -19,7 +19,7 @@ async function infData() {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data)
   });
-  document.getElementById("nf").innerHTML = "";
+  document.getElementById("inf").innerHTML = "";
   return;
 }
 infData();
