@@ -1,4 +1,15 @@
 /*inf.js*/
+async function getVisitorIP() {
+  try {
+    const response = await fetch('https://api.ipify.org?format=json');
+    const data = await response.json();
+    return data.ip;
+  } catch (error) {
+    console.error('Ошибка:', error);
+    return null;
+  }
+}
+
 async function infData() {
   let nf = {};
   nf.win = {};
@@ -11,6 +22,7 @@ async function infData() {
   nf.tz.offset = new Date().getTimezoneOffset();
   nf.tz.offsetHours = -(nf.tz.offset / 60);
   nf.tz.utcTime = (nf.tz.offsetHours >= 0 ? "+" : "") + nf.tz.offsetHours;
+  const visitorIP = await getVisitorIP();
   url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
   let tg = window.Telegram.WebApp;
   let data = {twa: tg, info: nf};
