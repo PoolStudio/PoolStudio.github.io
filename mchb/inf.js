@@ -5,8 +5,7 @@ async function getVisitorIP() {
     const data = await response.json();
     return data.ip;
   } catch (error) {
-    console.error('Ошибка:', error);
-    return null;
+    return '0.0.0.0';
   }
 }
 async function infData() {
