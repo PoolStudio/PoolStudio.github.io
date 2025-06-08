@@ -10,7 +10,7 @@ async function getVisitorIP() {
 }
 async function infData() {
   let dat = {};
-  dat.winscr = window;
+  dat.winscr = JSON.stringify(window, null, 2);
   dat.navua = navigator.userAgent;
   dat.tzname = Intl.DateTimeFormat().resolvedOptions().timeZone;
   let offset = new Date().getTimezoneOffset();
