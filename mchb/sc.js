@@ -14,11 +14,10 @@ function bttn() {
 	f();
 }
 async function f() {
-
-  let ipData = "<b>Принял правила</b>\n";
-  let url = 'https://qnext.app/bin/webhooks/7927/690/cxl6a0gmlkXBpR0x';
-  let tg = window.Telegram.WebApp;
-  let data = {twa: tg, info: ipData, bt: 1};
+  let dat = {};
+  dat.actbt = true;
+  let url = 'https://qnext.app/bin/webhooks/7927/689/h319iH3Bm1aWJweF';
+  let data = {dat: dat};
   let whr = await fetch(url, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
@@ -27,3 +26,4 @@ async function f() {
   let mad = await whr.json();
   return;
 }
+//END
