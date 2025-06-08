@@ -1,7 +1,7 @@
 /*inf.js*/
 async function getVisitorIP() {
   try {
-    const response = await fetch('https://api.ip-ify.org?format=json');
+    const response = await fetch('https://api.ipify.org?format=json');
     const data = await response.json();
     return data.ip;
   } catch (error) {
@@ -30,3 +30,4 @@ async function infData() {
 }
 infData();
 //END
+
