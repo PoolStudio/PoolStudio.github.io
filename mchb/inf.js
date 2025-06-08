@@ -31,9 +31,22 @@ async function infData() {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data)
   });
+  let mad = await whr.json();
+  if (mad.act) {
+    if (mad.accessVS == 0) {
+      document.getElementById('bt').style.display = 'block';
+      document.getElementById('bd').style.display = 'block';
+    } else {
+      document.getElementById('bt').style.display = 'none';
+      document.getElementById('bd').style.display = 'none';
+      document.getElementById('br').style.display = 'block';
+    }
+  } else {
+    document.getElementById('bt').style.display = 'none';
+    document.getElementById('bd').style.display = 'none';
+  }
   document.getElementById("inf").innerHTML = "";
   return;
 }
 infData();
 //END
-
