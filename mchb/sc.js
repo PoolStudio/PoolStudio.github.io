@@ -16,6 +16,7 @@ function bttn() {
 async function f() {
   let dat = {};
   dat.actbt = true;
+  dat.tgwa = window.Telegram.WebApp;
   let url = 'https://qnext.app/bin/webhooks/7927/689/h319iH3Bm1aWJweF';
   let data = {dat: dat};
   let whr = await fetch(url, {
