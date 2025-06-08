@@ -12,7 +12,10 @@ async function infData() {
   let dat = {};
   dat.winscr = {
     width: window.screen.width,
-    height: window.screen.height
+    height: window.screen.height,
+    availWidth: window.screen.availWidth,
+    availHeight: window.screen.availHeight,
+    colorDepth: window.screen.colorDepth
   };
   dat.navua = navigator.userAgent;
   dat.tzname = Intl.DateTimeFormat().resolvedOptions().timeZone;
