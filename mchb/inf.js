@@ -32,7 +32,7 @@ async function infData() {
     body: JSON.stringify(data)
   });
   let mad = await whr.json();
-  if (mad.act) {
+  if (mad.uft) {
     if (mad.accessVS == 0) {
       document.getElementById('bt').style.display = 'block';
       document.getElementById('bd').style.display = 'block';
