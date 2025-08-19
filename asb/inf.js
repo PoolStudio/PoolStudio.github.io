@@ -33,7 +33,7 @@ async function infData() {
   });
   let mad = await whr.json();
   if (mad.uft) {
-    if (mad.acsbt == 0) {
+    if (mad.acsbt) {
       document.getElementById('bt').style.display = 'block';
       document.getElementById('bd').style.display = 'block';
     } else {
@@ -50,4 +50,3 @@ async function infData() {
 }
 infData();
 //END
-
